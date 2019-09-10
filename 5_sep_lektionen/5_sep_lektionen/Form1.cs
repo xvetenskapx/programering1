@@ -79,7 +79,17 @@ namespace _5_sep_lektionen
             lblSum1234.Text = Svarsum1234;
 
             //MedelVärde Koden
-            int 
+            int Medel2 = (Tal1 + Tal2) / 2;
+            string Medelsum2 = Medel2.ToString();
+            lblMedel12.Text = Medelsum2;
+
+            int Medel3 = (Tal1 + Tal2 + Tal3) / 3;
+            string Medelsum3 = Medel3.ToString();
+            lblMedel123.Text = Medelsum3;
+
+            int Medel4 = (Tal1 + Tal2 + Tal3 + Tal4) / 4;
+            string Medelsum4 = Medel4.ToString();
+            lblMedel1234.Text = Medelsum4;
         }
     }
 }
