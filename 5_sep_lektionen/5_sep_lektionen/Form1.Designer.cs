@@ -50,6 +50,38 @@
             this.lblMedel12 = new System.Windows.Forms.Label();
             this.lblMedel123 = new System.Windows.Forms.Label();
             this.lblMedel1234 = new System.Windows.Forms.Label();
+            this.lblEngelska = new System.Windows.Forms.Label();
+            this.lblSvenska = new System.Windows.Forms.Label();
+            this.tbxSvenska = new System.Windows.Forms.TextBox();
+            this.tbxEngelska = new System.Windows.Forms.TextBox();
+            this.btnKör = new System.Windows.Forms.Button();
+            this.lblSE = new System.Windows.Forms.Label();
+            this.lblTranslate = new System.Windows.Forms.Label();
+            this.lblrubrik50 = new System.Windows.Forms.Label();
+            this.btnBeräkna = new System.Windows.Forms.Button();
+            this.tbxNamn50 = new System.Windows.Forms.TextBox();
+            this.tbxFödelseår50 = new System.Windows.Forms.TextBox();
+            this.lblFödelseår = new System.Windows.Forms.Label();
+            this.lblNamn50 = new System.Windows.Forms.Label();
+            this.lblMening50 = new System.Windows.Forms.Label();
+            this.btninitial = new System.Windows.Forms.Button();
+            this.lblEfternamn = new System.Windows.Forms.Label();
+            this.lblFornamn = new System.Windows.Forms.Label();
+            this.tbxEfternamn = new System.Windows.Forms.TextBox();
+            this.lblInitialer = new System.Windows.Forms.Label();
+            this.tbxFornamn = new System.Windows.Forms.TextBox();
+            this.lblInitial_Skapare = new System.Windows.Forms.Label();
+            this.btnKonventera = new System.Windows.Forms.Button();
+            this.lblTeckenO = new System.Windows.Forms.Label();
+            this.lblTecken = new System.Windows.Forms.Label();
+            this.tbxTecken = new System.Windows.Forms.TextBox();
+            this.lblUnicode = new System.Windows.Forms.Label();
+            this.tbxVersal = new System.Windows.Forms.TextBox();
+            this.lblGemen = new System.Windows.Forms.Label();
+            this.lblVersal = new System.Windows.Forms.Label();
+            this.lblUnicodeP = new System.Windows.Forms.Label();
+            this.tbxUnicode = new System.Windows.Forms.TextBox();
+            this.lblUnicodeS = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl3
@@ -251,11 +283,320 @@
             this.lblMedel1234.TabIndex = 24;
             this.lblMedel1234.Text = "-------";
             // 
+            // lblEngelska
+            // 
+            this.lblEngelska.AutoSize = true;
+            this.lblEngelska.Location = new System.Drawing.Point(633, 63);
+            this.lblEngelska.Name = "lblEngelska";
+            this.lblEngelska.Size = new System.Drawing.Size(51, 13);
+            this.lblEngelska.TabIndex = 25;
+            this.lblEngelska.Text = "Engelska";
+            // 
+            // lblSvenska
+            // 
+            this.lblSvenska.AutoSize = true;
+            this.lblSvenska.Location = new System.Drawing.Point(633, 37);
+            this.lblSvenska.Name = "lblSvenska";
+            this.lblSvenska.Size = new System.Drawing.Size(49, 13);
+            this.lblSvenska.TabIndex = 26;
+            this.lblSvenska.Text = "Svenska";
+            // 
+            // tbxSvenska
+            // 
+            this.tbxSvenska.Location = new System.Drawing.Point(704, 34);
+            this.tbxSvenska.Name = "tbxSvenska";
+            this.tbxSvenska.Size = new System.Drawing.Size(100, 20);
+            this.tbxSvenska.TabIndex = 27;
+            this.tbxSvenska.Text = "Hej";
+            // 
+            // tbxEngelska
+            // 
+            this.tbxEngelska.Location = new System.Drawing.Point(704, 60);
+            this.tbxEngelska.Name = "tbxEngelska";
+            this.tbxEngelska.Size = new System.Drawing.Size(100, 20);
+            this.tbxEngelska.TabIndex = 28;
+            this.tbxEngelska.Text = "Hi";
+            // 
+            // btnKör
+            // 
+            this.btnKör.Location = new System.Drawing.Point(681, 143);
+            this.btnKör.Name = "btnKör";
+            this.btnKör.Size = new System.Drawing.Size(75, 23);
+            this.btnKör.TabIndex = 29;
+            this.btnKör.Text = "Kör";
+            this.btnKör.UseVisualStyleBackColor = true;
+            this.btnKör.Click += new System.EventHandler(this.BtnKör_Click);
+            // 
+            // lblSE
+            // 
+            this.lblSE.AutoSize = true;
+            this.lblSE.Location = new System.Drawing.Point(633, 105);
+            this.lblSE.Name = "lblSE";
+            this.lblSE.Size = new System.Drawing.Size(0, 13);
+            this.lblSE.TabIndex = 30;
+            // 
+            // lblTranslate
+            // 
+            this.lblTranslate.AutoSize = true;
+            this.lblTranslate.Location = new System.Drawing.Point(701, 9);
+            this.lblTranslate.Name = "lblTranslate";
+            this.lblTranslate.Size = new System.Drawing.Size(51, 13);
+            this.lblTranslate.TabIndex = 31;
+            this.lblTranslate.Text = "Translate";
+            // 
+            // lblrubrik50
+            // 
+            this.lblrubrik50.AutoSize = true;
+            this.lblrubrik50.Location = new System.Drawing.Point(701, 196);
+            this.lblrubrik50.Name = "lblrubrik50";
+            this.lblrubrik50.Size = new System.Drawing.Size(47, 13);
+            this.lblrubrik50.TabIndex = 32;
+            this.lblrubrik50.Text = "50 kalas";
+            // 
+            // btnBeräkna
+            // 
+            this.btnBeräkna.Location = new System.Drawing.Point(681, 296);
+            this.btnBeräkna.Name = "btnBeräkna";
+            this.btnBeräkna.Size = new System.Drawing.Size(75, 23);
+            this.btnBeräkna.TabIndex = 33;
+            this.btnBeräkna.Text = "Beräkna";
+            this.btnBeräkna.UseVisualStyleBackColor = true;
+            this.btnBeräkna.Click += new System.EventHandler(this.BtnBeräkna_Click);
+            // 
+            // tbxNamn50
+            // 
+            this.tbxNamn50.Location = new System.Drawing.Point(704, 212);
+            this.tbxNamn50.Name = "tbxNamn50";
+            this.tbxNamn50.Size = new System.Drawing.Size(100, 20);
+            this.tbxNamn50.TabIndex = 34;
+            this.tbxNamn50.Text = "André";
+            // 
+            // tbxFödelseår50
+            // 
+            this.tbxFödelseår50.Location = new System.Drawing.Point(704, 238);
+            this.tbxFödelseår50.Name = "tbxFödelseår50";
+            this.tbxFödelseår50.Size = new System.Drawing.Size(100, 20);
+            this.tbxFödelseår50.TabIndex = 35;
+            this.tbxFödelseår50.Text = "2002";
+            // 
+            // lblFödelseår
+            // 
+            this.lblFödelseår.AutoSize = true;
+            this.lblFödelseår.Location = new System.Drawing.Point(633, 241);
+            this.lblFödelseår.Name = "lblFödelseår";
+            this.lblFödelseår.Size = new System.Drawing.Size(56, 13);
+            this.lblFödelseår.TabIndex = 37;
+            this.lblFödelseår.Text = "Födelseår:";
+            // 
+            // lblNamn50
+            // 
+            this.lblNamn50.AutoSize = true;
+            this.lblNamn50.Location = new System.Drawing.Point(633, 219);
+            this.lblNamn50.Name = "lblNamn50";
+            this.lblNamn50.Size = new System.Drawing.Size(38, 13);
+            this.lblNamn50.TabIndex = 38;
+            this.lblNamn50.Text = "Namn:";
+            // 
+            // lblMening50
+            // 
+            this.lblMening50.AutoSize = true;
+            this.lblMening50.Location = new System.Drawing.Point(636, 270);
+            this.lblMening50.Name = "lblMening50";
+            this.lblMening50.Size = new System.Drawing.Size(0, 13);
+            this.lblMening50.TabIndex = 39;
+            // 
+            // btninitial
+            // 
+            this.btninitial.Location = new System.Drawing.Point(49, 451);
+            this.btninitial.Name = "btninitial";
+            this.btninitial.Size = new System.Drawing.Size(75, 23);
+            this.btninitial.TabIndex = 40;
+            this.btninitial.Text = "Initial";
+            this.btninitial.UseVisualStyleBackColor = true;
+            this.btninitial.Click += new System.EventHandler(this.Btninitial_Click);
+            // 
+            // lblEfternamn
+            // 
+            this.lblEfternamn.AutoSize = true;
+            this.lblEfternamn.Location = new System.Drawing.Point(12, 391);
+            this.lblEfternamn.Name = "lblEfternamn";
+            this.lblEfternamn.Size = new System.Drawing.Size(58, 13);
+            this.lblEfternamn.TabIndex = 41;
+            this.lblEfternamn.Text = "Efternamn:";
+            // 
+            // lblFornamn
+            // 
+            this.lblFornamn.AutoSize = true;
+            this.lblFornamn.Location = new System.Drawing.Point(12, 365);
+            this.lblFornamn.Name = "lblFornamn";
+            this.lblFornamn.Size = new System.Drawing.Size(51, 13);
+            this.lblFornamn.TabIndex = 42;
+            this.lblFornamn.Text = "Förnamn:";
+            // 
+            // tbxEfternamn
+            // 
+            this.tbxEfternamn.Location = new System.Drawing.Point(68, 388);
+            this.tbxEfternamn.Name = "tbxEfternamn";
+            this.tbxEfternamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxEfternamn.TabIndex = 43;
+            this.tbxEfternamn.Text = "Edvardsson";
+            // 
+            // lblInitialer
+            // 
+            this.lblInitialer.AutoSize = true;
+            this.lblInitialer.Location = new System.Drawing.Point(12, 420);
+            this.lblInitialer.Name = "lblInitialer";
+            this.lblInitialer.Size = new System.Drawing.Size(0, 13);
+            this.lblInitialer.TabIndex = 44;
+            // 
+            // tbxFornamn
+            // 
+            this.tbxFornamn.Location = new System.Drawing.Point(69, 362);
+            this.tbxFornamn.Name = "tbxFornamn";
+            this.tbxFornamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxFornamn.TabIndex = 45;
+            this.tbxFornamn.Text = "André";
+            // 
+            // lblInitial_Skapare
+            // 
+            this.lblInitial_Skapare.AutoSize = true;
+            this.lblInitial_Skapare.Location = new System.Drawing.Point(70, 346);
+            this.lblInitial_Skapare.Name = "lblInitial_Skapare";
+            this.lblInitial_Skapare.Size = new System.Drawing.Size(74, 13);
+            this.lblInitial_Skapare.TabIndex = 46;
+            this.lblInitial_Skapare.Text = "Initial Skapare";
+            // 
+            // btnKonventera
+            // 
+            this.btnKonventera.Location = new System.Drawing.Point(389, 341);
+            this.btnKonventera.Name = "btnKonventera";
+            this.btnKonventera.Size = new System.Drawing.Size(75, 23);
+            this.btnKonventera.TabIndex = 47;
+            this.btnKonventera.Text = "Konventera";
+            this.btnKonventera.UseVisualStyleBackColor = true;
+            this.btnKonventera.Click += new System.EventHandler(this.BtnKonventera_Click);
+            // 
+            // lblTeckenO
+            // 
+            this.lblTeckenO.AutoSize = true;
+            this.lblTeckenO.Location = new System.Drawing.Point(280, 385);
+            this.lblTeckenO.Name = "lblTeckenO";
+            this.lblTeckenO.Size = new System.Drawing.Size(0, 13);
+            this.lblTeckenO.TabIndex = 48;
+            // 
+            // lblTecken
+            // 
+            this.lblTecken.AutoSize = true;
+            this.lblTecken.Location = new System.Drawing.Point(226, 365);
+            this.lblTecken.Name = "lblTecken";
+            this.lblTecken.Size = new System.Drawing.Size(47, 13);
+            this.lblTecken.TabIndex = 49;
+            this.lblTecken.Text = "Tecken:";
+            // 
+            // tbxTecken
+            // 
+            this.tbxTecken.Location = new System.Drawing.Point(283, 362);
+            this.tbxTecken.Name = "tbxTecken";
+            this.tbxTecken.Size = new System.Drawing.Size(100, 20);
+            this.tbxTecken.TabIndex = 50;
+            this.tbxTecken.Text = "@";
+            // 
+            // lblUnicode
+            // 
+            this.lblUnicode.AutoSize = true;
+            this.lblUnicode.Location = new System.Drawing.Point(280, 346);
+            this.lblUnicode.Name = "lblUnicode";
+            this.lblUnicode.Size = new System.Drawing.Size(47, 13);
+            this.lblUnicode.TabIndex = 51;
+            this.lblUnicode.Text = "Unicode";
+            // 
+            // tbxVersal
+            // 
+            this.tbxVersal.Location = new System.Drawing.Point(283, 401);
+            this.tbxVersal.Name = "tbxVersal";
+            this.tbxVersal.Size = new System.Drawing.Size(100, 20);
+            this.tbxVersal.TabIndex = 52;
+            this.tbxVersal.Text = "A";
+            // 
+            // lblGemen
+            // 
+            this.lblGemen.AutoSize = true;
+            this.lblGemen.Location = new System.Drawing.Point(280, 424);
+            this.lblGemen.Name = "lblGemen";
+            this.lblGemen.Size = new System.Drawing.Size(0, 13);
+            this.lblGemen.TabIndex = 53;
+            // 
+            // lblVersal
+            // 
+            this.lblVersal.AutoSize = true;
+            this.lblVersal.Location = new System.Drawing.Point(226, 404);
+            this.lblVersal.Name = "lblVersal";
+            this.lblVersal.Size = new System.Drawing.Size(39, 13);
+            this.lblVersal.TabIndex = 54;
+            this.lblVersal.Text = "Versal:";
+            // 
+            // lblUnicodeP
+            // 
+            this.lblUnicodeP.AutoSize = true;
+            this.lblUnicodeP.Location = new System.Drawing.Point(226, 443);
+            this.lblUnicodeP.Name = "lblUnicodeP";
+            this.lblUnicodeP.Size = new System.Drawing.Size(50, 13);
+            this.lblUnicodeP.TabIndex = 55;
+            this.lblUnicodeP.Text = "Unicode:";
+            // 
+            // tbxUnicode
+            // 
+            this.tbxUnicode.Location = new System.Drawing.Point(283, 440);
+            this.tbxUnicode.Name = "tbxUnicode";
+            this.tbxUnicode.Size = new System.Drawing.Size(100, 20);
+            this.tbxUnicode.TabIndex = 56;
+            this.tbxUnicode.Text = "96";
+            // 
+            // lblUnicodeS
+            // 
+            this.lblUnicodeS.AutoSize = true;
+            this.lblUnicodeS.Location = new System.Drawing.Point(280, 463);
+            this.lblUnicodeS.Name = "lblUnicodeS";
+            this.lblUnicodeS.Size = new System.Drawing.Size(0, 13);
+            this.lblUnicodeS.TabIndex = 57;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(873, 504);
+            this.Controls.Add(this.lblUnicodeS);
+            this.Controls.Add(this.tbxUnicode);
+            this.Controls.Add(this.lblUnicodeP);
+            this.Controls.Add(this.lblVersal);
+            this.Controls.Add(this.lblGemen);
+            this.Controls.Add(this.tbxVersal);
+            this.Controls.Add(this.lblUnicode);
+            this.Controls.Add(this.tbxTecken);
+            this.Controls.Add(this.lblTecken);
+            this.Controls.Add(this.lblTeckenO);
+            this.Controls.Add(this.btnKonventera);
+            this.Controls.Add(this.lblInitial_Skapare);
+            this.Controls.Add(this.tbxFornamn);
+            this.Controls.Add(this.lblInitialer);
+            this.Controls.Add(this.tbxEfternamn);
+            this.Controls.Add(this.lblFornamn);
+            this.Controls.Add(this.lblEfternamn);
+            this.Controls.Add(this.btninitial);
+            this.Controls.Add(this.lblMening50);
+            this.Controls.Add(this.lblNamn50);
+            this.Controls.Add(this.lblFödelseår);
+            this.Controls.Add(this.tbxFödelseår50);
+            this.Controls.Add(this.tbxNamn50);
+            this.Controls.Add(this.btnBeräkna);
+            this.Controls.Add(this.lblrubrik50);
+            this.Controls.Add(this.lblTranslate);
+            this.Controls.Add(this.lblSE);
+            this.Controls.Add(this.btnKör);
+            this.Controls.Add(this.tbxEngelska);
+            this.Controls.Add(this.tbxSvenska);
+            this.Controls.Add(this.lblSvenska);
+            this.Controls.Add(this.lblEngelska);
             this.Controls.Add(this.lblMedel1234);
             this.Controls.Add(this.lblMedel123);
             this.Controls.Add(this.lblMedel12);
@@ -309,6 +650,38 @@
         private System.Windows.Forms.Label lblMedel12;
         private System.Windows.Forms.Label lblMedel123;
         private System.Windows.Forms.Label lblMedel1234;
+        private System.Windows.Forms.Label lblEngelska;
+        private System.Windows.Forms.Label lblSvenska;
+        private System.Windows.Forms.TextBox tbxSvenska;
+        private System.Windows.Forms.TextBox tbxEngelska;
+        private System.Windows.Forms.Button btnKör;
+        private System.Windows.Forms.Label lblSE;
+        private System.Windows.Forms.Label lblTranslate;
+        private System.Windows.Forms.Label lblrubrik50;
+        private System.Windows.Forms.Button btnBeräkna;
+        private System.Windows.Forms.TextBox tbxNamn50;
+        private System.Windows.Forms.TextBox tbxFödelseår50;
+        private System.Windows.Forms.Label lblFödelseår;
+        private System.Windows.Forms.Label lblNamn50;
+        private System.Windows.Forms.Label lblMening50;
+        private System.Windows.Forms.Button btninitial;
+        private System.Windows.Forms.Label lblEfternamn;
+        private System.Windows.Forms.Label lblFornamn;
+        private System.Windows.Forms.TextBox tbxEfternamn;
+        private System.Windows.Forms.Label lblInitialer;
+        private System.Windows.Forms.TextBox tbxFornamn;
+        private System.Windows.Forms.Label lblInitial_Skapare;
+        private System.Windows.Forms.Button btnKonventera;
+        private System.Windows.Forms.Label lblTeckenO;
+        private System.Windows.Forms.Label lblTecken;
+        private System.Windows.Forms.TextBox tbxTecken;
+        private System.Windows.Forms.Label lblUnicode;
+        private System.Windows.Forms.TextBox tbxVersal;
+        private System.Windows.Forms.Label lblGemen;
+        private System.Windows.Forms.Label lblVersal;
+        private System.Windows.Forms.Label lblUnicodeP;
+        private System.Windows.Forms.TextBox tbxUnicode;
+        private System.Windows.Forms.Label lblUnicodeS;
     }
 }
 

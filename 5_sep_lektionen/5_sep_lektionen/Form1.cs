@@ -79,17 +79,75 @@ namespace _5_sep_lektionen
             lblSum1234.Text = Svarsum1234;
 
             //MedelVärde Koden
-            int Medel2 = (Tal1 + Tal2) / 2;
+            double Medel2;
+            Medel2= (Tal1 + Tal2) / (double)2;
             string Medelsum2 = Medel2.ToString();
             lblMedel12.Text = Medelsum2;
 
-            int Medel3 = (Tal1 + Tal2 + Tal3) / 3;
+            double Medel3;
+            Medel3 = (Tal1 + Tal2 + Tal3) / (double)3;
             string Medelsum3 = Medel3.ToString();
             lblMedel123.Text = Medelsum3;
 
-            int Medel4 = (Tal1 + Tal2 + Tal3 + Tal4) / 4;
+            double Medel4;
+            Medel4 = (Tal1 + Tal2 + Tal3 + Tal4) / (double) 4;
             string Medelsum4 = Medel4.ToString();
             lblMedel1234.Text = Medelsum4;
+        }
+
+        private void BtnKör_Click(object sender, EventArgs e)
+        {
+            string Svenska = tbxSvenska.Text;
+            string Engelska = tbxEngelska.Text;
+            lblSE.Text = Engelska + " " + "betyder" + " " + Svenska + " " + "på Engelska";
+        }
+
+        private void BtnBeräkna_Click(object sender, EventArgs e)
+        {
+            string Namn = tbxNamn50.Text;
+            int Födelseår = int.Parse(tbxFödelseår50.Text) + 50;
+            //int Fyller50 = Födelseår + 50;
+            string Mening50 = Namn + " " + "fyller 50 år" + " " + Födelseår.ToString();
+            lblMening50.Text = Mening50;
+        }
+
+        private void Btninitial_Click(object sender, EventArgs e)
+        {
+            string Fornamn = tbxFornamn.Text;
+            string Efternamn = tbxEfternamn.Text;
+            char Finitial = Fornamn[0];
+            char Einitial = Efternamn[0];
+            string initialer = Fornamn + " " + Efternamn + " har initialerna " + Finitial.ToString() + "." + Einitial + ".";
+            lblInitialer.Text = initialer;
+        }
+
+        private void BtnKonventera_Click(object sender, EventArgs e)
+        {
+            //Tecken till Unicode
+            string Tecken = tbxTecken.Text;
+            char TeckenS = Tecken[0];
+            int TeckenB = (int)TeckenS;
+            string Unicode = TeckenB.ToString();
+            lblTeckenO.Text = Tecken + " Har koden " + Unicode;
+
+            //Versal till gemen
+            Char Versal = tbxVersal.Text[0];
+            int TeckenG = Versal + 32;
+            Char Gemen = (char)TeckenG;
+            lblGemen.Text = Gemen.ToString();
+
+            //Unicode till Tecken
+            int Code = int.Parse(tbxUnicode.Text);
+            Char Ucode = (char)Code;
+            lblUnicodeS.Text = Ucode.ToString();
+
+            //Versal till gemen
+            //string Versal = tbxVersal.Text;
+            //Char TeckenV = Versal[0];
+            //int TeckenG = TeckenV + 32;
+            //Char Gemen = (char)TeckenG;
+            //lblGemen.Text = Gemen.ToString();
+
         }
     }
 }
