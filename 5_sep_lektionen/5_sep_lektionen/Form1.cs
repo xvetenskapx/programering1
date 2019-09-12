@@ -138,16 +138,28 @@ namespace _5_sep_lektionen
 
             //Unicode till Tecken
             int Code = int.Parse(tbxUnicode.Text);
+            String Code1 = tbxUnicode.Text;
             Char Ucode = (char)Code;
-            lblUnicodeS.Text = Ucode.ToString();
+            lblUnicodeS.Text = "Koden " + Code1 + " betyder " + Ucode.ToString() + ".";
+        }
 
-            //Versal till gemen
-            //string Versal = tbxVersal.Text;
-            //Char TeckenV = Versal[0];
-            //int TeckenG = TeckenV + 32;
-            //Char Gemen = (char)TeckenG;
-            //lblGemen.Text = Gemen.ToString();
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int X = int.Parse(tbxX.Text);
+            int Y = int.Parse(tbxY.Text);
+            Point nybtn = new Point(X, Y);
+            //Point nyY = new Point(X, Y);
+            //Point nyX = new Point(Y, X);
+            //tbxX.Location = nyX;
+            //tbxY.Location = nyY;
+            btnFlytta.Location = nybtn;
+        }
 
+        private void BtnTK_Click(object sender, EventArgs e)
+        {
+            Form2 Kalkylator = new Form2();
+            Kalkylator.Show();
+            Kalkylator.
         }
     }
 }

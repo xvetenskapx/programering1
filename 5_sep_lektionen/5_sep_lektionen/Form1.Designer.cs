@@ -82,6 +82,12 @@
             this.lblUnicodeP = new System.Windows.Forms.Label();
             this.tbxUnicode = new System.Windows.Forms.TextBox();
             this.lblUnicodeS = new System.Windows.Forms.Label();
+            this.lbly = new System.Windows.Forms.Label();
+            this.lblX = new System.Windows.Forms.Label();
+            this.tbxY = new System.Windows.Forms.TextBox();
+            this.tbxX = new System.Windows.Forms.TextBox();
+            this.btnFlytta = new System.Windows.Forms.Button();
+            this.btnTK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl3
@@ -560,11 +566,69 @@
             this.lblUnicodeS.Size = new System.Drawing.Size(0, 13);
             this.lblUnicodeS.TabIndex = 57;
             // 
+            // lbly
+            // 
+            this.lbly.AutoSize = true;
+            this.lbly.Location = new System.Drawing.Point(586, 346);
+            this.lbly.Name = "lbly";
+            this.lbly.Size = new System.Drawing.Size(14, 13);
+            this.lbly.TabIndex = 58;
+            this.lbly.Text = "Y";
+            // 
+            // lblX
+            // 
+            this.lblX.AutoSize = true;
+            this.lblX.Location = new System.Drawing.Point(511, 346);
+            this.lblX.Name = "lblX";
+            this.lblX.Size = new System.Drawing.Size(14, 13);
+            this.lblX.TabIndex = 59;
+            this.lblX.Text = "X";
+            // 
+            // tbxY
+            // 
+            this.tbxY.Location = new System.Drawing.Point(589, 362);
+            this.tbxY.Name = "tbxY";
+            this.tbxY.Size = new System.Drawing.Size(70, 20);
+            this.tbxY.TabIndex = 60;
+            // 
+            // tbxX
+            // 
+            this.tbxX.Location = new System.Drawing.Point(514, 362);
+            this.tbxX.Name = "tbxX";
+            this.tbxX.Size = new System.Drawing.Size(70, 20);
+            this.tbxX.TabIndex = 61;
+            // 
+            // btnFlytta
+            // 
+            this.btnFlytta.Location = new System.Drawing.Point(514, 394);
+            this.btnFlytta.Name = "btnFlytta";
+            this.btnFlytta.Size = new System.Drawing.Size(75, 23);
+            this.btnFlytta.TabIndex = 62;
+            this.btnFlytta.Text = "Flytta";
+            this.btnFlytta.UseVisualStyleBackColor = true;
+            this.btnFlytta.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // btnTK
+            // 
+            this.btnTK.Location = new System.Drawing.Point(483, 102);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Size = new System.Drawing.Size(106, 23);
+            this.btnTK.TabIndex = 63;
+            this.btnTK.Text = "Triangel Kalkylator";
+            this.btnTK.UseVisualStyleBackColor = true;
+            this.btnTK.Click += new System.EventHandler(this.BtnTK_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 504);
+            this.ClientSize = new System.Drawing.Size(863, 499);
+            this.Controls.Add(this.btnTK);
+            this.Controls.Add(this.btnFlytta);
+            this.Controls.Add(this.tbxX);
+            this.Controls.Add(this.tbxY);
+            this.Controls.Add(this.lblX);
+            this.Controls.Add(this.lbly);
             this.Controls.Add(this.lblUnicodeS);
             this.Controls.Add(this.tbxUnicode);
             this.Controls.Add(this.lblUnicodeP);
@@ -682,6 +746,12 @@
         private System.Windows.Forms.Label lblUnicodeP;
         private System.Windows.Forms.TextBox tbxUnicode;
         private System.Windows.Forms.Label lblUnicodeS;
+        private System.Windows.Forms.Label lbly;
+        private System.Windows.Forms.Label lblX;
+        private System.Windows.Forms.TextBox tbxY;
+        private System.Windows.Forms.TextBox tbxX;
+        private System.Windows.Forms.Button btnFlytta;
+        private System.Windows.Forms.Button btnTK;
     }
 }
 
