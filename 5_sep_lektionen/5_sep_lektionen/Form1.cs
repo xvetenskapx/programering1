@@ -184,9 +184,10 @@ namespace _5_sep_lektionen
 
         private void BtnAvrunda_Click(object sender, EventArgs e)
         {
-            int OaTal = int.Parse(tbxotal.Text);
-            int aTal = OaTal + 0.5;
-            lblAvrundningS.Text = aTal.ToString();
+            double OaTal = double.Parse(tbxotal.Text);
+            double aTal = OaTal + 0.5;
+            long Atal = (long) aTal;
+            lblAvrundningS.Text = Atal.ToString();
         }
     }
 }

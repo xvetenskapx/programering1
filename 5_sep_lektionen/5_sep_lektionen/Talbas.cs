@@ -19,7 +19,15 @@ namespace _5_sep_lektionen
 
         private void BtnBeräkna_Click(object sender, EventArgs e)
         {
-            //char tal10 = tal
+            string bokstav= tbxTal.Text;
+            for (int i = 0; i < bokstav.Length; i++)
+            {
+                //for (int l = i) ;
+                {
+
+                }
+            }
+            //tbxTal.Text = l;
         }
     }
 }
