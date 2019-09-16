@@ -73,6 +73,36 @@ namespace _5_sep_lektionen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Namnlös {
+            get {
+                object obj = ResourceManager.GetObject("Namnlös", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Namnlös1 {
+            get {
+                object obj = ResourceManager.GetObject("Namnlös1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Namnlös11 {
+            get {
+                object obj = ResourceManager.GetObject("Namnlös11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Triangel {
             get {
                 object obj = ResourceManager.GetObject("Triangel", resourceCulture);

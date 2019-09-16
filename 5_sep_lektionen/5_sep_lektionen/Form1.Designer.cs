@@ -88,6 +88,11 @@
             this.tbxX = new System.Windows.Forms.TextBox();
             this.btnFlytta = new System.Windows.Forms.Button();
             this.btnTK = new System.Windows.Forms.Button();
+            this.btnTalbas = new System.Windows.Forms.Button();
+            this.lblAvrundning = new System.Windows.Forms.Label();
+            this.btnAvrunda = new System.Windows.Forms.Button();
+            this.tbxotal = new System.Windows.Forms.TextBox();
+            this.lblAvrundningS = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl3
@@ -610,7 +615,7 @@
             // 
             // btnTK
             // 
-            this.btnTK.Location = new System.Drawing.Point(483, 102);
+            this.btnTK.Location = new System.Drawing.Point(465, 4);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(106, 23);
             this.btnTK.TabIndex = 63;
@@ -618,11 +623,60 @@
             this.btnTK.UseVisualStyleBackColor = true;
             this.btnTK.Click += new System.EventHandler(this.BtnTK_Click);
             // 
+            // btnTalbas
+            // 
+            this.btnTalbas.Location = new System.Drawing.Point(465, 33);
+            this.btnTalbas.Name = "btnTalbas";
+            this.btnTalbas.Size = new System.Drawing.Size(75, 23);
+            this.btnTalbas.TabIndex = 64;
+            this.btnTalbas.Text = "Talbas";
+            this.btnTalbas.UseVisualStyleBackColor = true;
+            this.btnTalbas.Click += new System.EventHandler(this.BtnTalbas_Click);
+            // 
+            // lblAvrundning
+            // 
+            this.lblAvrundning.AutoSize = true;
+            this.lblAvrundning.Location = new System.Drawing.Point(701, 412);
+            this.lblAvrundning.Name = "lblAvrundning";
+            this.lblAvrundning.Size = new System.Drawing.Size(64, 13);
+            this.lblAvrundning.TabIndex = 65;
+            this.lblAvrundning.Text = "Avrundning:";
+            // 
+            // btnAvrunda
+            // 
+            this.btnAvrunda.Location = new System.Drawing.Point(704, 360);
+            this.btnAvrunda.Name = "btnAvrunda";
+            this.btnAvrunda.Size = new System.Drawing.Size(75, 23);
+            this.btnAvrunda.TabIndex = 66;
+            this.btnAvrunda.Text = "Avrunda";
+            this.btnAvrunda.UseVisualStyleBackColor = true;
+            this.btnAvrunda.Click += new System.EventHandler(this.BtnAvrunda_Click);
+            // 
+            // tbxotal
+            // 
+            this.tbxotal.Location = new System.Drawing.Point(704, 389);
+            this.tbxotal.Name = "tbxotal";
+            this.tbxotal.Size = new System.Drawing.Size(100, 20);
+            this.tbxotal.TabIndex = 67;
+            // 
+            // lblAvrundningS
+            // 
+            this.lblAvrundningS.AutoSize = true;
+            this.lblAvrundningS.Location = new System.Drawing.Point(769, 412);
+            this.lblAvrundningS.Name = "lblAvrundningS";
+            this.lblAvrundningS.Size = new System.Drawing.Size(0, 13);
+            this.lblAvrundningS.TabIndex = 68;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 499);
+            this.Controls.Add(this.lblAvrundningS);
+            this.Controls.Add(this.tbxotal);
+            this.Controls.Add(this.btnAvrunda);
+            this.Controls.Add(this.lblAvrundning);
+            this.Controls.Add(this.btnTalbas);
             this.Controls.Add(this.btnTK);
             this.Controls.Add(this.btnFlytta);
             this.Controls.Add(this.tbxX);
@@ -752,6 +806,11 @@
         private System.Windows.Forms.TextBox tbxX;
         private System.Windows.Forms.Button btnFlytta;
         private System.Windows.Forms.Button btnTK;
+        private System.Windows.Forms.Button btnTalbas;
+        private System.Windows.Forms.Label lblAvrundning;
+        private System.Windows.Forms.Button btnAvrunda;
+        private System.Windows.Forms.TextBox tbxotal;
+        private System.Windows.Forms.Label lblAvrundningS;
     }
 }
 

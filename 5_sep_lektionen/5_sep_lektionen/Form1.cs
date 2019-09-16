@@ -119,6 +119,21 @@ namespace _5_sep_lektionen
             char Einitial = Efternamn[0];
             string initialer = Fornamn + " " + Efternamn + " har initialerna " + Finitial.ToString() + "." + Einitial + ".";
             lblInitialer.Text = initialer;
+
+            for (int i = 0; i < Fornamn.Length; i++)
+            {
+                MessageBox.Show("Nu är i= " + i + " och bokstaven är " + Fornamn[i]);
+            }
+
+            try
+            {
+                int tal = int.Parse(tbxFornamn.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Du måste skriva in ett tal i texboxen");
+            }
+
         }
 
         private void BtnKonventera_Click(object sender, EventArgs e)
@@ -159,7 +174,19 @@ namespace _5_sep_lektionen
         {
             Form2 Kalkylator = new Form2();
             Kalkylator.Show();
-            Kalkylator.
+        }
+
+        private void BtnTalbas_Click(object sender, EventArgs e)
+        {
+            Talbas talbas = new Talbas();
+            talbas.Show();
+        }
+
+        private void BtnAvrunda_Click(object sender, EventArgs e)
+        {
+            int OaTal = int.Parse(tbxotal.Text);
+            int aTal = OaTal + 0.5;
+            lblAvrundningS.Text = aTal.ToString();
         }
     }
 }
