@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automat.Designer.cs">
+      <DependentUpon>Automat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Talbas.Designer.cs">
       <DependentUpon>Talbas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Automat.resx">
+      <DependentUpon>Automat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

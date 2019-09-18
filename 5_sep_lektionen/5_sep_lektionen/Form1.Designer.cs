@@ -93,6 +93,7 @@
             this.btnAvrunda = new System.Windows.Forms.Button();
             this.tbxotal = new System.Windows.Forms.TextBox();
             this.lblAvrundningS = new System.Windows.Forms.Label();
+            this.btnAutomat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl3
@@ -667,11 +668,22 @@
             this.lblAvrundningS.Size = new System.Drawing.Size(0, 13);
             this.lblAvrundningS.TabIndex = 68;
             // 
+            // btnAutomat
+            // 
+            this.btnAutomat.Location = new System.Drawing.Point(465, 62);
+            this.btnAutomat.Name = "btnAutomat";
+            this.btnAutomat.Size = new System.Drawing.Size(106, 23);
+            this.btnAutomat.TabIndex = 69;
+            this.btnAutomat.Text = "Automat";
+            this.btnAutomat.UseVisualStyleBackColor = true;
+            this.btnAutomat.Click += new System.EventHandler(this.BtnAutomat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 499);
+            this.Controls.Add(this.btnAutomat);
             this.Controls.Add(this.lblAvrundningS);
             this.Controls.Add(this.tbxotal);
             this.Controls.Add(this.btnAvrunda);
@@ -811,6 +823,7 @@
         private System.Windows.Forms.Button btnAvrunda;
         private System.Windows.Forms.TextBox tbxotal;
         private System.Windows.Forms.Label lblAvrundningS;
+        private System.Windows.Forms.Button btnAutomat;
     }
 }
 

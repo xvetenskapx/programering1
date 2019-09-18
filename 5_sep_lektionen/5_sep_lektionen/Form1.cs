@@ -189,5 +189,11 @@ namespace _5_sep_lektionen
             long Atal = (long) aTal;
             lblAvrundningS.Text = Atal.ToString();
         }
+
+        private void BtnAutomat_Click(object sender, EventArgs e)
+        {
+            Automat automat = new Automat();
+            automat.Show();
+        }
     }
 }

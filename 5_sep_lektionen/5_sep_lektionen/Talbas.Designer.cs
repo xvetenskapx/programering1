@@ -51,7 +51,7 @@
             this.tbxTal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbxTal.Size = new System.Drawing.Size(100, 20);
             this.tbxTal.TabIndex = 1;
-            this.tbxTal.Text = "0000";
+            this.tbxTal.Text = "00000";
             // 
             // lblTalbas
             // 
