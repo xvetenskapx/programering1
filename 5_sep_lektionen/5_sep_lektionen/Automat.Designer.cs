@@ -38,6 +38,9 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btnStjärna = new System.Windows.Forms.Button();
+            this.btnBrädgård = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -127,12 +130,43 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(87, 20);
             this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(181, 168);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(25, 23);
+            this.btn0.TabIndex = 10;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            // 
+            // btnStjärna
+            // 
+            this.btnStjärna.Location = new System.Drawing.Point(150, 168);
+            this.btnStjärna.Name = "btnStjärna";
+            this.btnStjärna.Size = new System.Drawing.Size(25, 23);
+            this.btnStjärna.TabIndex = 11;
+            this.btnStjärna.Text = "*";
+            this.btnStjärna.UseVisualStyleBackColor = true;
+            // 
+            // btnBrädgård
+            // 
+            this.btnBrädgård.Location = new System.Drawing.Point(212, 168);
+            this.btnBrädgård.Name = "btnBrädgård";
+            this.btnBrädgård.Size = new System.Drawing.Size(25, 23);
+            this.btnBrädgård.TabIndex = 12;
+            this.btnBrädgård.Text = "#";
+            this.btnBrädgård.UseVisualStyleBackColor = true;
             // 
             // Automat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBrädgård);
+            this.Controls.Add(this.btnStjärna);
+            this.Controls.Add(this.btn0);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn6);
@@ -162,5 +196,8 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btnStjärna;
+        private System.Windows.Forms.Button btnBrädgård;
     }
 }

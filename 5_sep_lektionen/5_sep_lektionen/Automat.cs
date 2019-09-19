@@ -16,5 +16,10 @@ namespace _5_sep_lektionen
         {
             InitializeComponent();
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

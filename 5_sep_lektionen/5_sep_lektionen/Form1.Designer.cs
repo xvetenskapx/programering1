@@ -94,6 +94,7 @@
             this.tbxotal = new System.Windows.Forms.TextBox();
             this.lblAvrundningS = new System.Windows.Forms.Label();
             this.btnAutomat = new System.Windows.Forms.Button();
+            this.btnkapitel3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl3
@@ -678,11 +679,22 @@
             this.btnAutomat.UseVisualStyleBackColor = true;
             this.btnAutomat.Click += new System.EventHandler(this.BtnAutomat_Click);
             // 
+            // btnkapitel3
+            // 
+            this.btnkapitel3.Location = new System.Drawing.Point(964, 4);
+            this.btnkapitel3.Name = "btnkapitel3";
+            this.btnkapitel3.Size = new System.Drawing.Size(75, 23);
+            this.btnkapitel3.TabIndex = 70;
+            this.btnkapitel3.Text = "Kapitel 3";
+            this.btnkapitel3.UseVisualStyleBackColor = true;
+            this.btnkapitel3.Click += new System.EventHandler(this.Btnkapitel3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 499);
+            this.ClientSize = new System.Drawing.Size(1051, 499);
+            this.Controls.Add(this.btnkapitel3);
             this.Controls.Add(this.btnAutomat);
             this.Controls.Add(this.lblAvrundningS);
             this.Controls.Add(this.tbxotal);
@@ -824,6 +836,7 @@
         private System.Windows.Forms.TextBox tbxotal;
         private System.Windows.Forms.Label lblAvrundningS;
         private System.Windows.Forms.Button btnAutomat;
+        private System.Windows.Forms.Button btnkapitel3;
     }
 }
 

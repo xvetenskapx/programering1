@@ -195,5 +195,11 @@ namespace _5_sep_lektionen
             Automat automat = new Automat();
             automat.Show();
         }
+
+        private void Btnkapitel3_Click(object sender, EventArgs e)
+        {
+            Kapitel3 kapitel3 = new Kapitel3();
+            kapitel3.Show();
+        }
     }
 }
