@@ -40,7 +40,7 @@
             this.lblModulusSvar = new System.Windows.Forms.Label();
             this.tbxTidMi = new System.Windows.Forms.TextBox();
             this.tbxTidT = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeadlineTO = new System.Windows.Forms.Label();
             this.lbltidiS = new System.Windows.Forms.Label();
             this.lbltidiMi = new System.Windows.Forms.Label();
             this.lbltidiD = new System.Windows.Forms.Label();
@@ -56,9 +56,26 @@
             this.lbltidiV = new System.Windows.Forms.Label();
             this.tbxTid = new System.Windows.Forms.TextBox();
             this.btnBeräkna = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblRubrikVL = new System.Windows.Forms.Label();
             this.tbxTal3 = new System.Windows.Forms.TextBox();
             this.lblSvarVL = new System.Windows.Forms.Label();
+            this.btnKolla = new System.Windows.Forms.Button();
+            this.lblHJR = new System.Windows.Forms.Label();
+            this.lblPris = new System.Windows.Forms.Label();
+            this.lblPengar = new System.Windows.Forms.Label();
+            this.tbxVaransPris = new System.Windows.Forms.TextBox();
+            this.tbxMinaPengar = new System.Windows.Forms.TextBox();
+            this.lblHeadlineHJR = new System.Windows.Forms.Label();
+            this.lblSvarR = new System.Windows.Forms.Label();
+            this.btnKor = new System.Windows.Forms.Button();
+            this.lblTal10 = new System.Windows.Forms.Label();
+            this.lblTal30 = new System.Windows.Forms.Label();
+            this.lblOrdningSvar = new System.Windows.Forms.Label();
+            this.lblTal20 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbxTal30 = new System.Windows.Forms.TextBox();
+            this.tbxTal20 = new System.Windows.Forms.TextBox();
+            this.tbxTal10 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnBerakna1
@@ -166,14 +183,14 @@
             this.tbxTidT.TabIndex = 12;
             this.tbxTidT.Text = "0";
             // 
-            // label1
+            // lblHeadlineTO
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(401, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Tid omvandlare";
+            this.lblHeadlineTO.AutoSize = true;
+            this.lblHeadlineTO.Location = new System.Drawing.Point(401, 9);
+            this.lblHeadlineTO.Name = "lblHeadlineTO";
+            this.lblHeadlineTO.Size = new System.Drawing.Size(80, 13);
+            this.lblHeadlineTO.TabIndex = 13;
+            this.lblHeadlineTO.Text = "Tid omvandlare";
             // 
             // lbltidiS
             // 
@@ -306,14 +323,14 @@
             this.btnBeräkna.UseVisualStyleBackColor = true;
             this.btnBeräkna.Click += new System.EventHandler(this.BtnBeräkna_Click);
             // 
-            // label3
+            // lblRubrikVL
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 156);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Värde Löst";
+            this.lblRubrikVL.AutoSize = true;
+            this.lblRubrikVL.Location = new System.Drawing.Point(35, 156);
+            this.lblRubrikVL.Name = "lblRubrikVL";
+            this.lblRubrikVL.Size = new System.Drawing.Size(58, 13);
+            this.lblRubrikVL.TabIndex = 31;
+            this.lblRubrikVL.Text = "Värde Löst";
             // 
             // tbxTal3
             // 
@@ -330,14 +347,175 @@
             this.lblSvarVL.Size = new System.Drawing.Size(0, 13);
             this.lblSvarVL.TabIndex = 33;
             // 
+            // btnKolla
+            // 
+            this.btnKolla.Location = new System.Drawing.Point(659, 110);
+            this.btnKolla.Name = "btnKolla";
+            this.btnKolla.Size = new System.Drawing.Size(75, 23);
+            this.btnKolla.TabIndex = 34;
+            this.btnKolla.Text = "Kolla";
+            this.btnKolla.UseVisualStyleBackColor = true;
+            this.btnKolla.Click += new System.EventHandler(this.BtnKolla_Click);
+            // 
+            // lblHJR
+            // 
+            this.lblHJR.AutoSize = true;
+            this.lblHJR.Location = new System.Drawing.Point(622, 84);
+            this.lblHJR.Name = "lblHJR";
+            this.lblHJR.Size = new System.Drawing.Size(76, 13);
+            this.lblHJR.TabIndex = 35;
+            this.lblHJR.Text = "Har Jag Råd?:";
+            // 
+            // lblPris
+            // 
+            this.lblPris.AutoSize = true;
+            this.lblPris.Location = new System.Drawing.Point(622, 58);
+            this.lblPris.Name = "lblPris";
+            this.lblPris.Size = new System.Drawing.Size(60, 13);
+            this.lblPris.TabIndex = 36;
+            this.lblPris.Text = "Varans Pris";
+            // 
+            // lblPengar
+            // 
+            this.lblPengar.AutoSize = true;
+            this.lblPengar.Location = new System.Drawing.Point(615, 32);
+            this.lblPengar.Name = "lblPengar";
+            this.lblPengar.Size = new System.Drawing.Size(67, 13);
+            this.lblPengar.TabIndex = 37;
+            this.lblPengar.Text = "Mina Pengar";
+            // 
+            // tbxVaransPris
+            // 
+            this.tbxVaransPris.Location = new System.Drawing.Point(688, 55);
+            this.tbxVaransPris.Name = "tbxVaransPris";
+            this.tbxVaransPris.Size = new System.Drawing.Size(100, 20);
+            this.tbxVaransPris.TabIndex = 38;
+            // 
+            // tbxMinaPengar
+            // 
+            this.tbxMinaPengar.Location = new System.Drawing.Point(688, 29);
+            this.tbxMinaPengar.Name = "tbxMinaPengar";
+            this.tbxMinaPengar.Size = new System.Drawing.Size(100, 20);
+            this.tbxMinaPengar.TabIndex = 39;
+            // 
+            // lblHeadlineHJR
+            // 
+            this.lblHeadlineHJR.AutoSize = true;
+            this.lblHeadlineHJR.Location = new System.Drawing.Point(667, 9);
+            this.lblHeadlineHJR.Name = "lblHeadlineHJR";
+            this.lblHeadlineHJR.Size = new System.Drawing.Size(73, 13);
+            this.lblHeadlineHJR.TabIndex = 40;
+            this.lblHeadlineHJR.Text = "Har Jag Råd?";
+            // 
+            // lblSvarR
+            // 
+            this.lblSvarR.AutoSize = true;
+            this.lblSvarR.Location = new System.Drawing.Point(704, 84);
+            this.lblSvarR.Name = "lblSvarR";
+            this.lblSvarR.Size = new System.Drawing.Size(0, 13);
+            this.lblSvarR.TabIndex = 41;
+            // 
+            // btnKor
+            // 
+            this.btnKor.Location = new System.Drawing.Point(659, 286);
+            this.btnKor.Name = "btnKor";
+            this.btnKor.Size = new System.Drawing.Size(75, 23);
+            this.btnKor.TabIndex = 42;
+            this.btnKor.Text = "Kör";
+            this.btnKor.UseVisualStyleBackColor = true;
+            this.btnKor.Click += new System.EventHandler(this.BtnKor_Click);
+            // 
+            // lblTal10
+            // 
+            this.lblTal10.AutoSize = true;
+            this.lblTal10.Location = new System.Drawing.Point(625, 188);
+            this.lblTal10.Name = "lblTal10";
+            this.lblTal10.Size = new System.Drawing.Size(31, 13);
+            this.lblTal10.TabIndex = 43;
+            this.lblTal10.Text = "Tal 1";
+            // 
+            // lblTal30
+            // 
+            this.lblTal30.AutoSize = true;
+            this.lblTal30.Location = new System.Drawing.Point(622, 240);
+            this.lblTal30.Name = "lblTal30";
+            this.lblTal30.Size = new System.Drawing.Size(31, 13);
+            this.lblTal30.TabIndex = 44;
+            this.lblTal30.Text = "Tal 3";
+            // 
+            // lblOrdningSvar
+            // 
+            this.lblOrdningSvar.AutoSize = true;
+            this.lblOrdningSvar.Location = new System.Drawing.Point(625, 260);
+            this.lblOrdningSvar.Name = "lblOrdningSvar";
+            this.lblOrdningSvar.Size = new System.Drawing.Size(50, 13);
+            this.lblOrdningSvar.TabIndex = 45;
+            this.lblOrdningSvar.Text = "Talen Är:";
+            // 
+            // lblTal20
+            // 
+            this.lblTal20.AutoSize = true;
+            this.lblTal20.Location = new System.Drawing.Point(625, 214);
+            this.lblTal20.Name = "lblTal20";
+            this.lblTal20.Size = new System.Drawing.Size(28, 13);
+            this.lblTal20.TabIndex = 46;
+            this.lblTal20.Text = "Tal2";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(656, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 13);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Är Talen I Ordning";
+            // 
+            // tbxTal30
+            // 
+            this.tbxTal30.Location = new System.Drawing.Point(659, 237);
+            this.tbxTal30.Name = "tbxTal30";
+            this.tbxTal30.Size = new System.Drawing.Size(100, 20);
+            this.tbxTal30.TabIndex = 48;
+            // 
+            // tbxTal20
+            // 
+            this.tbxTal20.Location = new System.Drawing.Point(659, 211);
+            this.tbxTal20.Name = "tbxTal20";
+            this.tbxTal20.Size = new System.Drawing.Size(100, 20);
+            this.tbxTal20.TabIndex = 49;
+            // 
+            // tbxTal10
+            // 
+            this.tbxTal10.Location = new System.Drawing.Point(659, 185);
+            this.tbxTal10.Name = "tbxTal10";
+            this.tbxTal10.Size = new System.Drawing.Size(100, 20);
+            this.tbxTal10.TabIndex = 50;
+            // 
             // Kapitel5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbxTal10);
+            this.Controls.Add(this.tbxTal20);
+            this.Controls.Add(this.tbxTal30);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblTal20);
+            this.Controls.Add(this.lblOrdningSvar);
+            this.Controls.Add(this.lblTal30);
+            this.Controls.Add(this.lblTal10);
+            this.Controls.Add(this.btnKor);
+            this.Controls.Add(this.lblSvarR);
+            this.Controls.Add(this.lblHeadlineHJR);
+            this.Controls.Add(this.tbxMinaPengar);
+            this.Controls.Add(this.tbxVaransPris);
+            this.Controls.Add(this.lblPengar);
+            this.Controls.Add(this.lblPris);
+            this.Controls.Add(this.lblHJR);
+            this.Controls.Add(this.btnKolla);
             this.Controls.Add(this.lblSvarVL);
             this.Controls.Add(this.tbxTal3);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblRubrikVL);
             this.Controls.Add(this.btnBeräkna);
             this.Controls.Add(this.tbxTid);
             this.Controls.Add(this.lbltidiV);
@@ -353,7 +531,7 @@
             this.Controls.Add(this.lbltidiD);
             this.Controls.Add(this.lbltidiMi);
             this.Controls.Add(this.lbltidiS);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHeadlineTO);
             this.Controls.Add(this.tbxTidT);
             this.Controls.Add(this.tbxTidMi);
             this.Controls.Add(this.lblModulusSvar);
@@ -387,7 +565,7 @@
         private System.Windows.Forms.Label lblModulusSvar;
         private System.Windows.Forms.TextBox tbxTidMi;
         private System.Windows.Forms.TextBox tbxTidT;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHeadlineTO;
         private System.Windows.Forms.Label lbltidiS;
         private System.Windows.Forms.Label lbltidiMi;
         private System.Windows.Forms.Label lbltidiD;
@@ -403,8 +581,25 @@
         private System.Windows.Forms.Label lbltidiV;
         private System.Windows.Forms.TextBox tbxTid;
         private System.Windows.Forms.Button btnBeräkna;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblRubrikVL;
         private System.Windows.Forms.TextBox tbxTal3;
         private System.Windows.Forms.Label lblSvarVL;
+        private System.Windows.Forms.Button btnKolla;
+        private System.Windows.Forms.Label lblHJR;
+        private System.Windows.Forms.Label lblPris;
+        private System.Windows.Forms.Label lblPengar;
+        private System.Windows.Forms.TextBox tbxVaransPris;
+        private System.Windows.Forms.TextBox tbxMinaPengar;
+        private System.Windows.Forms.Label lblHeadlineHJR;
+        private System.Windows.Forms.Label lblSvarR;
+        private System.Windows.Forms.Button btnKor;
+        private System.Windows.Forms.Label lblTal10;
+        private System.Windows.Forms.Label lblTal30;
+        private System.Windows.Forms.Label lblOrdningSvar;
+        private System.Windows.Forms.Label lblTal20;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbxTal30;
+        private System.Windows.Forms.TextBox tbxTal20;
+        private System.Windows.Forms.TextBox tbxTal10;
     }
 }

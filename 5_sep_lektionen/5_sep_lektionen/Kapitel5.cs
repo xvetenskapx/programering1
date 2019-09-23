@@ -90,5 +90,23 @@ namespace _5_sep_lektionen
 
             lblSvarVL.Text = c.ToString();
         }
+
+        private void BtnKolla_Click(object sender, EventArgs e)
+        {
+            double Pengar = double.Parse(tbxMinaPengar.Text);
+            double Pris = double.Parse(tbxVaransPris.Text);
+            bool HarJagRåd = Pengar >= Pris;
+            lblSvarR.Text = HarJagRåd.ToString();
+        }
+
+        private void BtnKor_Click(object sender, EventArgs e)
+        {
+            int Tal10 = int.Parse(tbxTal10.Text);
+            int Tal20 = int.Parse(tbxTal20.Text);
+            int Tal30 = int.Parse(tbxTal30.Text);
+            bool Följd = Tal10 <= Tal20 && Tal20 <=Tal30;
+
+            lblOrdningSvar.Text = "Talen Är: " + Följd.ToString() + " I Ordningen";
+        }
     }
 }
