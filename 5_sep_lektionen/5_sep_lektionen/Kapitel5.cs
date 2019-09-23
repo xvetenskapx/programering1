@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _5_sep_lektionen
 {
-    public partial class Kapitel3 : Form
+    public partial class Kapitel5 : Form
     {
-        public Kapitel3()
+        public Kapitel5()
         {
             InitializeComponent();
         }
@@ -41,31 +41,54 @@ namespace _5_sep_lektionen
             int Tiden = Sek + Min + Tim + Dyg + Vec + Man + Ar;
             tbxTid.Text = Tiden.ToString();
 
-            //Sek
+            //Sek - Min
+            //int Min2 = Sek / 60;
+            //int Sek1 = Sek % 60;
+
+            //tbxTidMi.Text = Min2.ToString();
+            //tbxTidS.Text = Sek1.ToString();
+
+            //Min - Tim
+ 
+
+            //Tim - Dyg
+            //int Dyg1 = Tim / 24;
+            //int Tim2 = Tim % 24;
+
+            //tbxTidD.Text = Dyg1.ToString();
+            //tbxTidT.Text = Tim2.ToString();
+
+            //Dyg - Vec
+            //int Vec1 = Dyg / 7;
+            //int Dyg2 = Dyg % 7;
+
+            //tbxTidV.Text = Vec1.ToString();
+            //tbxTidD.Text = Dyg2.ToString();
+
+            //Vec - Mån
+            //int Man1 = Vec / 4;
+            //int Vec2 = Vec % 4;
+
+            //tbxTidMa.Text = Man1.ToString();
+            //tbxTidV.Text = Vec2.ToString();
+
+            //Mån - År1
+            int Ar1 = Man / 12;
+            int Man2 = Man % 12;
+
+            tbxTidA.Text = Ar1.ToString();
+            tbxTidMa.Text = Man2.ToString();
 
 
-            //Min
-            int Tim1 = Min / 60;
-            int Min1 = Min % 60;
+        }
 
-            //Tim
+        private void BtnBeräkna_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(tbxTal3.Text);
+            int b = --a;
+            int c = ++b + a;
 
-
-            //Dyg
-
-
-            //Vec
-
-
-            //Mån
-
-
-            //År
-
-            //Tbx
-            tbxTidMi.Text = Min1.ToString();
-            tbxTidT.Text = Tim1.ToString();
-
+            lblSvarVL.Text = c.ToString();
         }
     }
 }

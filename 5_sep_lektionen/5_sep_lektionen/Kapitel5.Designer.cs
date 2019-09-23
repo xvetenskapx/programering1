@@ -1,6 +1,6 @@
 ﻿namespace _5_sep_lektionen
 {
-    partial class Kapitel3
+    partial class Kapitel5
     {
         /// <summary>
         /// Required designer variable.
@@ -55,6 +55,10 @@
             this.lbltidiM = new System.Windows.Forms.Label();
             this.lbltidiV = new System.Windows.Forms.Label();
             this.tbxTid = new System.Windows.Forms.TextBox();
+            this.btnBeräkna = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbxTal3 = new System.Windows.Forms.TextBox();
+            this.lblSvarVL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBerakna1
@@ -292,11 +296,49 @@
             this.tbxTid.Size = new System.Drawing.Size(100, 20);
             this.tbxTid.TabIndex = 28;
             // 
-            // Kapitel3
+            // btnBeräkna
+            // 
+            this.btnBeräkna.Location = new System.Drawing.Point(27, 211);
+            this.btnBeräkna.Name = "btnBeräkna";
+            this.btnBeräkna.Size = new System.Drawing.Size(75, 23);
+            this.btnBeräkna.TabIndex = 29;
+            this.btnBeräkna.Text = "Beräkna";
+            this.btnBeräkna.UseVisualStyleBackColor = true;
+            this.btnBeräkna.Click += new System.EventHandler(this.BtnBeräkna_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Värde Löst";
+            // 
+            // tbxTal3
+            // 
+            this.tbxTal3.Location = new System.Drawing.Point(11, 172);
+            this.tbxTal3.Name = "tbxTal3";
+            this.tbxTal3.Size = new System.Drawing.Size(100, 20);
+            this.tbxTal3.TabIndex = 32;
+            // 
+            // lblSvarVL
+            // 
+            this.lblSvarVL.AutoSize = true;
+            this.lblSvarVL.Location = new System.Drawing.Point(44, 195);
+            this.lblSvarVL.Name = "lblSvarVL";
+            this.lblSvarVL.Size = new System.Drawing.Size(0, 13);
+            this.lblSvarVL.TabIndex = 33;
+            // 
+            // Kapitel5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSvarVL);
+            this.Controls.Add(this.tbxTal3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnBeräkna);
             this.Controls.Add(this.tbxTid);
             this.Controls.Add(this.lbltidiV);
             this.Controls.Add(this.lbltidiM);
@@ -324,7 +366,7 @@
             this.Controls.Add(this.tbxTal1);
             this.Controls.Add(this.tbxTal2);
             this.Controls.Add(this.btnBerakna1);
-            this.Name = "Kapitel3";
+            this.Name = "Kapitel5";
             this.Text = "Kapitel3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -360,5 +402,9 @@
         private System.Windows.Forms.Label lbltidiM;
         private System.Windows.Forms.Label lbltidiV;
         private System.Windows.Forms.TextBox tbxTid;
+        private System.Windows.Forms.Button btnBeräkna;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbxTal3;
+        private System.Windows.Forms.Label lblSvarVL;
     }
 }

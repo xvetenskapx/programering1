@@ -198,7 +198,7 @@ namespace _5_sep_lektionen
 
         private void Btnkapitel3_Click(object sender, EventArgs e)
         {
-            Kapitel3 kapitel3 = new Kapitel3();
+            Kapitel5 kapitel3 = new Kapitel5();
             kapitel3.Show();
         }
     }
