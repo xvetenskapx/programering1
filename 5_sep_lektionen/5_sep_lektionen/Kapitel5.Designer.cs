@@ -76,6 +76,24 @@
             this.tbxTal30 = new System.Windows.Forms.TextBox();
             this.tbxTal20 = new System.Windows.Forms.TextBox();
             this.tbxTal10 = new System.Windows.Forms.TextBox();
+            this.tbxSifflek = new System.Windows.Forms.TextBox();
+            this.lblTaletAr = new System.Windows.Forms.Label();
+            this.lblRubrikSifferLek = new System.Windows.Forms.Label();
+            this.btnSifflek = new System.Windows.Forms.Button();
+            this.lblSiffersvar = new System.Windows.Forms.Label();
+            this.btnAvrunda = new System.Windows.Forms.Button();
+            this.lblRubrikAvTus = new System.Windows.Forms.Label();
+            this.tbxTusTal = new System.Windows.Forms.TextBox();
+            this.lblAvrundningTusSvar = new System.Windows.Forms.Label();
+            this.lblUnderRubrikAvTill = new System.Windows.Forms.Label();
+            this.btnBlanda = new System.Windows.Forms.Button();
+            this.lblSvarHela = new System.Windows.Forms.Label();
+            this.lblBlandSvar = new System.Windows.Forms.Label();
+            this.lblRubrikBråk = new System.Windows.Forms.Label();
+            this.tbxTaljare = new System.Windows.Forms.TextBox();
+            this.tbxNamnare = new System.Windows.Forms.TextBox();
+            this.lblSvarTaljare = new System.Windows.Forms.Label();
+            this.lblSvarNamnare = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBerakna1
@@ -491,11 +509,186 @@
             this.tbxTal10.Size = new System.Drawing.Size(100, 20);
             this.tbxTal10.TabIndex = 50;
             // 
+            // tbxSifflek
+            // 
+            this.tbxSifflek.Location = new System.Drawing.Point(12, 288);
+            this.tbxSifflek.Name = "tbxSifflek";
+            this.tbxSifflek.Size = new System.Drawing.Size(100, 20);
+            this.tbxSifflek.TabIndex = 51;
+            // 
+            // lblTaletAr
+            // 
+            this.lblTaletAr.AutoSize = true;
+            this.lblTaletAr.Location = new System.Drawing.Point(12, 311);
+            this.lblTaletAr.Name = "lblTaletAr";
+            this.lblTaletAr.Size = new System.Drawing.Size(47, 13);
+            this.lblTaletAr.TabIndex = 52;
+            this.lblTaletAr.Text = "Talet Är:";
+            // 
+            // lblRubrikSifferLek
+            // 
+            this.lblRubrikSifferLek.AutoSize = true;
+            this.lblRubrikSifferLek.Location = new System.Drawing.Point(35, 272);
+            this.lblRubrikSifferLek.Name = "lblRubrikSifferLek";
+            this.lblRubrikSifferLek.Size = new System.Drawing.Size(57, 13);
+            this.lblRubrikSifferLek.TabIndex = 53;
+            this.lblRubrikSifferLek.Text = "Sifferleken";
+            // 
+            // btnSifflek
+            // 
+            this.btnSifflek.Location = new System.Drawing.Point(27, 327);
+            this.btnSifflek.Name = "btnSifflek";
+            this.btnSifflek.Size = new System.Drawing.Size(75, 23);
+            this.btnSifflek.TabIndex = 54;
+            this.btnSifflek.Text = "Lek";
+            this.btnSifflek.UseVisualStyleBackColor = true;
+            this.btnSifflek.Click += new System.EventHandler(this.BtnSifflek_Click);
+            // 
+            // lblSiffersvar
+            // 
+            this.lblSiffersvar.AutoSize = true;
+            this.lblSiffersvar.Location = new System.Drawing.Point(57, 311);
+            this.lblSiffersvar.Name = "lblSiffersvar";
+            this.lblSiffersvar.Size = new System.Drawing.Size(31, 13);
+            this.lblSiffersvar.TabIndex = 55;
+            this.lblSiffersvar.Text = "--------";
+            // 
+            // btnAvrunda
+            // 
+            this.btnAvrunda.Location = new System.Drawing.Point(173, 211);
+            this.btnAvrunda.Name = "btnAvrunda";
+            this.btnAvrunda.Size = new System.Drawing.Size(75, 23);
+            this.btnAvrunda.TabIndex = 56;
+            this.btnAvrunda.Text = "Avrunda";
+            this.btnAvrunda.UseVisualStyleBackColor = true;
+            this.btnAvrunda.Click += new System.EventHandler(this.BtnAvrunda_Click);
+            // 
+            // lblRubrikAvTus
+            // 
+            this.lblRubrikAvTus.AutoSize = true;
+            this.lblRubrikAvTus.Location = new System.Drawing.Point(157, 156);
+            this.lblRubrikAvTus.Name = "lblRubrikAvTus";
+            this.lblRubrikAvTus.Size = new System.Drawing.Size(91, 13);
+            this.lblRubrikAvTus.TabIndex = 57;
+            this.lblRubrikAvTus.Text = "Avrunda Tusental";
+            // 
+            // tbxTusTal
+            // 
+            this.tbxTusTal.Location = new System.Drawing.Point(157, 172);
+            this.tbxTusTal.Name = "tbxTusTal";
+            this.tbxTusTal.Size = new System.Drawing.Size(100, 20);
+            this.tbxTusTal.TabIndex = 58;
+            // 
+            // lblAvrundningTusSvar
+            // 
+            this.lblAvrundningTusSvar.AutoSize = true;
+            this.lblAvrundningTusSvar.Location = new System.Drawing.Point(226, 195);
+            this.lblAvrundningTusSvar.Name = "lblAvrundningTusSvar";
+            this.lblAvrundningTusSvar.Size = new System.Drawing.Size(34, 13);
+            this.lblAvrundningTusSvar.TabIndex = 59;
+            this.lblAvrundningTusSvar.Text = "---------";
+            // 
+            // lblUnderRubrikAvTill
+            // 
+            this.lblUnderRubrikAvTill.AutoSize = true;
+            this.lblUnderRubrikAvTill.Location = new System.Drawing.Point(154, 195);
+            this.lblUnderRubrikAvTill.Name = "lblUnderRubrikAvTill";
+            this.lblUnderRubrikAvTill.Size = new System.Drawing.Size(69, 13);
+            this.lblUnderRubrikAvTill.TabIndex = 60;
+            this.lblUnderRubrikAvTill.Text = "Avrundat Till:";
+            // 
+            // btnBlanda
+            // 
+            this.btnBlanda.Location = new System.Drawing.Point(173, 353);
+            this.btnBlanda.Name = "btnBlanda";
+            this.btnBlanda.Size = new System.Drawing.Size(75, 23);
+            this.btnBlanda.TabIndex = 61;
+            this.btnBlanda.Text = "Blanda";
+            this.btnBlanda.UseVisualStyleBackColor = true;
+            this.btnBlanda.Click += new System.EventHandler(this.BtnBlanda_Click);
+            // 
+            // lblSvarHela
+            // 
+            this.lblSvarHela.AutoSize = true;
+            this.lblSvarHela.Location = new System.Drawing.Point(314, 311);
+            this.lblSvarHela.Name = "lblSvarHela";
+            this.lblSvarHela.Size = new System.Drawing.Size(31, 13);
+            this.lblSvarHela.TabIndex = 63;
+            this.lblSvarHela.Text = "--------";
+            // 
+            // lblBlandSvar
+            // 
+            this.lblBlandSvar.AutoSize = true;
+            this.lblBlandSvar.Location = new System.Drawing.Point(276, 311);
+            this.lblBlandSvar.Name = "lblBlandSvar";
+            this.lblBlandSvar.Size = new System.Drawing.Size(32, 13);
+            this.lblBlandSvar.TabIndex = 64;
+            this.lblBlandSvar.Text = "Svar:";
+            // 
+            // lblRubrikBråk
+            // 
+            this.lblRubrikBråk.AutoSize = true;
+            this.lblRubrikBråk.Location = new System.Drawing.Point(157, 272);
+            this.lblRubrikBråk.Name = "lblRubrikBråk";
+            this.lblRubrikBråk.Size = new System.Drawing.Size(113, 13);
+            this.lblRubrikBråk.TabIndex = 65;
+            this.lblRubrikBråk.Text = "Bråk Till Blandad Form";
+            // 
+            // tbxTaljare
+            // 
+            this.tbxTaljare.Location = new System.Drawing.Point(157, 289);
+            this.tbxTaljare.Name = "tbxTaljare";
+            this.tbxTaljare.Size = new System.Drawing.Size(113, 20);
+            this.tbxTaljare.TabIndex = 66;
+            // 
+            // tbxNamnare
+            // 
+            this.tbxNamnare.Location = new System.Drawing.Point(157, 327);
+            this.tbxNamnare.Name = "tbxNamnare";
+            this.tbxNamnare.Size = new System.Drawing.Size(113, 20);
+            this.tbxNamnare.TabIndex = 67;
+            // 
+            // lblSvarTaljare
+            // 
+            this.lblSvarTaljare.AutoSize = true;
+            this.lblSvarTaljare.Location = new System.Drawing.Point(355, 296);
+            this.lblSvarTaljare.Name = "lblSvarTaljare";
+            this.lblSvarTaljare.Size = new System.Drawing.Size(31, 13);
+            this.lblSvarTaljare.TabIndex = 68;
+            this.lblSvarTaljare.Text = "--------";
+            // 
+            // lblSvarNamnare
+            // 
+            this.lblSvarNamnare.AutoSize = true;
+            this.lblSvarNamnare.Location = new System.Drawing.Point(355, 327);
+            this.lblSvarNamnare.Name = "lblSvarNamnare";
+            this.lblSvarNamnare.Size = new System.Drawing.Size(31, 13);
+            this.lblSvarNamnare.TabIndex = 69;
+            this.lblSvarNamnare.Text = "--------";
+            // 
             // Kapitel5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSvarNamnare);
+            this.Controls.Add(this.lblSvarTaljare);
+            this.Controls.Add(this.tbxNamnare);
+            this.Controls.Add(this.tbxTaljare);
+            this.Controls.Add(this.lblRubrikBråk);
+            this.Controls.Add(this.lblBlandSvar);
+            this.Controls.Add(this.lblSvarHela);
+            this.Controls.Add(this.btnBlanda);
+            this.Controls.Add(this.lblUnderRubrikAvTill);
+            this.Controls.Add(this.lblAvrundningTusSvar);
+            this.Controls.Add(this.tbxTusTal);
+            this.Controls.Add(this.lblRubrikAvTus);
+            this.Controls.Add(this.btnAvrunda);
+            this.Controls.Add(this.lblSiffersvar);
+            this.Controls.Add(this.btnSifflek);
+            this.Controls.Add(this.lblRubrikSifferLek);
+            this.Controls.Add(this.lblTaletAr);
+            this.Controls.Add(this.tbxSifflek);
             this.Controls.Add(this.tbxTal10);
             this.Controls.Add(this.tbxTal20);
             this.Controls.Add(this.tbxTal30);
@@ -601,5 +794,23 @@
         private System.Windows.Forms.TextBox tbxTal30;
         private System.Windows.Forms.TextBox tbxTal20;
         private System.Windows.Forms.TextBox tbxTal10;
+        private System.Windows.Forms.TextBox tbxSifflek;
+        private System.Windows.Forms.Label lblTaletAr;
+        private System.Windows.Forms.Label lblRubrikSifferLek;
+        private System.Windows.Forms.Button btnSifflek;
+        private System.Windows.Forms.Label lblSiffersvar;
+        private System.Windows.Forms.Button btnAvrunda;
+        private System.Windows.Forms.Label lblRubrikAvTus;
+        private System.Windows.Forms.TextBox tbxTusTal;
+        private System.Windows.Forms.Label lblAvrundningTusSvar;
+        private System.Windows.Forms.Label lblUnderRubrikAvTill;
+        private System.Windows.Forms.Button btnBlanda;
+        private System.Windows.Forms.Label lblSvarHela;
+        private System.Windows.Forms.Label lblBlandSvar;
+        private System.Windows.Forms.Label lblRubrikBråk;
+        private System.Windows.Forms.TextBox tbxTaljare;
+        private System.Windows.Forms.TextBox tbxNamnare;
+        private System.Windows.Forms.Label lblSvarTaljare;
+        private System.Windows.Forms.Label lblSvarNamnare;
     }
 }

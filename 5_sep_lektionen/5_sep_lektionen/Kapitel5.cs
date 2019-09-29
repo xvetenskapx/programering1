@@ -108,5 +108,33 @@ namespace _5_sep_lektionen
 
             lblOrdningSvar.Text = "Talen Är: " + Följd.ToString() + " I Ordningen";
         }
+
+        private void BtnSifflek_Click(object sender, EventArgs e)
+        {
+            double Osiffra = double.Parse(tbxSifflek.Text);
+            double Siffra = (((Osiffra + 1) * 2) - 6) * 0.5 + 3 - Osiffra;
+            lblSiffersvar.Text = Siffra.ToString();
+        }
+
+        private void BtnAvrunda_Click(object sender, EventArgs e)
+        {
+            double TusTal = double.Parse(tbxTusTal.Text);
+            double EnTal = TusTal / 1000 + 0.5;
+            int AvrundatEn = (int) EnTal;
+            int AvrundatTus = AvrundatEn * 1000;
+            lblAvrundningTusSvar.Text = AvrundatTus.ToString();
+        }
+
+        private void BtnBlanda_Click(object sender, EventArgs e)
+        {
+            int Taljare = int.Parse(tbxTaljare.Text);
+            int Namnare = int.Parse(tbxNamnare.Text);
+            int Hela = Taljare / Namnare;
+            int TaljareKvar = Taljare % Namnare;
+
+            lblSvarHela.Text = Hela.ToString();
+            lblSvarTaljare.Text = TaljareKvar.ToString();
+            lblSvarNamnare.Text = tbxNamnare.Text;
+        }
     }
 }
