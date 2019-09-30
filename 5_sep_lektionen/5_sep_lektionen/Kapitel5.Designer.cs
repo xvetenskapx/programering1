@@ -41,20 +41,13 @@
             this.tbxTidMi = new System.Windows.Forms.TextBox();
             this.tbxTidT = new System.Windows.Forms.TextBox();
             this.lblHeadlineTO = new System.Windows.Forms.Label();
-            this.lbltidiS = new System.Windows.Forms.Label();
-            this.lbltidiMi = new System.Windows.Forms.Label();
             this.lbltidiD = new System.Windows.Forms.Label();
-            this.lbltidiT = new System.Windows.Forms.Label();
             this.btnTid = new System.Windows.Forms.Button();
             this.tbxTidA = new System.Windows.Forms.TextBox();
             this.tbxTidMa = new System.Windows.Forms.TextBox();
             this.tbxTidV = new System.Windows.Forms.TextBox();
             this.tbxTidD = new System.Windows.Forms.TextBox();
             this.tbxTidS = new System.Windows.Forms.TextBox();
-            this.lbltidiA = new System.Windows.Forms.Label();
-            this.lbltidiM = new System.Windows.Forms.Label();
-            this.lbltidiV = new System.Windows.Forms.Label();
-            this.tbxTid = new System.Windows.Forms.TextBox();
             this.btnBeräkna = new System.Windows.Forms.Button();
             this.lblRubrikVL = new System.Windows.Forms.Label();
             this.tbxTal3 = new System.Windows.Forms.TextBox();
@@ -94,6 +87,12 @@
             this.tbxNamnare = new System.Windows.Forms.TextBox();
             this.lblSvarTaljare = new System.Windows.Forms.Label();
             this.lblSvarNamnare = new System.Windows.Forms.Label();
+            this.btnTidIÅr = new System.Windows.Forms.Button();
+            this.btnTidIMånader = new System.Windows.Forms.Button();
+            this.btnTidIVeckor = new System.Windows.Forms.Button();
+            this.btnTidIDygn = new System.Windows.Forms.Button();
+            this.btnTidITimmar = new System.Windows.Forms.Button();
+            this.btnTidISekunder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBerakna1
@@ -210,49 +209,21 @@
             this.lblHeadlineTO.TabIndex = 13;
             this.lblHeadlineTO.Text = "Tid omvandlare";
             // 
-            // lbltidiS
-            // 
-            this.lbltidiS.AutoSize = true;
-            this.lbltidiS.Location = new System.Drawing.Point(321, 32);
-            this.lbltidiS.Name = "lbltidiS";
-            this.lbltidiS.Size = new System.Drawing.Size(77, 13);
-            this.lbltidiS.TabIndex = 14;
-            this.lbltidiS.Text = "Tid I Sekunder";
-            // 
-            // lbltidiMi
-            // 
-            this.lbltidiMi.AutoSize = true;
-            this.lbltidiMi.Location = new System.Drawing.Point(321, 58);
-            this.lbltidiMi.Name = "lbltidiMi";
-            this.lbltidiMi.Size = new System.Drawing.Size(66, 13);
-            this.lbltidiMi.TabIndex = 15;
-            this.lbltidiMi.Text = "Tid I Minuter";
-            // 
             // lbltidiD
             // 
             this.lbltidiD.AutoSize = true;
             this.lbltidiD.Location = new System.Drawing.Point(321, 110);
             this.lbltidiD.Name = "lbltidiD";
-            this.lbltidiD.Size = new System.Drawing.Size(56, 13);
+            this.lbltidiD.Size = new System.Drawing.Size(0, 13);
             this.lbltidiD.TabIndex = 16;
-            this.lbltidiD.Text = "Tid I Dygn";
-            // 
-            // lbltidiT
-            // 
-            this.lbltidiT.AutoSize = true;
-            this.lbltidiT.Location = new System.Drawing.Point(321, 84);
-            this.lbltidiT.Name = "lbltidiT";
-            this.lbltidiT.Size = new System.Drawing.Size(65, 13);
-            this.lbltidiT.TabIndex = 17;
-            this.lbltidiT.Text = "Tid I Timmar";
             // 
             // btnTid
             // 
-            this.btnTid.Location = new System.Drawing.Point(324, 211);
+            this.btnTid.Location = new System.Drawing.Point(325, 53);
             this.btnTid.Name = "btnTid";
             this.btnTid.Size = new System.Drawing.Size(74, 23);
             this.btnTid.TabIndex = 18;
-            this.btnTid.Text = "Tiden";
+            this.btnTid.Text = "Tid I Minuter";
             this.btnTid.UseVisualStyleBackColor = true;
             this.btnTid.Click += new System.EventHandler(this.BtnTid_Click);
             // 
@@ -295,41 +266,6 @@
             this.tbxTidS.Size = new System.Drawing.Size(100, 20);
             this.tbxTidS.TabIndex = 24;
             this.tbxTidS.Text = "0";
-            // 
-            // lbltidiA
-            // 
-            this.lbltidiA.AutoSize = true;
-            this.lbltidiA.Location = new System.Drawing.Point(321, 188);
-            this.lbltidiA.Name = "lbltidiA";
-            this.lbltidiA.Size = new System.Drawing.Size(41, 13);
-            this.lbltidiA.TabIndex = 25;
-            this.lbltidiA.Text = "Tid I År";
-            // 
-            // lbltidiM
-            // 
-            this.lbltidiM.AutoSize = true;
-            this.lbltidiM.Location = new System.Drawing.Point(321, 162);
-            this.lbltidiM.Name = "lbltidiM";
-            this.lbltidiM.Size = new System.Drawing.Size(73, 13);
-            this.lbltidiM.TabIndex = 26;
-            this.lbltidiM.Text = "Tid I Månader";
-            // 
-            // lbltidiV
-            // 
-            this.lbltidiV.AutoSize = true;
-            this.lbltidiV.Location = new System.Drawing.Point(321, 136);
-            this.lbltidiV.Name = "lbltidiV";
-            this.lbltidiV.Size = new System.Drawing.Size(65, 13);
-            this.lbltidiV.TabIndex = 27;
-            this.lbltidiV.Text = "Tid I Veckor";
-            // 
-            // tbxTid
-            // 
-            this.tbxTid.Location = new System.Drawing.Point(404, 214);
-            this.tbxTid.Name = "tbxTid";
-            this.tbxTid.ReadOnly = true;
-            this.tbxTid.Size = new System.Drawing.Size(100, 20);
-            this.tbxTid.TabIndex = 28;
             // 
             // btnBeräkna
             // 
@@ -666,11 +602,72 @@
             this.lblSvarNamnare.TabIndex = 69;
             this.lblSvarNamnare.Text = "--------";
             // 
+            // btnTidIÅr
+            // 
+            this.btnTidIÅr.Location = new System.Drawing.Point(323, 183);
+            this.btnTidIÅr.Name = "btnTidIÅr";
+            this.btnTidIÅr.Size = new System.Drawing.Size(75, 23);
+            this.btnTidIÅr.TabIndex = 70;
+            this.btnTidIÅr.Text = "Tid I År";
+            this.btnTidIÅr.UseVisualStyleBackColor = true;
+            // 
+            // btnTidIMånader
+            // 
+            this.btnTidIMånader.Location = new System.Drawing.Point(311, 157);
+            this.btnTidIMånader.Name = "btnTidIMånader";
+            this.btnTidIMånader.Size = new System.Drawing.Size(88, 23);
+            this.btnTidIMånader.TabIndex = 71;
+            this.btnTidIMånader.Text = "Tid I Månader";
+            this.btnTidIMånader.UseVisualStyleBackColor = true;
+            // 
+            // btnTidIVeckor
+            // 
+            this.btnTidIVeckor.Location = new System.Drawing.Point(324, 131);
+            this.btnTidIVeckor.Name = "btnTidIVeckor";
+            this.btnTidIVeckor.Size = new System.Drawing.Size(75, 23);
+            this.btnTidIVeckor.TabIndex = 72;
+            this.btnTidIVeckor.Text = "Tid I Veckor";
+            this.btnTidIVeckor.UseVisualStyleBackColor = true;
+            // 
+            // btnTidIDygn
+            // 
+            this.btnTidIDygn.Location = new System.Drawing.Point(324, 105);
+            this.btnTidIDygn.Name = "btnTidIDygn";
+            this.btnTidIDygn.Size = new System.Drawing.Size(75, 23);
+            this.btnTidIDygn.TabIndex = 73;
+            this.btnTidIDygn.Text = "Tid I Dygn";
+            this.btnTidIDygn.UseVisualStyleBackColor = true;
+            // 
+            // btnTidITimmar
+            // 
+            this.btnTidITimmar.Location = new System.Drawing.Point(324, 79);
+            this.btnTidITimmar.Name = "btnTidITimmar";
+            this.btnTidITimmar.Size = new System.Drawing.Size(75, 23);
+            this.btnTidITimmar.TabIndex = 74;
+            this.btnTidITimmar.Text = "Tid I Timmar";
+            this.btnTidITimmar.UseVisualStyleBackColor = true;
+            // 
+            // btnTidISekunder
+            // 
+            this.btnTidISekunder.Location = new System.Drawing.Point(311, 27);
+            this.btnTidISekunder.Name = "btnTidISekunder";
+            this.btnTidISekunder.Size = new System.Drawing.Size(87, 23);
+            this.btnTidISekunder.TabIndex = 75;
+            this.btnTidISekunder.Text = "Tid I Sekunder";
+            this.btnTidISekunder.UseVisualStyleBackColor = true;
+            this.btnTidISekunder.Click += new System.EventHandler(this.BtnTidISekunder_Click);
+            // 
             // Kapitel5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTidISekunder);
+            this.Controls.Add(this.btnTidITimmar);
+            this.Controls.Add(this.btnTidIDygn);
+            this.Controls.Add(this.btnTidIVeckor);
+            this.Controls.Add(this.btnTidIMånader);
+            this.Controls.Add(this.btnTidIÅr);
             this.Controls.Add(this.lblSvarNamnare);
             this.Controls.Add(this.lblSvarTaljare);
             this.Controls.Add(this.tbxNamnare);
@@ -710,20 +707,13 @@
             this.Controls.Add(this.tbxTal3);
             this.Controls.Add(this.lblRubrikVL);
             this.Controls.Add(this.btnBeräkna);
-            this.Controls.Add(this.tbxTid);
-            this.Controls.Add(this.lbltidiV);
-            this.Controls.Add(this.lbltidiM);
-            this.Controls.Add(this.lbltidiA);
             this.Controls.Add(this.tbxTidS);
             this.Controls.Add(this.tbxTidD);
             this.Controls.Add(this.tbxTidV);
             this.Controls.Add(this.tbxTidMa);
             this.Controls.Add(this.tbxTidA);
             this.Controls.Add(this.btnTid);
-            this.Controls.Add(this.lbltidiT);
             this.Controls.Add(this.lbltidiD);
-            this.Controls.Add(this.lbltidiMi);
-            this.Controls.Add(this.lbltidiS);
             this.Controls.Add(this.lblHeadlineTO);
             this.Controls.Add(this.tbxTidT);
             this.Controls.Add(this.tbxTidMi);
@@ -759,20 +749,13 @@
         private System.Windows.Forms.TextBox tbxTidMi;
         private System.Windows.Forms.TextBox tbxTidT;
         private System.Windows.Forms.Label lblHeadlineTO;
-        private System.Windows.Forms.Label lbltidiS;
-        private System.Windows.Forms.Label lbltidiMi;
         private System.Windows.Forms.Label lbltidiD;
-        private System.Windows.Forms.Label lbltidiT;
         private System.Windows.Forms.Button btnTid;
         private System.Windows.Forms.TextBox tbxTidA;
         private System.Windows.Forms.TextBox tbxTidMa;
         private System.Windows.Forms.TextBox tbxTidV;
         private System.Windows.Forms.TextBox tbxTidD;
         private System.Windows.Forms.TextBox tbxTidS;
-        private System.Windows.Forms.Label lbltidiA;
-        private System.Windows.Forms.Label lbltidiM;
-        private System.Windows.Forms.Label lbltidiV;
-        private System.Windows.Forms.TextBox tbxTid;
         private System.Windows.Forms.Button btnBeräkna;
         private System.Windows.Forms.Label lblRubrikVL;
         private System.Windows.Forms.TextBox tbxTal3;
@@ -812,5 +795,11 @@
         private System.Windows.Forms.TextBox tbxNamnare;
         private System.Windows.Forms.Label lblSvarTaljare;
         private System.Windows.Forms.Label lblSvarNamnare;
+        private System.Windows.Forms.Button btnTidIÅr;
+        private System.Windows.Forms.Button btnTidIMånader;
+        private System.Windows.Forms.Button btnTidIVeckor;
+        private System.Windows.Forms.Button btnTidIDygn;
+        private System.Windows.Forms.Button btnTidITimmar;
+        private System.Windows.Forms.Button btnTidISekunder;
     }
 }

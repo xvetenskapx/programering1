@@ -30,16 +30,12 @@ namespace _5_sep_lektionen
         private void BtnTid_Click(object sender, EventArgs e)
         {
             //Värden
-            int Sek = int.Parse(tbxTidS.Text);
             int Min = int.Parse(tbxTidMi.Text);
-            int Tim = int.Parse(tbxTidT.Text);
-            int Dyg = int.Parse(tbxTidD.Text);
-            int Vec = int.Parse(tbxTidV.Text);
-            int Man = int.Parse(tbxTidMa.Text);
-            int Ar = int.Parse(tbxTidA.Text);
+            
 
-            int Tiden = Sek + Min + Tim + Dyg + Vec + Man + Ar;
-            tbxTid.Text = Tiden.ToString();
+
+
+
 
             //Sek - Min
             //int Min2 = Sek / 60;
@@ -49,7 +45,7 @@ namespace _5_sep_lektionen
             //tbxTidS.Text = Sek1.ToString();
 
             //Min - Tim
- 
+
 
             //Tim - Dyg
             //int Dyg1 = Tim / 24;
@@ -73,11 +69,9 @@ namespace _5_sep_lektionen
             //tbxTidV.Text = Vec2.ToString();
 
             //Mån - År1
-            int Ar1 = Man / 12;
-            int Man2 = Man % 12;
+            //int Ar1 = Man / 12;
+            //int Man2 = Man % 12;
 
-            tbxTidA.Text = Ar1.ToString();
-            tbxTidMa.Text = Man2.ToString();
 
 
         }
@@ -135,6 +129,32 @@ namespace _5_sep_lektionen
             lblSvarHela.Text = Hela.ToString();
             lblSvarTaljare.Text = TaljareKvar.ToString();
             lblSvarNamnare.Text = tbxNamnare.Text;
+        }
+
+        private void BtnTidISekunder_Click(object sender, EventArgs e)
+        {
+            double Sek = double.Parse(tbxTidS.Text);
+            double Sek1 = Sek % 60;
+            double Min1 = Sek / 60;
+            double Tim1 = Sek / 3600;
+            double Dyg1 = Sek / 3600 / 24;
+            double Veckor = Sek / 3600 / 24 / 7;
+            double Man1 = Sek / 3600 / 24 / 7 / 4;
+            double Ar1 = Sek / 3600 / 24 / 7 / 4 / 12;
+
+            tbxTidS.Text = Sek1.ToString();
+            tbxTidMi.Text = Min1.ToString();
+            tbxTidT.Text = Tim1.ToString();
+            tbxTidD.Text = Dyg1.ToString();
+
+            tbxTidMa.Text = Man1.ToString();
+            tbxTidA.Text = Ar1.ToString();
+
+            double Tim = double.Parse(tbxTidT.Text);
+            double Dyg = double.Parse(tbxTidD.Text);
+            double Vec = double.Parse(tbxTidV.Text);
+            double Man = double.Parse(tbxTidMa.Text);
+            double Ar = double.Parse(tbxTidA.Text);
         }
     }
 }
