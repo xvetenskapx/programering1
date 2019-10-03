@@ -16,7 +16,7 @@ namespace _5_sep_lektionen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kapitel5());
+            Application.Run(new Kapitel_7());
         }
     }
 }
