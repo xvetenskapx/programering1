@@ -63,20 +63,77 @@ namespace _5_sep_lektionen
 
         private void BtnPuddelKolla_Click(object sender, EventArgs e)
         {
-            double Hojd = double.Parse(tbxPudelHojd.Text)
-            if (Hojd>28 && Hojd<35)
+            double Hojd = double.Parse(tbxPudelHojd.Text);
+            if (Hojd > 28 && Hojd < 35) 
             {
-                lblPudelSvar.Text = "Det Är En Dvärgpudel"
+                lblPudelSvar.Text = "Det Är En Dvärgpudel";
             }
             else
             {
-                lblPudelSvar.Text = "Det Är Inte En Dvärgpudel"
+                lblPudelSvar.Text = "Det Är Inte En Dvärgpudel";
             }
         }
 
         private void LblPudelSvar_TextChanged(object sender, EventArgs e)
         {
-            lblPudelSvar.Text = ""
+            
+        }
+
+        private void TbxPudelHojd_TextChanged(object sender, EventArgs e)
+        {
+            lblPudelSvar.Text = "";
+        }
+
+        private void BtnBeräkna72_Click(object sender, EventArgs e)
+        {
+            int Alder = int.Parse(tbxAlder.Text);
+            //if (Alder>15&&Alder<65)
+            //{
+            //    lblKostnad72.Text = "Du åker för 20 kr";
+            //}
+            //else
+            //{
+            //    lblKostnad72.Text = "Du åker för 10 kr";
+            //}
+
+            if (Alder < 15 || Alder > 65)
+            {
+                lblKostnad72.Text = "Du åker för 10 kr";
+            }
+            
+            else
+            {
+                lblKostnad72.Text = "Du åker för 20 kr";
+            }
+
+        }
+
+        private void BtnBeräknaUttag_Click(object sender, EventArgs e)
+        {
+            double Pengar = double.Parse(tbxDinaPengar.Text);
+            double Kostnad = double.Parse(tbxKostand.Text);
+            if (Pengar > Kostnad)
+            {
+                double Rest = Pengar - Kostnad;
+                lblSvarPengarKvar.Text = "Du kommer få tillbaka " + Rest.ToString() + " kr";
+            }
+            else
+            {
+                double Rest = Kostnad - Pengar;
+                int Hundratal = (int)(Rest / 100);
+                int uttag = (Hundratal + 1) * 100;
+                double kvar = (double)uttag + Pengar - Kostnad;
+                lblSvarPengarKvar.Text = "Ta ut " + uttag.ToString() + " kronor." + " Efter köpet återstå " + kvar.ToString() + " kronor.";
+            }
+        }
+
+        private void BtnRoll_Click(object sender, EventArgs e)
+        {
+            Random tarnigng = new Random();
+            int Resulat = tarnigng.Next(1, 7);
+            if (Resulat == 6)
+                MessageBox.Show("Grattis", "En sexa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            lblAntalPrickar.Text = Resulat.ToString();
         }
     }
 }
