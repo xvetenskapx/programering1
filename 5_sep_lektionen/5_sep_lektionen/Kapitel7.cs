@@ -135,5 +135,49 @@ namespace _5_sep_lektionen
                 MessageBox.Show("Grattis", "En sexa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             lblAntalPrickar.Text = Resulat.ToString();
         }
+
+        private void BtnBeraknaPorto_Click(object sender, EventArgs e)
+        {
+            int brevet = int.Parse(tbxBrevetsVikt.Text);
+
+                if (brevet <= 20)
+            {
+                lblPortoKostnad.Text = "Ett brev som väger " + brevet.ToString() + " kostar 5 kronor";
+            }
+                else if (brevet <= 100)
+            {
+                lblPortoKostnad.Text = "Ett brev som väger " + brevet.ToString() + " kostar 10 kronor";
+            }
+                else
+            {
+                lblPortoKostnad.Text = "Ett brev som väger " + brevet.ToString() + " kostar 20 kronor";
+            }
+        }
+
+        private void BtnDVDPris_Click(object sender, EventArgs e)
+        {
+            double Skivor = double.Parse(tbxAntalSkivor.Text);
+            double rabatt = 1;
+
+            if (Skivor >= 10)
+                rabatt = 0.90;
+
+            else if (Skivor >= 100)
+                rabatt = 0.85;
+
+            double DVDKostnad = (Skivor * 9.90) * rabatt;
+            lblDVDKostnad.Text = "Kostnaden för " + Skivor.ToString() + " Skivor är " + DVDKostnad.ToString() + " kronor";
+        }
+
+        private void BtnBatKostnad_Click(object sender, EventArgs e)
+        {
+            int personer = int.Parse(tbxAntalPersoner.Text);
+            switch (AntalPersoner)
+            {
+                
+            }
+
+                
+        }
     }
 }

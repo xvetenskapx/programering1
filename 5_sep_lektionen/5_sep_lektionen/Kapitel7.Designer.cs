@@ -68,6 +68,24 @@
             this.lblPrickar = new System.Windows.Forms.Label();
             this.lblORubrik73 = new System.Windows.Forms.Label();
             this.lblOvning73 = new System.Windows.Forms.Label();
+            this.btnBeraknaPorto = new System.Windows.Forms.Button();
+            this.lblEmp74 = new System.Windows.Forms.Label();
+            this.lblBrevetsVikt = new System.Windows.Forms.Label();
+            this.lblRubrik74 = new System.Windows.Forms.Label();
+            this.tbxBrevetsVikt = new System.Windows.Forms.TextBox();
+            this.lblPortoKostnad = new System.Windows.Forms.Label();
+            this.lblDVDKostnad = new System.Windows.Forms.Label();
+            this.lblAntalSkivor = new System.Windows.Forms.Label();
+            this.lblRubrikE74 = new System.Windows.Forms.Label();
+            this.lblOvning74 = new System.Windows.Forms.Label();
+            this.tbxAntalSkivor = new System.Windows.Forms.TextBox();
+            this.btnDVDPris = new System.Windows.Forms.Button();
+            this.lblBatKostnad = new System.Windows.Forms.Label();
+            this.lblAntalPersoner = new System.Windows.Forms.Label();
+            this.lblHyraRodBat = new System.Windows.Forms.Label();
+            this.lblExmp75 = new System.Windows.Forms.Label();
+            this.btnBatKostnad = new System.Windows.Forms.Button();
+            this.tbxAntalPersoner = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblexp71
@@ -429,11 +447,188 @@
             this.lblOvning73.TabIndex = 41;
             this.lblOvning73.Text = "Övning 7.3";
             // 
+            // btnBeraknaPorto
+            // 
+            this.btnBeraknaPorto.Location = new System.Drawing.Point(47, 385);
+            this.btnBeraknaPorto.Name = "btnBeraknaPorto";
+            this.btnBeraknaPorto.Size = new System.Drawing.Size(95, 23);
+            this.btnBeraknaPorto.TabIndex = 42;
+            this.btnBeraknaPorto.Text = "Beräkna Porto";
+            this.btnBeraknaPorto.UseVisualStyleBackColor = true;
+            this.btnBeraknaPorto.Click += new System.EventHandler(this.BtnBeraknaPorto_Click);
+            // 
+            // lblEmp74
+            // 
+            this.lblEmp74.AutoSize = true;
+            this.lblEmp74.Location = new System.Drawing.Point(83, 307);
+            this.lblEmp74.Name = "lblEmp74";
+            this.lblEmp74.Size = new System.Drawing.Size(65, 13);
+            this.lblEmp74.TabIndex = 43;
+            this.lblEmp74.Text = "Exemple 7.4";
+            // 
+            // lblBrevetsVikt
+            // 
+            this.lblBrevetsVikt.AutoSize = true;
+            this.lblBrevetsVikt.Location = new System.Drawing.Point(6, 339);
+            this.lblBrevetsVikt.Name = "lblBrevetsVikt";
+            this.lblBrevetsVikt.Size = new System.Drawing.Size(85, 13);
+            this.lblBrevetsVikt.TabIndex = 44;
+            this.lblBrevetsVikt.Text = "Brevets Vikt (kg)";
+            // 
+            // lblRubrik74
+            // 
+            this.lblRubrik74.AutoSize = true;
+            this.lblRubrik74.Location = new System.Drawing.Point(68, 320);
+            this.lblRubrik74.Name = "lblRubrik74";
+            this.lblRubrik74.Size = new System.Drawing.Size(74, 13);
+            this.lblRubrik74.TabIndex = 45;
+            this.lblRubrik74.Text = "Porto Kostnad";
+            // 
+            // tbxBrevetsVikt
+            // 
+            this.tbxBrevetsVikt.Location = new System.Drawing.Point(97, 336);
+            this.tbxBrevetsVikt.Name = "tbxBrevetsVikt";
+            this.tbxBrevetsVikt.Size = new System.Drawing.Size(100, 20);
+            this.tbxBrevetsVikt.TabIndex = 46;
+            // 
+            // lblPortoKostnad
+            // 
+            this.lblPortoKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPortoKostnad.Location = new System.Drawing.Point(9, 359);
+            this.lblPortoKostnad.Name = "lblPortoKostnad";
+            this.lblPortoKostnad.Size = new System.Drawing.Size(188, 23);
+            this.lblPortoKostnad.TabIndex = 47;
+            this.lblPortoKostnad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblDVDKostnad
+            // 
+            this.lblDVDKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDVDKostnad.Location = new System.Drawing.Point(9, 495);
+            this.lblDVDKostnad.Name = "lblDVDKostnad";
+            this.lblDVDKostnad.Size = new System.Drawing.Size(188, 23);
+            this.lblDVDKostnad.TabIndex = 48;
+            this.lblDVDKostnad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAntalSkivor
+            // 
+            this.lblAntalSkivor.AutoSize = true;
+            this.lblAntalSkivor.Location = new System.Drawing.Point(8, 475);
+            this.lblAntalSkivor.Name = "lblAntalSkivor";
+            this.lblAntalSkivor.Size = new System.Drawing.Size(64, 13);
+            this.lblAntalSkivor.TabIndex = 49;
+            this.lblAntalSkivor.Text = "Antal Skivor";
+            // 
+            // lblRubrikE74
+            // 
+            this.lblRubrikE74.AutoSize = true;
+            this.lblRubrikE74.Location = new System.Drawing.Point(44, 456);
+            this.lblRubrikE74.Name = "lblRubrikE74";
+            this.lblRubrikE74.Size = new System.Drawing.Size(133, 13);
+            this.lblRubrikE74.TabIndex = 50;
+            this.lblRubrikE74.Text = "Kostnaden För DVD-skivor";
+            // 
+            // lblOvning74
+            // 
+            this.lblOvning74.AutoSize = true;
+            this.lblOvning74.Location = new System.Drawing.Point(84, 443);
+            this.lblOvning74.Name = "lblOvning74";
+            this.lblOvning74.Size = new System.Drawing.Size(56, 13);
+            this.lblOvning74.TabIndex = 51;
+            this.lblOvning74.Text = "Övning 74";
+            // 
+            // tbxAntalSkivor
+            // 
+            this.tbxAntalSkivor.Location = new System.Drawing.Point(78, 472);
+            this.tbxAntalSkivor.Name = "tbxAntalSkivor";
+            this.tbxAntalSkivor.Size = new System.Drawing.Size(119, 20);
+            this.tbxAntalSkivor.TabIndex = 52;
+            // 
+            // btnDVDPris
+            // 
+            this.btnDVDPris.Location = new System.Drawing.Point(47, 521);
+            this.btnDVDPris.Name = "btnDVDPris";
+            this.btnDVDPris.Size = new System.Drawing.Size(95, 23);
+            this.btnDVDPris.TabIndex = 53;
+            this.btnDVDPris.Text = "Beräkna Priset";
+            this.btnDVDPris.UseVisualStyleBackColor = true;
+            this.btnDVDPris.Click += new System.EventHandler(this.BtnDVDPris_Click);
+            // 
+            // lblBatKostnad
+            // 
+            this.lblBatKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblBatKostnad.Location = new System.Drawing.Point(303, 359);
+            this.lblBatKostnad.Name = "lblBatKostnad";
+            this.lblBatKostnad.Size = new System.Drawing.Size(179, 23);
+            this.lblBatKostnad.TabIndex = 54;
+            this.lblBatKostnad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAntalPersoner
+            // 
+            this.lblAntalPersoner.AutoSize = true;
+            this.lblAntalPersoner.Location = new System.Drawing.Point(300, 339);
+            this.lblAntalPersoner.Name = "lblAntalPersoner";
+            this.lblAntalPersoner.Size = new System.Drawing.Size(76, 13);
+            this.lblAntalPersoner.TabIndex = 55;
+            this.lblAntalPersoner.Text = "Antal Personer";
+            // 
+            // lblHyraRodBat
+            // 
+            this.lblHyraRodBat.AutoSize = true;
+            this.lblHyraRodBat.Location = new System.Drawing.Point(353, 320);
+            this.lblHyraRodBat.Name = "lblHyraRodBat";
+            this.lblHyraRodBat.Size = new System.Drawing.Size(65, 13);
+            this.lblHyraRodBat.TabIndex = 56;
+            this.lblHyraRodBat.Text = "Hyr Rod Båt";
+            // 
+            // lblExmp75
+            // 
+            this.lblExmp75.AutoSize = true;
+            this.lblExmp75.Location = new System.Drawing.Point(352, 307);
+            this.lblExmp75.Name = "lblExmp75";
+            this.lblExmp75.Size = new System.Drawing.Size(65, 13);
+            this.lblExmp75.TabIndex = 57;
+            this.lblExmp75.Text = "Exemple 7.5";
+            // 
+            // btnBatKostnad
+            // 
+            this.btnBatKostnad.Location = new System.Drawing.Point(339, 385);
+            this.btnBatKostnad.Name = "btnBatKostnad";
+            this.btnBatKostnad.Size = new System.Drawing.Size(89, 23);
+            this.btnBatKostnad.TabIndex = 58;
+            this.btnBatKostnad.Text = "Hyreskostnad";
+            this.btnBatKostnad.UseVisualStyleBackColor = true;
+            this.btnBatKostnad.Click += new System.EventHandler(this.BtnBatKostnad_Click);
+            // 
+            // tbxAntalPersoner
+            // 
+            this.tbxAntalPersoner.Location = new System.Drawing.Point(382, 336);
+            this.tbxAntalPersoner.Name = "tbxAntalPersoner";
+            this.tbxAntalPersoner.Size = new System.Drawing.Size(100, 20);
+            this.tbxAntalPersoner.TabIndex = 59;
+            // 
             // Kapitel_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 450);
+            this.ClientSize = new System.Drawing.Size(1037, 604);
+            this.Controls.Add(this.tbxAntalPersoner);
+            this.Controls.Add(this.btnBatKostnad);
+            this.Controls.Add(this.lblExmp75);
+            this.Controls.Add(this.lblHyraRodBat);
+            this.Controls.Add(this.lblAntalPersoner);
+            this.Controls.Add(this.lblBatKostnad);
+            this.Controls.Add(this.btnDVDPris);
+            this.Controls.Add(this.tbxAntalSkivor);
+            this.Controls.Add(this.lblOvning74);
+            this.Controls.Add(this.lblRubrikE74);
+            this.Controls.Add(this.lblAntalSkivor);
+            this.Controls.Add(this.lblDVDKostnad);
+            this.Controls.Add(this.lblPortoKostnad);
+            this.Controls.Add(this.tbxBrevetsVikt);
+            this.Controls.Add(this.lblRubrik74);
+            this.Controls.Add(this.lblBrevetsVikt);
+            this.Controls.Add(this.lblEmp74);
+            this.Controls.Add(this.btnBeraknaPorto);
             this.Controls.Add(this.lblOvning73);
             this.Controls.Add(this.lblORubrik73);
             this.Controls.Add(this.lblPrickar);
@@ -523,5 +718,23 @@
         private System.Windows.Forms.Label lblPrickar;
         private System.Windows.Forms.Label lblORubrik73;
         private System.Windows.Forms.Label lblOvning73;
+        private System.Windows.Forms.Button btnBeraknaPorto;
+        private System.Windows.Forms.Label lblEmp74;
+        private System.Windows.Forms.Label lblBrevetsVikt;
+        private System.Windows.Forms.Label lblRubrik74;
+        private System.Windows.Forms.TextBox tbxBrevetsVikt;
+        private System.Windows.Forms.Label lblPortoKostnad;
+        private System.Windows.Forms.Label lblDVDKostnad;
+        private System.Windows.Forms.Label lblAntalSkivor;
+        private System.Windows.Forms.Label lblRubrikE74;
+        private System.Windows.Forms.Label lblOvning74;
+        private System.Windows.Forms.TextBox tbxAntalSkivor;
+        private System.Windows.Forms.Button btnDVDPris;
+        private System.Windows.Forms.Label lblBatKostnad;
+        private System.Windows.Forms.Label lblAntalPersoner;
+        private System.Windows.Forms.Label lblHyraRodBat;
+        private System.Windows.Forms.Label lblExmp75;
+        private System.Windows.Forms.Button btnBatKostnad;
+        private System.Windows.Forms.TextBox tbxAntalPersoner;
     }
 }
