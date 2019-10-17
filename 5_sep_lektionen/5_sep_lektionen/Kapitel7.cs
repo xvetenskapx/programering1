@@ -171,13 +171,125 @@ namespace _5_sep_lektionen
 
         private void BtnBatKostnad_Click(object sender, EventArgs e)
         {
-            int personer = int.Parse(tbxAntalPersoner.Text);
+            int AntalPersoner = int.Parse(tbxAntalPersoner.Text);
             switch (AntalPersoner)
             {
-                
+                case 1:
+                    lblBatKostnad.Text = "Det kostar 70 kr";
+                    break;
+
+                case 2:
+                    lblBatKostnad.Text = "Det kostar 120 kr";
+                    break;
+
+                case 3:
+                    lblBatKostnad.Text = "Det kostar 150 kr";
+                    break;
+
+                default:
+                    lblBatKostnad.Text = "Fel inmatning";
+                    break;
+
             }
 
                 
+        }
+
+        private void AntalPersoner(object sender, EventArgs e)
+        {
+            lblBatKostnad.Text = "";
+        }
+
+        private void BtnVeckoDag_Click(object sender, EventArgs e)
+        {
+            int VeckoDag = int.Parse(tbxVeckodagsNr.Text);
+            switch (VeckoDag)
+            {
+                case 1:
+                    lblVeckoDag.Text = "Måndag";
+                    break;
+
+                case 2:
+                    lblVeckoDag.Text = "Tisdag";
+                    break;
+
+                case 3:
+                    lblVeckoDag.Text = "Onsdag";
+                    break;
+
+                case 4:
+                    lblVeckoDag.Text = "Torsdag";
+                    break;
+
+                case 5:
+                    lblVeckoDag.Text = "Fredag";
+                    break;
+
+                case 6:
+                    lblVeckoDag.Text = "lördag";
+                    break;
+
+                case 7:
+                    lblVeckoDag.Text = "Söndag";
+                    break;
+
+                case 10:
+                    lblVeckoDag.Text = "Sneaky";
+                    break;
+
+                default:
+                    lblVeckoDag.Text = "Fel inmatning";
+                    break;
+            }
+        }
+
+        private void tbxVeckodagNr(object sender, EventArgs e)
+        {
+            lblVeckoDag.Text = "";
+        }
+
+        private void BtnKontrollera_Click(object sender, EventArgs e)
+        {
+            string Namn = tbxNamn.Text;
+            string Losenord = tbxLosenord.Text;
+            if (Namn.Equals("Andre") && Losenord.Equals("Password"))
+            {
+                lblInloggning.Text = "Hej André";
+            }
+
+            else
+            {
+                lblInloggning.Text = "Felaktigt namn eller lösenord";
+            }
+        }
+
+        private void BtnJämnförNamn_Click(object sender, EventArgs e)
+        {
+            string Namn1 = tbxNamn1.Text;
+            string Namn2 = tbxNamn2.Text;
+
+            if (Namn1.CompareTo(Namn2) > 0)
+            {
+                lblNamnOrdning.Text = Namn2 + " " + Namn1;
+            }
+
+            else
+            {
+                lblNamnOrdning.Text = Namn1 + " " + Namn2;
+            }
+        }
+
+        private void BtnStörstaTalet_Click(object sender, EventArgs e)
+        {
+            double TalE1 = double.Parse(tbxTalE177.Text);
+            double TalE2 = double.Parse(tbxTalE277.Text);
+            double max = TalE1 > TalE2 ? TalE1 : TalE2;
+            lblTalOrdning77.Text = "Det Största Talet Är " + max.ToString();
+        }
+
+        private void BtnTalIOOrdning_Click(object sender, EventArgs e)
+        {
+            double TalO1
         }
     }
 }

@@ -86,6 +86,44 @@
             this.lblExmp75 = new System.Windows.Forms.Label();
             this.btnBatKostnad = new System.Windows.Forms.Button();
             this.tbxAntalPersoner = new System.Windows.Forms.TextBox();
+            this.btnVeckoDag = new System.Windows.Forms.Button();
+            this.lblVeckoDag = new System.Windows.Forms.Label();
+            this.lblVeckoNR = new System.Windows.Forms.Label();
+            this.tbxVeckodagsNr = new System.Windows.Forms.TextBox();
+            this.lblOvning75 = new System.Windows.Forms.Label();
+            this.lblRubrikO = new System.Windows.Forms.Label();
+            this.lblExemple76 = new System.Windows.Forms.Label();
+            this.lblRubrikE76 = new System.Windows.Forms.Label();
+            this.lblNamn = new System.Windows.Forms.Label();
+            this.lblLosenord = new System.Windows.Forms.Label();
+            this.lblInloggning = new System.Windows.Forms.Label();
+            this.btnKontrollera = new System.Windows.Forms.Button();
+            this.tbxLosenord = new System.Windows.Forms.TextBox();
+            this.tbxNamn = new System.Windows.Forms.TextBox();
+            this.lblOvning76 = new System.Windows.Forms.Label();
+            this.lblRubrik76O = new System.Windows.Forms.Label();
+            this.lblNamn2 = new System.Windows.Forms.Label();
+            this.lblNamn1 = new System.Windows.Forms.Label();
+            this.lblNamnOrdning = new System.Windows.Forms.Label();
+            this.tbxNamn1 = new System.Windows.Forms.TextBox();
+            this.tbxNamn2 = new System.Windows.Forms.TextBox();
+            this.btnJämnförNamn = new System.Windows.Forms.Button();
+            this.lblExemple77 = new System.Windows.Forms.Label();
+            this.lblRubrik77E = new System.Windows.Forms.Label();
+            this.lblTal1 = new System.Windows.Forms.Label();
+            this.lblTal2 = new System.Windows.Forms.Label();
+            this.lblTalOrdning77 = new System.Windows.Forms.Label();
+            this.lblOvning77 = new System.Windows.Forms.Label();
+            this.lblRubrik77O = new System.Windows.Forms.Label();
+            this.tbxTalE277 = new System.Windows.Forms.TextBox();
+            this.tbxTalE177 = new System.Windows.Forms.TextBox();
+            this.btnStörstaTalet = new System.Windows.Forms.Button();
+            this.btnTalIOOrdning = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblTal1O = new System.Windows.Forms.Label();
+            this.lblTalIOOrdning = new System.Windows.Forms.Label();
+            this.lblTal2O = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblexp71
@@ -449,7 +487,7 @@
             // 
             // btnBeraknaPorto
             // 
-            this.btnBeraknaPorto.Location = new System.Drawing.Point(47, 385);
+            this.btnBeraknaPorto.Location = new System.Drawing.Point(913, 89);
             this.btnBeraknaPorto.Name = "btnBeraknaPorto";
             this.btnBeraknaPorto.Size = new System.Drawing.Size(95, 23);
             this.btnBeraknaPorto.TabIndex = 42;
@@ -460,7 +498,7 @@
             // lblEmp74
             // 
             this.lblEmp74.AutoSize = true;
-            this.lblEmp74.Location = new System.Drawing.Point(83, 307);
+            this.lblEmp74.Location = new System.Drawing.Point(949, 11);
             this.lblEmp74.Name = "lblEmp74";
             this.lblEmp74.Size = new System.Drawing.Size(65, 13);
             this.lblEmp74.TabIndex = 43;
@@ -469,7 +507,7 @@
             // lblBrevetsVikt
             // 
             this.lblBrevetsVikt.AutoSize = true;
-            this.lblBrevetsVikt.Location = new System.Drawing.Point(6, 339);
+            this.lblBrevetsVikt.Location = new System.Drawing.Point(872, 43);
             this.lblBrevetsVikt.Name = "lblBrevetsVikt";
             this.lblBrevetsVikt.Size = new System.Drawing.Size(85, 13);
             this.lblBrevetsVikt.TabIndex = 44;
@@ -478,7 +516,7 @@
             // lblRubrik74
             // 
             this.lblRubrik74.AutoSize = true;
-            this.lblRubrik74.Location = new System.Drawing.Point(68, 320);
+            this.lblRubrik74.Location = new System.Drawing.Point(934, 24);
             this.lblRubrik74.Name = "lblRubrik74";
             this.lblRubrik74.Size = new System.Drawing.Size(74, 13);
             this.lblRubrik74.TabIndex = 45;
@@ -486,7 +524,7 @@
             // 
             // tbxBrevetsVikt
             // 
-            this.tbxBrevetsVikt.Location = new System.Drawing.Point(97, 336);
+            this.tbxBrevetsVikt.Location = new System.Drawing.Point(963, 40);
             this.tbxBrevetsVikt.Name = "tbxBrevetsVikt";
             this.tbxBrevetsVikt.Size = new System.Drawing.Size(100, 20);
             this.tbxBrevetsVikt.TabIndex = 46;
@@ -494,7 +532,7 @@
             // lblPortoKostnad
             // 
             this.lblPortoKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPortoKostnad.Location = new System.Drawing.Point(9, 359);
+            this.lblPortoKostnad.Location = new System.Drawing.Point(875, 63);
             this.lblPortoKostnad.Name = "lblPortoKostnad";
             this.lblPortoKostnad.Size = new System.Drawing.Size(188, 23);
             this.lblPortoKostnad.TabIndex = 47;
@@ -503,7 +541,7 @@
             // lblDVDKostnad
             // 
             this.lblDVDKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblDVDKostnad.Location = new System.Drawing.Point(9, 495);
+            this.lblDVDKostnad.Location = new System.Drawing.Point(875, 199);
             this.lblDVDKostnad.Name = "lblDVDKostnad";
             this.lblDVDKostnad.Size = new System.Drawing.Size(188, 23);
             this.lblDVDKostnad.TabIndex = 48;
@@ -512,7 +550,7 @@
             // lblAntalSkivor
             // 
             this.lblAntalSkivor.AutoSize = true;
-            this.lblAntalSkivor.Location = new System.Drawing.Point(8, 475);
+            this.lblAntalSkivor.Location = new System.Drawing.Point(874, 179);
             this.lblAntalSkivor.Name = "lblAntalSkivor";
             this.lblAntalSkivor.Size = new System.Drawing.Size(64, 13);
             this.lblAntalSkivor.TabIndex = 49;
@@ -521,7 +559,7 @@
             // lblRubrikE74
             // 
             this.lblRubrikE74.AutoSize = true;
-            this.lblRubrikE74.Location = new System.Drawing.Point(44, 456);
+            this.lblRubrikE74.Location = new System.Drawing.Point(910, 160);
             this.lblRubrikE74.Name = "lblRubrikE74";
             this.lblRubrikE74.Size = new System.Drawing.Size(133, 13);
             this.lblRubrikE74.TabIndex = 50;
@@ -530,7 +568,7 @@
             // lblOvning74
             // 
             this.lblOvning74.AutoSize = true;
-            this.lblOvning74.Location = new System.Drawing.Point(84, 443);
+            this.lblOvning74.Location = new System.Drawing.Point(950, 147);
             this.lblOvning74.Name = "lblOvning74";
             this.lblOvning74.Size = new System.Drawing.Size(56, 13);
             this.lblOvning74.TabIndex = 51;
@@ -538,14 +576,14 @@
             // 
             // tbxAntalSkivor
             // 
-            this.tbxAntalSkivor.Location = new System.Drawing.Point(78, 472);
+            this.tbxAntalSkivor.Location = new System.Drawing.Point(944, 176);
             this.tbxAntalSkivor.Name = "tbxAntalSkivor";
             this.tbxAntalSkivor.Size = new System.Drawing.Size(119, 20);
             this.tbxAntalSkivor.TabIndex = 52;
             // 
             // btnDVDPris
             // 
-            this.btnDVDPris.Location = new System.Drawing.Point(47, 521);
+            this.btnDVDPris.Location = new System.Drawing.Point(913, 225);
             this.btnDVDPris.Name = "btnDVDPris";
             this.btnDVDPris.Size = new System.Drawing.Size(95, 23);
             this.btnDVDPris.TabIndex = 53;
@@ -556,7 +594,7 @@
             // lblBatKostnad
             // 
             this.lblBatKostnad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBatKostnad.Location = new System.Drawing.Point(303, 359);
+            this.lblBatKostnad.Location = new System.Drawing.Point(15, 375);
             this.lblBatKostnad.Name = "lblBatKostnad";
             this.lblBatKostnad.Size = new System.Drawing.Size(179, 23);
             this.lblBatKostnad.TabIndex = 54;
@@ -565,7 +603,7 @@
             // lblAntalPersoner
             // 
             this.lblAntalPersoner.AutoSize = true;
-            this.lblAntalPersoner.Location = new System.Drawing.Point(300, 339);
+            this.lblAntalPersoner.Location = new System.Drawing.Point(12, 355);
             this.lblAntalPersoner.Name = "lblAntalPersoner";
             this.lblAntalPersoner.Size = new System.Drawing.Size(76, 13);
             this.lblAntalPersoner.TabIndex = 55;
@@ -574,7 +612,7 @@
             // lblHyraRodBat
             // 
             this.lblHyraRodBat.AutoSize = true;
-            this.lblHyraRodBat.Location = new System.Drawing.Point(353, 320);
+            this.lblHyraRodBat.Location = new System.Drawing.Point(65, 336);
             this.lblHyraRodBat.Name = "lblHyraRodBat";
             this.lblHyraRodBat.Size = new System.Drawing.Size(65, 13);
             this.lblHyraRodBat.TabIndex = 56;
@@ -583,7 +621,7 @@
             // lblExmp75
             // 
             this.lblExmp75.AutoSize = true;
-            this.lblExmp75.Location = new System.Drawing.Point(352, 307);
+            this.lblExmp75.Location = new System.Drawing.Point(64, 323);
             this.lblExmp75.Name = "lblExmp75";
             this.lblExmp75.Size = new System.Drawing.Size(65, 13);
             this.lblExmp75.TabIndex = 57;
@@ -591,7 +629,7 @@
             // 
             // btnBatKostnad
             // 
-            this.btnBatKostnad.Location = new System.Drawing.Point(339, 385);
+            this.btnBatKostnad.Location = new System.Drawing.Point(51, 401);
             this.btnBatKostnad.Name = "btnBatKostnad";
             this.btnBatKostnad.Size = new System.Drawing.Size(89, 23);
             this.btnBatKostnad.TabIndex = 58;
@@ -601,16 +639,385 @@
             // 
             // tbxAntalPersoner
             // 
-            this.tbxAntalPersoner.Location = new System.Drawing.Point(382, 336);
+            this.tbxAntalPersoner.Location = new System.Drawing.Point(94, 352);
             this.tbxAntalPersoner.Name = "tbxAntalPersoner";
             this.tbxAntalPersoner.Size = new System.Drawing.Size(100, 20);
             this.tbxAntalPersoner.TabIndex = 59;
+            this.tbxAntalPersoner.TextChanged += new System.EventHandler(this.AntalPersoner);
+            // 
+            // btnVeckoDag
+            // 
+            this.btnVeckoDag.Location = new System.Drawing.Point(51, 537);
+            this.btnVeckoDag.Name = "btnVeckoDag";
+            this.btnVeckoDag.Size = new System.Drawing.Size(89, 23);
+            this.btnVeckoDag.TabIndex = 60;
+            this.btnVeckoDag.Text = "Visa Veckodag";
+            this.btnVeckoDag.UseVisualStyleBackColor = true;
+            this.btnVeckoDag.Click += new System.EventHandler(this.BtnVeckoDag_Click);
+            // 
+            // lblVeckoDag
+            // 
+            this.lblVeckoDag.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblVeckoDag.Location = new System.Drawing.Point(15, 511);
+            this.lblVeckoDag.Name = "lblVeckoDag";
+            this.lblVeckoDag.Size = new System.Drawing.Size(179, 23);
+            this.lblVeckoDag.TabIndex = 61;
+            this.lblVeckoDag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblVeckoNR
+            // 
+            this.lblVeckoNR.AutoSize = true;
+            this.lblVeckoNR.Location = new System.Drawing.Point(12, 491);
+            this.lblVeckoNR.Name = "lblVeckoNR";
+            this.lblVeckoNR.Size = new System.Drawing.Size(76, 13);
+            this.lblVeckoNR.TabIndex = 62;
+            this.lblVeckoNR.Text = "Veckodags nr.";
+            // 
+            // tbxVeckodagsNr
+            // 
+            this.tbxVeckodagsNr.Location = new System.Drawing.Point(94, 488);
+            this.tbxVeckodagsNr.Name = "tbxVeckodagsNr";
+            this.tbxVeckodagsNr.Size = new System.Drawing.Size(100, 20);
+            this.tbxVeckodagsNr.TabIndex = 63;
+            this.tbxVeckodagsNr.TextChanged += new System.EventHandler(this.tbxVeckodagNr);
+            // 
+            // lblOvning75
+            // 
+            this.lblOvning75.AutoSize = true;
+            this.lblOvning75.Location = new System.Drawing.Point(64, 459);
+            this.lblOvning75.Name = "lblOvning75";
+            this.lblOvning75.Size = new System.Drawing.Size(59, 13);
+            this.lblOvning75.TabIndex = 64;
+            this.lblOvning75.Text = "Övning 7.5";
+            // 
+            // lblRubrikO
+            // 
+            this.lblRubrikO.AutoSize = true;
+            this.lblRubrikO.Location = new System.Drawing.Point(48, 472);
+            this.lblRubrikO.Name = "lblRubrikO";
+            this.lblRubrikO.Size = new System.Drawing.Size(93, 13);
+            this.lblRubrikO.TabIndex = 65;
+            this.lblRubrikO.Text = "Vilken dag är det?";
+            // 
+            // lblExemple76
+            // 
+            this.lblExemple76.AutoSize = true;
+            this.lblExemple76.Location = new System.Drawing.Point(369, 323);
+            this.lblExemple76.Name = "lblExemple76";
+            this.lblExemple76.Size = new System.Drawing.Size(65, 13);
+            this.lblExemple76.TabIndex = 66;
+            this.lblExemple76.Text = "Exemple 7.6";
+            // 
+            // lblRubrikE76
+            // 
+            this.lblRubrikE76.AutoSize = true;
+            this.lblRubrikE76.Location = new System.Drawing.Point(372, 336);
+            this.lblRubrikE76.Name = "lblRubrikE76";
+            this.lblRubrikE76.Size = new System.Drawing.Size(56, 13);
+            this.lblRubrikE76.TabIndex = 67;
+            this.lblRubrikE76.Text = "Inloggning";
+            // 
+            // lblNamn
+            // 
+            this.lblNamn.AutoSize = true;
+            this.lblNamn.Location = new System.Drawing.Point(328, 355);
+            this.lblNamn.Name = "lblNamn";
+            this.lblNamn.Size = new System.Drawing.Size(38, 13);
+            this.lblNamn.TabIndex = 68;
+            this.lblNamn.Text = "Namn:";
+            // 
+            // lblLosenord
+            // 
+            this.lblLosenord.AutoSize = true;
+            this.lblLosenord.Location = new System.Drawing.Point(312, 381);
+            this.lblLosenord.Name = "lblLosenord";
+            this.lblLosenord.Size = new System.Drawing.Size(54, 13);
+            this.lblLosenord.TabIndex = 69;
+            this.lblLosenord.Text = "Lösenord:";
+            // 
+            // lblInloggning
+            // 
+            this.lblInloggning.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblInloggning.Location = new System.Drawing.Point(315, 401);
+            this.lblInloggning.Name = "lblInloggning";
+            this.lblInloggning.Size = new System.Drawing.Size(157, 23);
+            this.lblInloggning.TabIndex = 70;
+            this.lblInloggning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnKontrollera
+            // 
+            this.btnKontrollera.Location = new System.Drawing.Point(348, 427);
+            this.btnKontrollera.Name = "btnKontrollera";
+            this.btnKontrollera.Size = new System.Drawing.Size(93, 23);
+            this.btnKontrollera.TabIndex = 71;
+            this.btnKontrollera.Text = "Kontrollera";
+            this.btnKontrollera.UseVisualStyleBackColor = true;
+            this.btnKontrollera.Click += new System.EventHandler(this.BtnKontrollera_Click);
+            // 
+            // tbxLosenord
+            // 
+            this.tbxLosenord.Location = new System.Drawing.Point(372, 378);
+            this.tbxLosenord.Name = "tbxLosenord";
+            this.tbxLosenord.Size = new System.Drawing.Size(100, 20);
+            this.tbxLosenord.TabIndex = 72;
+            // 
+            // tbxNamn
+            // 
+            this.tbxNamn.Location = new System.Drawing.Point(372, 352);
+            this.tbxNamn.Name = "tbxNamn";
+            this.tbxNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxNamn.TabIndex = 73;
+            // 
+            // lblOvning76
+            // 
+            this.lblOvning76.AutoSize = true;
+            this.lblOvning76.Location = new System.Drawing.Point(369, 459);
+            this.lblOvning76.Name = "lblOvning76";
+            this.lblOvning76.Size = new System.Drawing.Size(59, 13);
+            this.lblOvning76.TabIndex = 74;
+            this.lblOvning76.Text = "Övning 7.6";
+            // 
+            // lblRubrik76O
+            // 
+            this.lblRubrik76O.AutoSize = true;
+            this.lblRubrik76O.Location = new System.Drawing.Point(353, 472);
+            this.lblRubrik76O.Name = "lblRubrik76O";
+            this.lblRubrik76O.Size = new System.Drawing.Size(91, 13);
+            this.lblRubrik76O.TabIndex = 75;
+            this.lblRubrik76O.Text = "Bokstavs Ordning";
+            // 
+            // lblNamn2
+            // 
+            this.lblNamn2.AutoSize = true;
+            this.lblNamn2.Location = new System.Drawing.Point(319, 517);
+            this.lblNamn2.Name = "lblNamn2";
+            this.lblNamn2.Size = new System.Drawing.Size(47, 13);
+            this.lblNamn2.TabIndex = 76;
+            this.lblNamn2.Text = "Namn 2:";
+            // 
+            // lblNamn1
+            // 
+            this.lblNamn1.AutoSize = true;
+            this.lblNamn1.Location = new System.Drawing.Point(319, 491);
+            this.lblNamn1.Name = "lblNamn1";
+            this.lblNamn1.Size = new System.Drawing.Size(47, 13);
+            this.lblNamn1.TabIndex = 77;
+            this.lblNamn1.Text = "Namn 1:";
+            // 
+            // lblNamnOrdning
+            // 
+            this.lblNamnOrdning.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNamnOrdning.Location = new System.Drawing.Point(322, 537);
+            this.lblNamnOrdning.Name = "lblNamnOrdning";
+            this.lblNamnOrdning.Size = new System.Drawing.Size(150, 23);
+            this.lblNamnOrdning.TabIndex = 78;
+            this.lblNamnOrdning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxNamn1
+            // 
+            this.tbxNamn1.Location = new System.Drawing.Point(372, 488);
+            this.tbxNamn1.Name = "tbxNamn1";
+            this.tbxNamn1.Size = new System.Drawing.Size(100, 20);
+            this.tbxNamn1.TabIndex = 79;
+            // 
+            // tbxNamn2
+            // 
+            this.tbxNamn2.Location = new System.Drawing.Point(372, 514);
+            this.tbxNamn2.Name = "tbxNamn2";
+            this.tbxNamn2.Size = new System.Drawing.Size(100, 20);
+            this.tbxNamn2.TabIndex = 80;
+            // 
+            // btnJämnförNamn
+            // 
+            this.btnJämnförNamn.Location = new System.Drawing.Point(348, 563);
+            this.btnJämnförNamn.Name = "btnJämnförNamn";
+            this.btnJämnförNamn.Size = new System.Drawing.Size(93, 23);
+            this.btnJämnförNamn.TabIndex = 81;
+            this.btnJämnförNamn.Text = "Jämför Namnen";
+            this.btnJämnförNamn.UseVisualStyleBackColor = true;
+            this.btnJämnförNamn.Click += new System.EventHandler(this.BtnJämnförNamn_Click);
+            // 
+            // lblExemple77
+            // 
+            this.lblExemple77.AutoSize = true;
+            this.lblExemple77.Location = new System.Drawing.Point(657, 323);
+            this.lblExemple77.Name = "lblExemple77";
+            this.lblExemple77.Size = new System.Drawing.Size(65, 13);
+            this.lblExemple77.TabIndex = 82;
+            this.lblExemple77.Text = "Exemple 7.7";
+            // 
+            // lblRubrik77E
+            // 
+            this.lblRubrik77E.AutoSize = true;
+            this.lblRubrik77E.Location = new System.Drawing.Point(633, 336);
+            this.lblRubrik77E.Name = "lblRubrik77E";
+            this.lblRubrik77E.Size = new System.Drawing.Size(100, 13);
+            this.lblRubrik77E.TabIndex = 83;
+            this.lblRubrik77E.Text = "Vilket Tal Är Störst?";
+            // 
+            // lblTal1
+            // 
+            this.lblTal1.AutoSize = true;
+            this.lblTal1.Location = new System.Drawing.Point(615, 355);
+            this.lblTal1.Name = "lblTal1";
+            this.lblTal1.Size = new System.Drawing.Size(28, 13);
+            this.lblTal1.TabIndex = 84;
+            this.lblTal1.Text = "Tal1";
+            // 
+            // lblTal2
+            // 
+            this.lblTal2.AutoSize = true;
+            this.lblTal2.Location = new System.Drawing.Point(615, 380);
+            this.lblTal2.Name = "lblTal2";
+            this.lblTal2.Size = new System.Drawing.Size(28, 13);
+            this.lblTal2.TabIndex = 85;
+            this.lblTal2.Text = "Tal2";
+            // 
+            // lblTalOrdning77
+            // 
+            this.lblTalOrdning77.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTalOrdning77.Location = new System.Drawing.Point(618, 401);
+            this.lblTalOrdning77.Name = "lblTalOrdning77";
+            this.lblTalOrdning77.Size = new System.Drawing.Size(131, 23);
+            this.lblTalOrdning77.TabIndex = 86;
+            this.lblTalOrdning77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOvning77
+            // 
+            this.lblOvning77.AutoSize = true;
+            this.lblOvning77.Location = new System.Drawing.Point(657, 459);
+            this.lblOvning77.Name = "lblOvning77";
+            this.lblOvning77.Size = new System.Drawing.Size(59, 13);
+            this.lblOvning77.TabIndex = 87;
+            this.lblOvning77.Text = "Övning 7.7";
+            // 
+            // lblRubrik77O
+            // 
+            this.lblRubrik77O.AutoSize = true;
+            this.lblRubrik77O.Location = new System.Drawing.Point(633, 472);
+            this.lblRubrik77O.Name = "lblRubrik77O";
+            this.lblRubrik77O.Size = new System.Drawing.Size(98, 13);
+            this.lblRubrik77O.TabIndex = 88;
+            this.lblRubrik77O.Text = "Vilket Tal Är Minst?";
+            // 
+            // tbxTalE277
+            // 
+            this.tbxTalE277.Location = new System.Drawing.Point(649, 378);
+            this.tbxTalE277.Name = "tbxTalE277";
+            this.tbxTalE277.Size = new System.Drawing.Size(100, 20);
+            this.tbxTalE277.TabIndex = 89;
+            // 
+            // tbxTalE177
+            // 
+            this.tbxTalE177.Location = new System.Drawing.Point(649, 352);
+            this.tbxTalE177.Name = "tbxTalE177";
+            this.tbxTalE177.Size = new System.Drawing.Size(100, 20);
+            this.tbxTalE177.TabIndex = 90;
+            // 
+            // btnStörstaTalet
+            // 
+            this.btnStörstaTalet.Location = new System.Drawing.Point(618, 427);
+            this.btnStörstaTalet.Name = "btnStörstaTalet";
+            this.btnStörstaTalet.Size = new System.Drawing.Size(131, 23);
+            this.btnStörstaTalet.TabIndex = 91;
+            this.btnStörstaTalet.Text = "Hitta Största Talet";
+            this.btnStörstaTalet.UseVisualStyleBackColor = true;
+            this.btnStörstaTalet.Click += new System.EventHandler(this.BtnStörstaTalet_Click);
+            // 
+            // btnTalIOOrdning
+            // 
+            this.btnTalIOOrdning.Location = new System.Drawing.Point(612, 563);
+            this.btnTalIOOrdning.Name = "btnTalIOOrdning";
+            this.btnTalIOOrdning.Size = new System.Drawing.Size(137, 23);
+            this.btnTalIOOrdning.TabIndex = 92;
+            this.btnTalIOOrdning.Text = "Hitta Minsta Talet";
+            this.btnTalIOOrdning.UseVisualStyleBackColor = true;
+            this.btnTalIOOrdning.Click += new System.EventHandler(this.BtnTalIOOrdning_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(649, 514);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 93;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(649, 488);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 94;
+            // 
+            // lblTal1O
+            // 
+            this.lblTal1O.AutoSize = true;
+            this.lblTal1O.Location = new System.Drawing.Point(609, 491);
+            this.lblTal1O.Name = "lblTal1O";
+            this.lblTal1O.Size = new System.Drawing.Size(34, 13);
+            this.lblTal1O.TabIndex = 95;
+            this.lblTal1O.Text = "Tal 1:";
+            // 
+            // lblTalIOOrdning
+            // 
+            this.lblTalIOOrdning.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTalIOOrdning.Location = new System.Drawing.Point(612, 537);
+            this.lblTalIOOrdning.Name = "lblTalIOOrdning";
+            this.lblTalIOOrdning.Size = new System.Drawing.Size(137, 23);
+            this.lblTalIOOrdning.TabIndex = 96;
+            this.lblTalIOOrdning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTal2O
+            // 
+            this.lblTal2O.AutoSize = true;
+            this.lblTal2O.Location = new System.Drawing.Point(609, 517);
+            this.lblTal2O.Name = "lblTal2O";
+            this.lblTal2O.Size = new System.Drawing.Size(34, 13);
+            this.lblTal2O.TabIndex = 97;
+            this.lblTal2O.Text = "Tal 2:";
             // 
             // Kapitel_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 604);
+            this.ClientSize = new System.Drawing.Size(1142, 599);
+            this.Controls.Add(this.lblTal2O);
+            this.Controls.Add(this.lblTalIOOrdning);
+            this.Controls.Add(this.lblTal1O);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnTalIOOrdning);
+            this.Controls.Add(this.btnStörstaTalet);
+            this.Controls.Add(this.tbxTalE177);
+            this.Controls.Add(this.tbxTalE277);
+            this.Controls.Add(this.lblRubrik77O);
+            this.Controls.Add(this.lblOvning77);
+            this.Controls.Add(this.lblTalOrdning77);
+            this.Controls.Add(this.lblTal2);
+            this.Controls.Add(this.lblTal1);
+            this.Controls.Add(this.lblRubrik77E);
+            this.Controls.Add(this.lblExemple77);
+            this.Controls.Add(this.btnJämnförNamn);
+            this.Controls.Add(this.tbxNamn2);
+            this.Controls.Add(this.tbxNamn1);
+            this.Controls.Add(this.lblNamnOrdning);
+            this.Controls.Add(this.lblNamn1);
+            this.Controls.Add(this.lblNamn2);
+            this.Controls.Add(this.lblRubrik76O);
+            this.Controls.Add(this.lblOvning76);
+            this.Controls.Add(this.tbxNamn);
+            this.Controls.Add(this.tbxLosenord);
+            this.Controls.Add(this.btnKontrollera);
+            this.Controls.Add(this.lblInloggning);
+            this.Controls.Add(this.lblLosenord);
+            this.Controls.Add(this.lblNamn);
+            this.Controls.Add(this.lblRubrikE76);
+            this.Controls.Add(this.lblExemple76);
+            this.Controls.Add(this.lblRubrikO);
+            this.Controls.Add(this.lblOvning75);
+            this.Controls.Add(this.tbxVeckodagsNr);
+            this.Controls.Add(this.lblVeckoNR);
+            this.Controls.Add(this.lblVeckoDag);
+            this.Controls.Add(this.btnVeckoDag);
             this.Controls.Add(this.tbxAntalPersoner);
             this.Controls.Add(this.btnBatKostnad);
             this.Controls.Add(this.lblExmp75);
@@ -736,5 +1143,43 @@
         private System.Windows.Forms.Label lblExmp75;
         private System.Windows.Forms.Button btnBatKostnad;
         private System.Windows.Forms.TextBox tbxAntalPersoner;
+        private System.Windows.Forms.Button btnVeckoDag;
+        private System.Windows.Forms.Label lblVeckoDag;
+        private System.Windows.Forms.Label lblVeckoNR;
+        private System.Windows.Forms.TextBox tbxVeckodagsNr;
+        private System.Windows.Forms.Label lblOvning75;
+        private System.Windows.Forms.Label lblRubrikO;
+        private System.Windows.Forms.Label lblExemple76;
+        private System.Windows.Forms.Label lblRubrikE76;
+        private System.Windows.Forms.Label lblNamn;
+        private System.Windows.Forms.Label lblLosenord;
+        private System.Windows.Forms.Label lblInloggning;
+        private System.Windows.Forms.Button btnKontrollera;
+        private System.Windows.Forms.TextBox tbxLosenord;
+        private System.Windows.Forms.TextBox tbxNamn;
+        private System.Windows.Forms.Label lblOvning76;
+        private System.Windows.Forms.Label lblRubrik76O;
+        private System.Windows.Forms.Label lblNamn2;
+        private System.Windows.Forms.Label lblNamn1;
+        private System.Windows.Forms.Label lblNamnOrdning;
+        private System.Windows.Forms.TextBox tbxNamn1;
+        private System.Windows.Forms.TextBox tbxNamn2;
+        private System.Windows.Forms.Button btnJämnförNamn;
+        private System.Windows.Forms.Label lblExemple77;
+        private System.Windows.Forms.Label lblRubrik77E;
+        private System.Windows.Forms.Label lblTal1;
+        private System.Windows.Forms.Label lblTal2;
+        private System.Windows.Forms.Label lblTalOrdning77;
+        private System.Windows.Forms.Label lblOvning77;
+        private System.Windows.Forms.Label lblRubrik77O;
+        private System.Windows.Forms.TextBox tbxTalE277;
+        private System.Windows.Forms.TextBox tbxTalE177;
+        private System.Windows.Forms.Button btnStörstaTalet;
+        private System.Windows.Forms.Button btnTalIOOrdning;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblTal1O;
+        private System.Windows.Forms.Label lblTalIOOrdning;
+        private System.Windows.Forms.Label lblTal2O;
     }
 }
