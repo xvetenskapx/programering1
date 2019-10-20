@@ -289,7 +289,107 @@ namespace _5_sep_lektionen
 
         private void BtnTalIOOrdning_Click(object sender, EventArgs e)
         {
-            double TalO1
+            double Tal01 = double.Parse(tbxTal1O.Text);
+            double Tal02 = double.Parse(tbxTal2O.Text);
+            double minsta = Tal01 < Tal02 ? Tal01 : Tal02;
+            lblTalIOOrdning.Text = "Det Minsta Talet Är " + minsta.ToString();
+        }
+
+        private void btnOKU71_Click(object sender, EventArgs e)
+        {
+            double TalU1 = double.Parse(tbxTal1U.Text);
+            if (TalU1<0)
+            {
+                lblResultatU71.Text = "Talet är negativt";
+            }
+            else if (TalU1==0)
+            {
+                lblResultatU71.Text = "Talet är 0";
+            }
+            else
+            {
+                lblResultatU71.Text = "Talet är positivt";
+            }
+
+        }
+
+        private void Tal1U(object sender, EventArgs e)
+        {
+            lblResultatU71.Text = "";
+        }
+
+        private void btnKolla72U_Click(object sender, EventArgs e)
+        {
+            int langdU = int.Parse(tbxLangd72U.Text);
+            if (langdU<=150 || langdU>=200)
+            {
+                lblResultat72U.Text = "Grattis! Du klarade dig";
+            }
+            else
+            {
+                lblResultat72U.Text = "Tyvärr du blev blöt";
+            }
+        }
+
+        private void TbxTal72U(object sender, EventArgs e)
+        {
+            lblResultat72U.Text = "";
+        }
+
+        private void btnKontrollera73U_Click(object sender, EventArgs e)
+        {
+            double LangdU2 = double.Parse(tbxLangd73U.Text);
+            double Vind = double.Parse(tbxVindstyrka73U.Text);
+            if (LangdU2 > 7.92 && Vind <= 2)
+            {
+                lblResultat73U.Text = "Grattis! nytt rekord";
+            }
+            else
+            {
+                lblResultat73U.Text = "Tyvärr, inget nytt rekord";
+            }
+        }
+
+        private void tbxLangd(object sender, EventArgs e)
+        {
+            lblResultat73U.Text = "";
+        }
+
+        private void tbcVind73(object sender, EventArgs e)
+        {
+            lblResultat73U.Text = "";
+        }
+
+        private void btnBerakna74_Click(object sender, EventArgs e)
+        {
+            double Tal10U = double.Parse(tbxTal10U.Text);
+            double Tal20U = double.Parse(tbxTal20U.Text);
+            char Raknesett = char.Parse(tbxRaknesatt.Text);
+            double svar = 0;
+            if (Raknesett.Equals())
+            {
+                svar = Tal10U * Tal20U;
+            }
+            //if else (Raknesett == /)
+            //{
+            //    svar = Tal10U / Tal20U;
+            //}
+            //if else ()
+        }
+
+        private void TbxTal10U(object sender, EventArgs e)
+        {
+            lblResultat74U.Text = "";
+        }
+
+        private void TbxRaknasatt(object sender, EventArgs e)
+        {
+            lblResultat74U.Text = "";
+        }
+
+        private void tbxRal20U_TextChanged(object sender, EventArgs e)
+        {
+            lblResultat74U.Text = "";
         }
     }
 }
