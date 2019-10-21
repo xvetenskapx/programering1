@@ -364,17 +364,52 @@ namespace _5_sep_lektionen
         {
             double Tal10U = double.Parse(tbxTal10U.Text);
             double Tal20U = double.Parse(tbxTal20U.Text);
-            char Raknesett = char.Parse(tbxRaknesatt.Text);
-            double svar = 0;
-            if (Raknesett.Equals())
+            string Raknesett = tbxRaknesatt.Text;
+            //char rs = tbxRaknesatt.Text[0];
+            if (Raknesett.Equals("*"))
+            //if (rs.Equals('*')) ;
             {
-                svar = Tal10U * Tal20U;
+                lblResultat74U.Text = (Tal10U * Tal20U).ToString();
             }
-            //if else (Raknesett == /)
-            //{
-            //    svar = Tal10U / Tal20U;
-            //}
-            //if else ()
+            else if (Raknesett.Equals("/"))
+            {
+                lblResultat74U.Text = (Tal10U / Tal20U).ToString();
+            }
+            else if (Raknesett.Equals("-"))
+            {
+                lblResultat74U.Text = (Tal10U - Tal20U).ToString();
+            }
+            else if (Raknesett.Equals("+"))
+            {
+                lblResultat74U.Text = (Tal10U + Tal20U).ToString();
+            }
+            else
+            {
+                lblResultat74U.Text = "Fel inmatning";
+            }
+
+            switch (Raknesett)
+            {
+                case "*":
+                    lblResultat74U.Text = (Tal10U * Tal20U).ToString();
+                    break;
+
+                case "/":
+                    lblResultat74U.Text = (Tal10U / Tal20U).ToString();
+                    break;
+
+                case "-":
+                    lblResultat74U.Text = (Tal10U - Tal20U).ToString();
+                    break;
+
+                case "+":
+                    lblResultat74U.Text = (Tal10U + Tal20U).ToString();
+                    break;
+
+                default:
+                    lblResultat74U.Text = "Fel inmatning";
+                    break;
+            }
         }
 
         private void TbxTal10U(object sender, EventArgs e)
@@ -390,6 +425,32 @@ namespace _5_sep_lektionen
         private void tbxRal20U_TextChanged(object sender, EventArgs e)
         {
             lblResultat74U.Text = "";
+        }
+
+        private void BtnRätta_Click(object sender, EventArgs e)
+        {
+            string Svar1 = tbxSvar1.Text;
+            string Svar2 = tbxSvar2.Text;
+            string Svar3 = tbxSvar3.Text;
+            string Svar1Rätt = "Fel";
+            string Svar2Rätt = "Fel";
+            string Svar3Rätt = "Fel";
+            
+            if (Svar1.Equals("x") || Svar1.Equals("X"))
+            {
+                Svar1Rätt = "Rätt";                
+            }
+
+            if (Svar3.Equals("1")||Svar3.Equals("1"))
+            {
+                Svar3Rätt = "Rätt";
+            }
+
+            if (Svar2.Equals("x")||Svar2.Equals("X"))
+            {
+                Svar2Rätt = "Rätt";
+            }
+            lblResultat75U.Text = "1. " + Svar1Rätt +" " + "2. " + Svar2Rätt +" " + "3. " + Svar3Rätt;
         }
     }
 }

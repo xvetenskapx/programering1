@@ -154,6 +154,19 @@
             this.lblUppgift74 = new System.Windows.Forms.Label();
             this.tbxTal20U = new System.Windows.Forms.TextBox();
             this.lblTal20U = new System.Windows.Forms.Label();
+            this.tbxSvar3 = new System.Windows.Forms.TextBox();
+            this.lblFråga3 = new System.Windows.Forms.Label();
+            this.tbxSvar1 = new System.Windows.Forms.TextBox();
+            this.tbxSvar2 = new System.Windows.Forms.TextBox();
+            this.btnRätta = new System.Windows.Forms.Button();
+            this.lblResultat75U = new System.Windows.Forms.Label();
+            this.lblFråga2 = new System.Windows.Forms.Label();
+            this.lblFråga1 = new System.Windows.Forms.Label();
+            this.lblRubrik75 = new System.Windows.Forms.Label();
+            this.Upgift75 = new System.Windows.Forms.Label();
+            this.lblFrågeAlternativ3 = new System.Windows.Forms.Label();
+            this.lblFrågeAlternativ2 = new System.Windows.Forms.Label();
+            this.lblFrågeAlternativ1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblexp71
@@ -1272,11 +1285,136 @@
             this.lblTal20U.TabIndex = 126;
             this.lblTal20U.Text = "Tal 2:";
             // 
+            // tbxSvar3
+            // 
+            this.tbxSvar3.Location = new System.Drawing.Point(1303, 92);
+            this.tbxSvar3.Name = "tbxSvar3";
+            this.tbxSvar3.Size = new System.Drawing.Size(100, 20);
+            this.tbxSvar3.TabIndex = 137;
+            // 
+            // lblFråga3
+            // 
+            this.lblFråga3.AutoSize = true;
+            this.lblFråga3.Location = new System.Drawing.Point(1118, 147);
+            this.lblFråga3.Name = "lblFråga3";
+            this.lblFråga3.Size = new System.Drawing.Size(86, 13);
+            this.lblFråga3.TabIndex = 136;
+            this.lblFråga3.Text = "3. Vad blir 14/5?";
+            // 
+            // tbxSvar1
+            // 
+            this.tbxSvar1.Location = new System.Drawing.Point(1303, 40);
+            this.tbxSvar1.Name = "tbxSvar1";
+            this.tbxSvar1.Size = new System.Drawing.Size(100, 20);
+            this.tbxSvar1.TabIndex = 135;
+            // 
+            // tbxSvar2
+            // 
+            this.tbxSvar2.Location = new System.Drawing.Point(1303, 144);
+            this.tbxSvar2.Name = "tbxSvar2";
+            this.tbxSvar2.Size = new System.Drawing.Size(100, 20);
+            this.tbxSvar2.TabIndex = 134;
+            // 
+            // btnRätta
+            // 
+            this.btnRätta.Location = new System.Drawing.Point(1219, 225);
+            this.btnRätta.Name = "btnRätta";
+            this.btnRätta.Size = new System.Drawing.Size(93, 23);
+            this.btnRätta.TabIndex = 133;
+            this.btnRätta.Text = "Rätta";
+            this.btnRätta.UseVisualStyleBackColor = true;
+            this.btnRätta.Click += new System.EventHandler(this.BtnRätta_Click);
+            // 
+            // lblResultat75U
+            // 
+            this.lblResultat75U.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultat75U.Location = new System.Drawing.Point(1121, 199);
+            this.lblResultat75U.Name = "lblResultat75U";
+            this.lblResultat75U.Size = new System.Drawing.Size(282, 23);
+            this.lblResultat75U.TabIndex = 132;
+            this.lblResultat75U.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblFråga2
+            // 
+            this.lblFråga2.AutoSize = true;
+            this.lblFråga2.Location = new System.Drawing.Point(1118, 95);
+            this.lblFråga2.Name = "lblFråga2";
+            this.lblFråga2.Size = new System.Drawing.Size(89, 13);
+            this.lblFråga2.TabIndex = 131;
+            this.lblFråga2.Text = "2. Vad blir 14%4?";
+            // 
+            // lblFråga1
+            // 
+            this.lblFråga1.AutoSize = true;
+            this.lblFråga1.Location = new System.Drawing.Point(1118, 43);
+            this.lblFråga1.Name = "lblFråga1";
+            this.lblFråga1.Size = new System.Drawing.Size(179, 13);
+            this.lblFråga1.TabIndex = 130;
+            this.lblFråga1.Text = "1. Vilket variabelnamn är inte tillåtet?";
+            // 
+            // lblRubrik75
+            // 
+            this.lblRubrik75.AutoSize = true;
+            this.lblRubrik75.Location = new System.Drawing.Point(1216, 22);
+            this.lblRubrik75.Name = "lblRubrik75";
+            this.lblRubrik75.Size = new System.Drawing.Size(57, 13);
+            this.lblRubrik75.TabIndex = 129;
+            this.lblRubrik75.Text = "Frågesport";
+            // 
+            // Upgift75
+            // 
+            this.Upgift75.AutoSize = true;
+            this.Upgift75.Location = new System.Drawing.Point(1219, 9);
+            this.Upgift75.Name = "Upgift75";
+            this.Upgift75.Size = new System.Drawing.Size(59, 13);
+            this.Upgift75.TabIndex = 128;
+            this.Upgift75.Text = "Uppgift 7.5";
+            // 
+            // lblFrågeAlternativ3
+            // 
+            this.lblFrågeAlternativ3.AutoSize = true;
+            this.lblFrågeAlternativ3.Location = new System.Drawing.Point(1118, 163);
+            this.lblFrågeAlternativ3.Name = "lblFrågeAlternativ3";
+            this.lblFrågeAlternativ3.Size = new System.Drawing.Size(77, 13);
+            this.lblFrågeAlternativ3.TabIndex = 138;
+            this.lblFrågeAlternativ3.Text = "1. 2   X.3   2. 4";
+            // 
+            // lblFrågeAlternativ2
+            // 
+            this.lblFrågeAlternativ2.AutoSize = true;
+            this.lblFrågeAlternativ2.Location = new System.Drawing.Point(1118, 108);
+            this.lblFrågeAlternativ2.Name = "lblFrågeAlternativ2";
+            this.lblFrågeAlternativ2.Size = new System.Drawing.Size(80, 13);
+            this.lblFrågeAlternativ2.TabIndex = 139;
+            this.lblFrågeAlternativ2.Text = "1. 3   X. 2   2. 1";
+            // 
+            // lblFrågeAlternativ1
+            // 
+            this.lblFrågeAlternativ1.AutoSize = true;
+            this.lblFrågeAlternativ1.Location = new System.Drawing.Point(1118, 56);
+            this.lblFrågeAlternativ1.Name = "lblFrågeAlternativ1";
+            this.lblFrågeAlternativ1.Size = new System.Drawing.Size(177, 13);
+            this.lblFrågeAlternativ1.TabIndex = 140;
+            this.lblFrågeAlternativ1.Text = "1. tal1              X.1tal              2.ta_1";
+            // 
             // Kapitel_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1301, 671);
+            this.ClientSize = new System.Drawing.Size(1569, 671);
+            this.Controls.Add(this.lblFrågeAlternativ1);
+            this.Controls.Add(this.lblFrågeAlternativ2);
+            this.Controls.Add(this.lblFrågeAlternativ3);
+            this.Controls.Add(this.tbxSvar3);
+            this.Controls.Add(this.lblFråga3);
+            this.Controls.Add(this.tbxSvar1);
+            this.Controls.Add(this.tbxSvar2);
+            this.Controls.Add(this.btnRätta);
+            this.Controls.Add(this.lblResultat75U);
+            this.Controls.Add(this.lblFråga2);
+            this.Controls.Add(this.lblFråga1);
+            this.Controls.Add(this.lblRubrik75);
+            this.Controls.Add(this.Upgift75);
             this.Controls.Add(this.tbxTal20U);
             this.Controls.Add(this.lblTal20U);
             this.Controls.Add(this.tbxTal10U);
@@ -1539,5 +1677,18 @@
         private System.Windows.Forms.TextBox tbxTal20U;
         private System.Windows.Forms.Label lblTal20U;
         private System.Windows.Forms.TextBox tbxRaknesatt;
+        private System.Windows.Forms.TextBox tbxSvar3;
+        private System.Windows.Forms.Label lblFråga3;
+        private System.Windows.Forms.TextBox tbxSvar1;
+        private System.Windows.Forms.TextBox tbxSvar2;
+        private System.Windows.Forms.Button btnRätta;
+        private System.Windows.Forms.Label lblResultat75U;
+        private System.Windows.Forms.Label lblFråga2;
+        private System.Windows.Forms.Label lblFråga1;
+        private System.Windows.Forms.Label lblRubrik75;
+        private System.Windows.Forms.Label Upgift75;
+        private System.Windows.Forms.Label lblFrågeAlternativ3;
+        private System.Windows.Forms.Label lblFrågeAlternativ2;
+        private System.Windows.Forms.Label lblFrågeAlternativ1;
     }
 }
