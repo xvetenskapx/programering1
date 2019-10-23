@@ -61,5 +61,34 @@ namespace _5_sep_lektionen
             double Katet2S2 = Math.Sqrt(Katet1S1);
             lblKatet2Svar.Text = Katet2S2.ToString();
         }
+
+        private void btnCirkel_Click(object sender, EventArgs e)
+        {
+            double CirkelDiameter = double.Parse(tbxDiameter.Text);
+            double CirkelRadie = double.Parse(tbxRadie.Text);
+            
+            //Omkrets
+            double CirkelOmkrets = Math.PI * CirkelDiameter;
+            lblOmkretsSvar.Text = CirkelOmkrets.ToString();
+
+            //Area
+            if (CirkelDiameter>0)
+            {
+                double CirkelArea = ((Math.PI * (CirkelDiameter * CirkelDiameter)) / 4);
+                lblAreaCiSvar.Text = CirkelArea.ToString();
+            }
+            else if (CirkelRadie>0)
+            {
+                double CirkelArea = Math.PI * (CirkelRadie * CirkelRadie);
+                lblAreaCiSvar.Text = CirkelArea.ToString();
+            }
+            else
+            {
+                lblAreaCiSvar.Text = "Fel inmatning";
+            }
+
+            
+
+        }
     }
 }

@@ -452,5 +452,70 @@ namespace _5_sep_lektionen
             }
             lblResultat75U.Text = "1. " + Svar1Rätt +" " + "2. " + Svar2Rätt +" " + "3. " + Svar3Rätt;
         }
+
+        private void btnBetygBerakna_Click(object sender, EventArgs e)
+        {
+            double Quiz = double.Parse(tbxQuiz.Text);
+            double Mid = double.Parse(tbxMid.Text);
+            double Final = double.Parse(tbxFinal.Text);
+            double Betyg = (Quiz + Mid + Final)/300;
+            if (Betyg < 0.5)
+            {
+                tbxScore.Text = "Du Fick F, Ha, HA";
+            }
+            else if (Betyg >= 0.5 && Betyg < 0.7)
+            {
+                tbxScore.Text = "Du Fick C, Du Klarade Dig";
+            }
+            else if (Betyg >= 0.7 && Betyg < 0.9)
+            {
+                tbxScore.Text = "Du Fick B, Bättre";
+            }
+            else
+            {
+                tbxScore.Text = "Du Fick A, Grattis, Du Är Best";
+            
+            }
+        }
+
+        private void btnJamtTal_Click(object sender, EventArgs e)
+        {
+            double Okant = double.Parse(tbxOkantTal.Text);
+            double Kant1 = Okant / 2;
+            int Kant2 = (int)Kant1;
+            //int Okant2 = (int)Okant/2;
+            //double Okant3 = (double)Okant2;
+            if (Kant1 == Kant2)
+            {
+                lblSvarJamt.Text = Okant.ToString() + " Är Ett Jämt Tal";
+            }
+            else
+            {
+                lblSvarJamt.Text = Okant.ToString() + " Talet Är Icke Jämt";
+            }
+        }
+
+        private void btnVader_Click(object sender, EventArgs e)
+        {
+            double C = double.Parse(tbxTemp.Text);
+            if (C < 0)
+                lblTempSvar.Text = "Freezing Weather";
+
+            else if (C >= 0 && C < 10)
+                lblTempSvar.Text = "Very Cold Weather";
+
+            else if (C >= 10 && C < 20)
+                lblTempSvar.Text = "Cold Weather";
+
+            else if (C >= 20 && C < 30)
+                lblTempSvar.Text = "Normal Weather";
+
+            else if (C >= 30 && C < 40)
+                lblTempSvar.Text = "Hot Weather";
+
+            else
+                MessageBox.Show("Hot Weather", "Extreme Danger", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
+

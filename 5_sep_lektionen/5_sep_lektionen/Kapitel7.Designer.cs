@@ -167,6 +167,27 @@
             this.lblFrågeAlternativ3 = new System.Windows.Forms.Label();
             this.lblFrågeAlternativ2 = new System.Windows.Forms.Label();
             this.lblFrågeAlternativ1 = new System.Windows.Forms.Label();
+            this.lblStorRubrik = new System.Windows.Forms.Label();
+            this.lblQuizscore = new System.Windows.Forms.Label();
+            this.lblBetyg = new System.Windows.Forms.Label();
+            this.lblFinalScore = new System.Windows.Forms.Label();
+            this.lblMidScore = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.tbxQuiz = new System.Windows.Forms.TextBox();
+            this.tbxMid = new System.Windows.Forms.TextBox();
+            this.tbxFinal = new System.Windows.Forms.TextBox();
+            this.tbxScore = new System.Windows.Forms.TextBox();
+            this.btnBetygBerakna = new System.Windows.Forms.Button();
+            this.tbxOkantTal = new System.Windows.Forms.TextBox();
+            this.btnJamtTal = new System.Windows.Forms.Button();
+            this.lblOkant = new System.Windows.Forms.Label();
+            this.lblSvarJamt = new System.Windows.Forms.Label();
+            this.lblRubrik = new System.Windows.Forms.Label();
+            this.lblRubrik3 = new System.Windows.Forms.Label();
+            this.lblTempSvar = new System.Windows.Forms.Label();
+            this.lblTemp = new System.Windows.Forms.Label();
+            this.btnVader = new System.Windows.Forms.Button();
+            this.tbxTemp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblexp71
@@ -1397,11 +1418,214 @@
             this.lblFrågeAlternativ1.TabIndex = 140;
             this.lblFrågeAlternativ1.Text = "1. tal1              X.1tal              2.ta_1";
             // 
+            // lblStorRubrik
+            // 
+            this.lblStorRubrik.AutoSize = true;
+            this.lblStorRubrik.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStorRubrik.Location = new System.Drawing.Point(1115, 305);
+            this.lblStorRubrik.Name = "lblStorRubrik";
+            this.lblStorRubrik.Size = new System.Drawing.Size(268, 31);
+            this.lblStorRubrik.TabIndex = 141;
+            this.lblStorRubrik.Text = "Repetitions Övningar";
+            // 
+            // lblQuizscore
+            // 
+            this.lblQuizscore.AutoSize = true;
+            this.lblQuizscore.Location = new System.Drawing.Point(1118, 381);
+            this.lblQuizscore.Name = "lblQuizscore";
+            this.lblQuizscore.Size = new System.Drawing.Size(109, 13);
+            this.lblQuizscore.TabIndex = 142;
+            this.lblQuizscore.Text = "Quiz Score (Max.100:";
+            // 
+            // lblBetyg
+            // 
+            this.lblBetyg.AutoSize = true;
+            this.lblBetyg.Location = new System.Drawing.Point(1118, 458);
+            this.lblBetyg.Name = "lblBetyg";
+            this.lblBetyg.Size = new System.Drawing.Size(37, 13);
+            this.lblBetyg.TabIndex = 143;
+            this.lblBetyg.Text = "Betyg:";
+            // 
+            // lblFinalScore
+            // 
+            this.lblFinalScore.AutoSize = true;
+            this.lblFinalScore.Location = new System.Drawing.Point(1118, 432);
+            this.lblFinalScore.Name = "lblFinalScore";
+            this.lblFinalScore.Size = new System.Drawing.Size(116, 13);
+            this.lblFinalScore.TabIndex = 144;
+            this.lblFinalScore.Text = "Final Score (Max. 100):";
+            // 
+            // lblMidScore
+            // 
+            this.lblMidScore.AutoSize = true;
+            this.lblMidScore.Location = new System.Drawing.Point(1118, 406);
+            this.lblMidScore.Name = "lblMidScore";
+            this.lblMidScore.Size = new System.Drawing.Size(136, 13);
+            this.lblMidScore.TabIndex = 145;
+            this.lblMidScore.Text = "Mid-Term score (Max. 100):";
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(1118, 356);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(89, 13);
+            this.lblScore.TabIndex = 146;
+            this.lblScore.Text = "Betyg Kalkylatorn";
+            // 
+            // tbxQuiz
+            // 
+            this.tbxQuiz.Location = new System.Drawing.Point(1260, 377);
+            this.tbxQuiz.Name = "tbxQuiz";
+            this.tbxQuiz.Size = new System.Drawing.Size(100, 20);
+            this.tbxQuiz.TabIndex = 147;
+            // 
+            // tbxMid
+            // 
+            this.tbxMid.Location = new System.Drawing.Point(1260, 403);
+            this.tbxMid.Name = "tbxMid";
+            this.tbxMid.Size = new System.Drawing.Size(100, 20);
+            this.tbxMid.TabIndex = 148;
+            // 
+            // tbxFinal
+            // 
+            this.tbxFinal.Location = new System.Drawing.Point(1260, 429);
+            this.tbxFinal.Name = "tbxFinal";
+            this.tbxFinal.Size = new System.Drawing.Size(100, 20);
+            this.tbxFinal.TabIndex = 149;
+            // 
+            // tbxScore
+            // 
+            this.tbxScore.Location = new System.Drawing.Point(1161, 455);
+            this.tbxScore.Name = "tbxScore";
+            this.tbxScore.ReadOnly = true;
+            this.tbxScore.Size = new System.Drawing.Size(199, 20);
+            this.tbxScore.TabIndex = 150;
+            // 
+            // btnBetygBerakna
+            // 
+            this.btnBetygBerakna.Location = new System.Drawing.Point(1121, 481);
+            this.btnBetygBerakna.Name = "btnBetygBerakna";
+            this.btnBetygBerakna.Size = new System.Drawing.Size(239, 23);
+            this.btnBetygBerakna.TabIndex = 151;
+            this.btnBetygBerakna.Text = "Betyg";
+            this.btnBetygBerakna.UseVisualStyleBackColor = true;
+            this.btnBetygBerakna.Click += new System.EventHandler(this.btnBetygBerakna_Click);
+            // 
+            // tbxOkantTal
+            // 
+            this.tbxOkantTal.Location = new System.Drawing.Point(1158, 543);
+            this.tbxOkantTal.Name = "tbxOkantTal";
+            this.tbxOkantTal.Size = new System.Drawing.Size(100, 20);
+            this.tbxOkantTal.TabIndex = 152;
+            // 
+            // btnJamtTal
+            // 
+            this.btnJamtTal.Location = new System.Drawing.Point(1121, 592);
+            this.btnJamtTal.Name = "btnJamtTal";
+            this.btnJamtTal.Size = new System.Drawing.Size(137, 23);
+            this.btnJamtTal.TabIndex = 153;
+            this.btnJamtTal.Text = "Jämt Tal";
+            this.btnJamtTal.UseVisualStyleBackColor = true;
+            this.btnJamtTal.Click += new System.EventHandler(this.btnJamtTal_Click);
+            // 
+            // lblOkant
+            // 
+            this.lblOkant.AutoSize = true;
+            this.lblOkant.Location = new System.Drawing.Point(1118, 546);
+            this.lblOkant.Name = "lblOkant";
+            this.lblOkant.Size = new System.Drawing.Size(34, 13);
+            this.lblOkant.TabIndex = 154;
+            this.lblOkant.Text = "Talet:";
+            // 
+            // lblSvarJamt
+            // 
+            this.lblSvarJamt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSvarJamt.Location = new System.Drawing.Point(1121, 566);
+            this.lblSvarJamt.Name = "lblSvarJamt";
+            this.lblSvarJamt.Size = new System.Drawing.Size(137, 23);
+            this.lblSvarJamt.TabIndex = 155;
+            this.lblSvarJamt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblRubrik
+            // 
+            this.lblRubrik.AutoSize = true;
+            this.lblRubrik.Location = new System.Drawing.Point(1118, 527);
+            this.lblRubrik.Name = "lblRubrik";
+            this.lblRubrik.Size = new System.Drawing.Size(147, 13);
+            this.lblRubrik.TabIndex = 156;
+            this.lblRubrik.Text = "Är Talet Jämt? (Endast Heltal)";
+            // 
+            // lblRubrik3
+            // 
+            this.lblRubrik3.AutoSize = true;
+            this.lblRubrik3.Location = new System.Drawing.Point(1322, 527);
+            this.lblRubrik3.Name = "lblRubrik3";
+            this.lblRubrik3.Size = new System.Drawing.Size(61, 13);
+            this.lblRubrik3.TabIndex = 161;
+            this.lblRubrik3.Text = "Temperatur";
+            // 
+            // lblTempSvar
+            // 
+            this.lblTempSvar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTempSvar.Location = new System.Drawing.Point(1275, 566);
+            this.lblTempSvar.Name = "lblTempSvar";
+            this.lblTempSvar.Size = new System.Drawing.Size(183, 23);
+            this.lblTempSvar.TabIndex = 160;
+            this.lblTempSvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTemp
+            // 
+            this.lblTemp.AutoSize = true;
+            this.lblTemp.Location = new System.Drawing.Point(1272, 546);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(80, 13);
+            this.lblTemp.TabIndex = 159;
+            this.lblTemp.Text = "Temepratur (C):";
+            // 
+            // btnVader
+            // 
+            this.btnVader.Location = new System.Drawing.Point(1275, 592);
+            this.btnVader.Name = "btnVader";
+            this.btnVader.Size = new System.Drawing.Size(183, 23);
+            this.btnVader.TabIndex = 158;
+            this.btnVader.Text = "Väder";
+            this.btnVader.UseVisualStyleBackColor = true;
+            this.btnVader.Click += new System.EventHandler(this.btnVader_Click);
+            // 
+            // tbxTemp
+            // 
+            this.tbxTemp.Location = new System.Drawing.Point(1358, 543);
+            this.tbxTemp.Name = "tbxTemp";
+            this.tbxTemp.Size = new System.Drawing.Size(100, 20);
+            this.tbxTemp.TabIndex = 157;
+            // 
             // Kapitel_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1569, 671);
+            this.Controls.Add(this.lblRubrik3);
+            this.Controls.Add(this.lblTempSvar);
+            this.Controls.Add(this.lblTemp);
+            this.Controls.Add(this.btnVader);
+            this.Controls.Add(this.tbxTemp);
+            this.Controls.Add(this.lblRubrik);
+            this.Controls.Add(this.lblSvarJamt);
+            this.Controls.Add(this.lblOkant);
+            this.Controls.Add(this.btnJamtTal);
+            this.Controls.Add(this.tbxOkantTal);
+            this.Controls.Add(this.btnBetygBerakna);
+            this.Controls.Add(this.tbxScore);
+            this.Controls.Add(this.tbxFinal);
+            this.Controls.Add(this.tbxMid);
+            this.Controls.Add(this.tbxQuiz);
+            this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.lblMidScore);
+            this.Controls.Add(this.lblFinalScore);
+            this.Controls.Add(this.lblBetyg);
+            this.Controls.Add(this.lblQuizscore);
+            this.Controls.Add(this.lblStorRubrik);
             this.Controls.Add(this.lblFrågeAlternativ1);
             this.Controls.Add(this.lblFrågeAlternativ2);
             this.Controls.Add(this.lblFrågeAlternativ3);
@@ -1542,7 +1766,7 @@
             this.Controls.Add(this.btnKolla71);
             this.Controls.Add(this.lblexp71);
             this.Name = "Kapitel_7";
-            this.Text = "Kapitel_7";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1690,5 +1914,26 @@
         private System.Windows.Forms.Label lblFrågeAlternativ3;
         private System.Windows.Forms.Label lblFrågeAlternativ2;
         private System.Windows.Forms.Label lblFrågeAlternativ1;
+        private System.Windows.Forms.Label lblStorRubrik;
+        private System.Windows.Forms.Label lblQuizscore;
+        private System.Windows.Forms.Label lblBetyg;
+        private System.Windows.Forms.Label lblFinalScore;
+        private System.Windows.Forms.Label lblMidScore;
+        private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.TextBox tbxQuiz;
+        private System.Windows.Forms.TextBox tbxMid;
+        private System.Windows.Forms.TextBox tbxFinal;
+        private System.Windows.Forms.TextBox tbxScore;
+        private System.Windows.Forms.Button btnBetygBerakna;
+        private System.Windows.Forms.TextBox tbxOkantTal;
+        private System.Windows.Forms.Button btnJamtTal;
+        private System.Windows.Forms.Label lblOkant;
+        private System.Windows.Forms.Label lblSvarJamt;
+        private System.Windows.Forms.Label lblRubrik;
+        private System.Windows.Forms.Label lblRubrik3;
+        private System.Windows.Forms.Label lblTempSvar;
+        private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.Button btnVader;
+        private System.Windows.Forms.TextBox tbxTemp;
     }
 }
