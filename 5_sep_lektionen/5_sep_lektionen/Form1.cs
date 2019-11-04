@@ -207,5 +207,11 @@ namespace _5_sep_lektionen
             Kapitel_7 kapitel7 = new Kapitel_7();
             kapitel7.Show();
         }
+
+        private void btnKapitel8_Click(object sender, EventArgs e)
+        {
+            Kapitel_8 kapitel8 = new Kapitel_8();
+            kapitel8.Show();
+        }
     }
 }

@@ -96,6 +96,7 @@
             this.btnAutomat = new System.Windows.Forms.Button();
             this.btnkapitel3 = new System.Windows.Forms.Button();
             this.btnkap7 = new System.Windows.Forms.Button();
+            this.btnKapitel8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl3
@@ -700,11 +701,22 @@
             this.btnkap7.UseVisualStyleBackColor = true;
             this.btnkap7.Click += new System.EventHandler(this.Btnkap7_Click);
             // 
+            // btnKapitel8
+            // 
+            this.btnKapitel8.Location = new System.Drawing.Point(964, 62);
+            this.btnKapitel8.Name = "btnKapitel8";
+            this.btnKapitel8.Size = new System.Drawing.Size(75, 23);
+            this.btnKapitel8.TabIndex = 72;
+            this.btnKapitel8.Text = "Kapitel 8 ";
+            this.btnKapitel8.UseVisualStyleBackColor = true;
+            this.btnKapitel8.Click += new System.EventHandler(this.btnKapitel8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1051, 499);
+            this.Controls.Add(this.btnKapitel8);
             this.Controls.Add(this.btnkap7);
             this.Controls.Add(this.btnkapitel3);
             this.Controls.Add(this.btnAutomat);
@@ -850,6 +862,7 @@
         private System.Windows.Forms.Button btnAutomat;
         private System.Windows.Forms.Button btnkapitel3;
         private System.Windows.Forms.Button btnkap7;
+        private System.Windows.Forms.Button btnKapitel8;
     }
 }
 
