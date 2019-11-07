@@ -210,8 +210,9 @@ namespace _5_sep_lektionen
 
         private void btnKapitel8_Click(object sender, EventArgs e)
         {
-            Kapitel_8 kapitel8 = new Kapitel_8();
-            kapitel8.Show();
+            MessageBox.Show("Hej", "Nej", MessageBoxButtons.YesNo);
+            //Kapitel_8 kapitel8 = new Kapitel_8();
+            //kapitel8.Show();
         }
     }
 }

@@ -60,6 +60,7 @@ namespace _5_sep_lektionen
 
                 lblDatornsTal.Text = datornsTal.ToString();
                 tbxMinaResultat.AppendText(antalGissningar + " försök\n");
+
             }
 
             else if (gissatTal < datornsTal)
@@ -74,6 +75,17 @@ namespace _5_sep_lektionen
             btnStartaspelet.Enabled = true;
             gbxSpeldata.Enabled = true;
             gbxSpelet.Enabled = false;
+            antalGissningar = 0;
+            tbxMinaResultat.Text = "";
+            tbxGissa.Text = "";
+            lblDatornsTal.Text = "";
+            lblResultat.Text = "";
+
+        }
+
+        private void lbxStörstaTalet_TabIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

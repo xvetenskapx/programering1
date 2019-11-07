@@ -16,7 +16,7 @@ namespace _5_sep_lektionen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kapitel_8());
+            Application.Run(new StenSaxPase());
         }
     }
 }

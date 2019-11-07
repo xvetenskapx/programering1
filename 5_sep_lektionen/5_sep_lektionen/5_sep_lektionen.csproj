@@ -64,11 +64,11 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kapitel 8.cs">
+    <Compile Include="Gissatalet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kapitel 8.Designer.cs">
-      <DependentUpon>Kapitel 8.cs</DependentUpon>
+    <Compile Include="Gissatalet.Designer.cs">
+      <DependentUpon>Gissatalet.cs</DependentUpon>
     </Compile>
     <Compile Include="Kapitel7.cs">
       <SubType>Form</SubType>
@@ -84,6 +84,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spel.Designer.cs">
+      <DependentUpon>Spel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StenSaxPase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StenSaxPase.Designer.cs">
+      <DependentUpon>StenSaxPase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Talbas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +111,8 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kapitel 8.resx">
-      <DependentUpon>Kapitel 8.cs</DependentUpon>
+    <EmbeddedResource Include="Gissatalet.resx">
+      <DependentUpon>Gissatalet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kapitel5.resx">
       <DependentUpon>Kapitel5.cs</DependentUpon>
@@ -118,6 +130,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StenSaxPase.resx">
+      <DependentUpon>StenSaxPase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Talbas.resx">
       <DependentUpon>Talbas.cs</DependentUpon>
     </EmbeddedResource>

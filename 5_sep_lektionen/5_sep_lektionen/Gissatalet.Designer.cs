@@ -86,6 +86,7 @@
             this.lbxStörstaTalet.Size = new System.Drawing.Size(90, 30);
             this.lbxStörstaTalet.TabIndex = 3;
             this.lbxStörstaTalet.SelectedIndexChanged += new System.EventHandler(this.lbxStörstaTalet_SelectedIndexChanged);
+            this.lbxStörstaTalet.TabIndexChanged += new System.EventHandler(this.lbxStörstaTalet_TabIndexChanged);
             // 
             // gbxSpelet
             // 
