@@ -21,7 +21,7 @@ namespace _5_sep_lektionen
 
         private void StenSaxPase_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSpela_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace _5_sep_lektionen
                     break;
                 case 3:
                     Datornsval = "Påse";
-                    break;          
+                    break;
             }
 
             //skriv datorns val till etiketen som visar datorns val.
@@ -65,7 +65,7 @@ namespace _5_sep_lektionen
 
             lblResultat.Text = "Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster;
 
-            if (nrDatorVinster>2||nrSpelarVinster>2)
+            if (nrDatorVinster > 2 || nrSpelarVinster > 2)
             {
                 gbxStenSaxPåse.Enabled = false;
                 btnSpela.Enabled = true;
@@ -136,7 +136,7 @@ namespace _5_sep_lektionen
             //skriv datorns val till etiketen som visar datorns val.
             lblDatornsVal.Text = Datornsval;
 
-                  if (Datornsval.Equals("Sten"))
+            if (Datornsval.Equals("Sten"))
                 nrSpelarVinster++;
             else if (Datornsval.Equals("Sax"))
                 nrDatorVinster++;
@@ -149,5 +149,6 @@ namespace _5_sep_lektionen
                 btnSpela.Enabled = true;
                 tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\n");
             }
+        }
     }
 }

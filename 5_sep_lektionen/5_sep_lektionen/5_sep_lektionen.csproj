@@ -82,6 +82,12 @@
     <Compile Include="Kapitel5.Designer.cs">
       <DependentUpon>Kapitel5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kapitel9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kapitel9.Designer.cs">
+      <DependentUpon>Kapitel9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spel.cs">
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kapitel7.resx">
       <DependentUpon>Kapitel7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kapitel9.resx">
+      <DependentUpon>Kapitel9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
