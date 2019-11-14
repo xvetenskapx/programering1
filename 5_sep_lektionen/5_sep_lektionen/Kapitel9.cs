@@ -39,5 +39,42 @@ namespace _5_sep_lektionen
                 ruta++;
             }
         }
+
+        private void btnKor_Click(object sender, EventArgs e)
+        {
+            for (int n = int.Parse(tbxTal.Text); n <= 100; n += int.Parse(tbxTal.Text))
+            {
+                tbxTalTabell.Text += n.ToString() + "\t";
+            }
+        }
+
+        private void tbxTal_TextChanged(object sender, EventArgs e)
+        {
+            tbxTalTabell.Text = "";
+        }
+
+        private void btnKor95_Click(object sender, EventArgs e)
+        {
+            for (int n = int.Parse(tbxStart.Text); n <= int.Parse(tbxSlut.Text); n += int.Parse(tbxSteg.Text))
+            {
+                tbxStegS.Text += n.ToString() + "\t";
+            }
+
+        }
+
+        private void btnVisa_Click(object sender, EventArgs e)
+        {
+            tbxNivadata.Clear();
+
+            for (int i = 1; i <= int.Parse(tbxNiva.Text) ; i++)
+            {
+                for (int j=1; j<= 10; j++)
+                {
+                    tbxNivadata.Text += (i * j).ToString() + "\t";
+                }
+
+                tbxNivadata.Text += "\r\n";
+            }
+        }
     }
 }
