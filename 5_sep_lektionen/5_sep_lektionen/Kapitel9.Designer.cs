@@ -57,6 +57,26 @@
             this.lblniva = new System.Windows.Forms.Label();
             this.btnVisa = new System.Windows.Forms.Button();
             this.tbxNiva = new System.Windows.Forms.TextBox();
+            this.lblExemple92 = new System.Windows.Forms.Label();
+            this.lblTecken = new System.Windows.Forms.Label();
+            this.tbxTecken2 = new System.Windows.Forms.TextBox();
+            this.tbxTecken1 = new System.Windows.Forms.TextBox();
+            this.btnvandom = new System.Windows.Forms.Button();
+            this.tbxstrang1 = new System.Windows.Forms.TextBox();
+            this.tbxstrang2 = new System.Windows.Forms.TextBox();
+            this.tbxstrang3 = new System.Windows.Forms.TextBox();
+            this.btnFörskjut = new System.Windows.Forms.Button();
+            this.lblStrang = new System.Windows.Forms.Label();
+            this.lblOvning99 = new System.Windows.Forms.Label();
+            this.gbxGenerera = new System.Windows.Forms.GroupBox();
+            this.gbxberäkna = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbxMeny = new System.Windows.Forms.ListBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.gbxGenerera.SuspendLayout();
+            this.gbxberäkna.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblExemple91
@@ -318,11 +338,178 @@
             this.tbxNiva.Size = new System.Drawing.Size(43, 20);
             this.tbxNiva.TabIndex = 28;
             // 
+            // lblExemple92
+            // 
+            this.lblExemple92.AutoSize = true;
+            this.lblExemple92.Location = new System.Drawing.Point(687, 213);
+            this.lblExemple92.Name = "lblExemple92";
+            this.lblExemple92.Size = new System.Drawing.Size(65, 13);
+            this.lblExemple92.TabIndex = 29;
+            this.lblExemple92.Text = "Exemple 9.2";
+            // 
+            // lblTecken
+            // 
+            this.lblTecken.AutoSize = true;
+            this.lblTecken.Location = new System.Drawing.Point(697, 234);
+            this.lblTecken.Name = "lblTecken";
+            this.lblTecken.Size = new System.Drawing.Size(44, 13);
+            this.lblTecken.TabIndex = 30;
+            this.lblTecken.Text = "Tecken";
+            // 
+            // tbxTecken2
+            // 
+            this.tbxTecken2.Location = new System.Drawing.Point(669, 252);
+            this.tbxTecken2.Name = "tbxTecken2";
+            this.tbxTecken2.Size = new System.Drawing.Size(100, 20);
+            this.tbxTecken2.TabIndex = 31;
+            // 
+            // tbxTecken1
+            // 
+            this.tbxTecken1.Location = new System.Drawing.Point(669, 278);
+            this.tbxTecken1.Name = "tbxTecken1";
+            this.tbxTecken1.Size = new System.Drawing.Size(100, 20);
+            this.tbxTecken1.TabIndex = 32;
+            // 
+            // btnvandom
+            // 
+            this.btnvandom.Location = new System.Drawing.Point(666, 304);
+            this.btnvandom.Name = "btnvandom";
+            this.btnvandom.Size = new System.Drawing.Size(103, 23);
+            this.btnvandom.TabIndex = 33;
+            this.btnvandom.Text = "Vänd om";
+            this.btnvandom.UseVisualStyleBackColor = true;
+            this.btnvandom.Click += new System.EventHandler(this.btnvandom_Click);
+            // 
+            // tbxstrang1
+            // 
+            this.tbxstrang1.Location = new System.Drawing.Point(914, 43);
+            this.tbxstrang1.Name = "tbxstrang1";
+            this.tbxstrang1.Size = new System.Drawing.Size(100, 20);
+            this.tbxstrang1.TabIndex = 34;
+            // 
+            // tbxstrang2
+            // 
+            this.tbxstrang2.Location = new System.Drawing.Point(914, 69);
+            this.tbxstrang2.Name = "tbxstrang2";
+            this.tbxstrang2.Size = new System.Drawing.Size(100, 20);
+            this.tbxstrang2.TabIndex = 35;
+            // 
+            // tbxstrang3
+            // 
+            this.tbxstrang3.Location = new System.Drawing.Point(914, 95);
+            this.tbxstrang3.Name = "tbxstrang3";
+            this.tbxstrang3.Size = new System.Drawing.Size(100, 20);
+            this.tbxstrang3.TabIndex = 36;
+            // 
+            // btnFörskjut
+            // 
+            this.btnFörskjut.Location = new System.Drawing.Point(914, 121);
+            this.btnFörskjut.Name = "btnFörskjut";
+            this.btnFörskjut.Size = new System.Drawing.Size(100, 23);
+            this.btnFörskjut.TabIndex = 37;
+            this.btnFörskjut.Text = "Förskjut";
+            this.btnFörskjut.UseVisualStyleBackColor = true;
+            this.btnFörskjut.Click += new System.EventHandler(this.btnFörskjut_Click);
+            // 
+            // lblStrang
+            // 
+            this.lblStrang.AutoSize = true;
+            this.lblStrang.Location = new System.Drawing.Point(938, 27);
+            this.lblStrang.Name = "lblStrang";
+            this.lblStrang.Size = new System.Drawing.Size(38, 13);
+            this.lblStrang.TabIndex = 38;
+            this.lblStrang.Text = "Sträng";
+            // 
+            // lblOvning99
+            // 
+            this.lblOvning99.AutoSize = true;
+            this.lblOvning99.Location = new System.Drawing.Point(927, 8);
+            this.lblOvning99.Name = "lblOvning99";
+            this.lblOvning99.Size = new System.Drawing.Size(59, 13);
+            this.lblOvning99.TabIndex = 39;
+            this.lblOvning99.Text = "Övning 9.9";
+            // 
+            // gbxGenerera
+            // 
+            this.gbxGenerera.Controls.Add(this.textBox2);
+            this.gbxGenerera.Controls.Add(this.button2);
+            this.gbxGenerera.Location = new System.Drawing.Point(930, 231);
+            this.gbxGenerera.Name = "gbxGenerera";
+            this.gbxGenerera.Size = new System.Drawing.Size(92, 142);
+            this.gbxGenerera.TabIndex = 40;
+            this.gbxGenerera.TabStop = false;
+            this.gbxGenerera.Text = "Generera";
+            // 
+            // gbxberäkna
+            // 
+            this.gbxberäkna.Controls.Add(this.lbxMeny);
+            this.gbxberäkna.Controls.Add(this.textBox1);
+            this.gbxberäkna.Controls.Add(this.button1);
+            this.gbxberäkna.Location = new System.Drawing.Point(1041, 231);
+            this.gbxberäkna.Name = "gbxberäkna";
+            this.gbxberäkna.Size = new System.Drawing.Size(114, 142);
+            this.gbxberäkna.TabIndex = 0;
+            this.gbxberäkna.TabStop = false;
+            this.gbxberäkna.Text = "Beräkna";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(11, 87);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 116);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 42;
+            // 
+            // lbxMeny
+            // 
+            this.lbxMeny.FormattingEnabled = true;
+            this.lbxMeny.Location = new System.Drawing.Point(6, 38);
+            this.lbxMeny.Name = "lbxMeny";
+            this.lbxMeny.Size = new System.Drawing.Size(100, 43);
+            this.lbxMeny.TabIndex = 41;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(11, 61);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(75, 20);
+            this.textBox2.TabIndex = 42;
+            // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 450);
+            this.ClientSize = new System.Drawing.Size(1230, 450);
+            this.Controls.Add(this.gbxberäkna);
+            this.Controls.Add(this.gbxGenerera);
+            this.Controls.Add(this.lblOvning99);
+            this.Controls.Add(this.lblStrang);
+            this.Controls.Add(this.btnFörskjut);
+            this.Controls.Add(this.tbxstrang3);
+            this.Controls.Add(this.tbxstrang2);
+            this.Controls.Add(this.tbxstrang1);
+            this.Controls.Add(this.btnvandom);
+            this.Controls.Add(this.tbxTecken1);
+            this.Controls.Add(this.tbxTecken2);
+            this.Controls.Add(this.lblTecken);
+            this.Controls.Add(this.lblExemple92);
             this.Controls.Add(this.tbxNiva);
             this.Controls.Add(this.btnVisa);
             this.Controls.Add(this.lblniva);
@@ -354,6 +541,10 @@
             this.Controls.Add(this.lblExemple91);
             this.Name = "Kapitel9";
             this.Text = "Kapitel9";
+            this.gbxGenerera.ResumeLayout(false);
+            this.gbxGenerera.PerformLayout();
+            this.gbxberäkna.ResumeLayout(false);
+            this.gbxberäkna.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +581,23 @@
         private System.Windows.Forms.Label lblniva;
         private System.Windows.Forms.Button btnVisa;
         private System.Windows.Forms.TextBox tbxNiva;
+        private System.Windows.Forms.Label lblExemple92;
+        private System.Windows.Forms.Label lblTecken;
+        private System.Windows.Forms.TextBox tbxTecken2;
+        private System.Windows.Forms.TextBox tbxTecken1;
+        private System.Windows.Forms.Button btnvandom;
+        private System.Windows.Forms.TextBox tbxstrang1;
+        private System.Windows.Forms.TextBox tbxstrang2;
+        private System.Windows.Forms.TextBox tbxstrang3;
+        private System.Windows.Forms.Button btnFörskjut;
+        private System.Windows.Forms.Label lblStrang;
+        private System.Windows.Forms.Label lblOvning99;
+        private System.Windows.Forms.GroupBox gbxGenerera;
+        private System.Windows.Forms.GroupBox gbxberäkna;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox lbxMeny;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

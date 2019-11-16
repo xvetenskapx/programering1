@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StenSaxPase));
             this.gbxStenSaxPåse = new System.Windows.Forms.GroupBox();
             this.lblDatornsValde = new System.Windows.Forms.Label();
             this.lblResultat = new System.Windows.Forms.Label();
@@ -100,6 +101,7 @@
             // 
             // pbxSten
             // 
+            this.pbxSten.Image = ((System.Drawing.Image)(resources.GetObject("pbxSten.Image")));
             this.pbxSten.Location = new System.Drawing.Point(6, 52);
             this.pbxSten.Name = "pbxSten";
             this.pbxSten.Size = new System.Drawing.Size(50, 50);
@@ -109,6 +111,7 @@
             // 
             // pbxSax
             // 
+            this.pbxSax.Image = ((System.Drawing.Image)(resources.GetObject("pbxSax.Image")));
             this.pbxSax.Location = new System.Drawing.Point(106, 52);
             this.pbxSax.Name = "pbxSax";
             this.pbxSax.Size = new System.Drawing.Size(50, 50);
@@ -118,6 +121,7 @@
             // 
             // pbxPåse
             // 
+            this.pbxPåse.Image = ((System.Drawing.Image)(resources.GetObject("pbxPåse.Image")));
             this.pbxPåse.Location = new System.Drawing.Point(205, 52);
             this.pbxPåse.Name = "pbxPåse";
             this.pbxPåse.Size = new System.Drawing.Size(50, 50);

@@ -76,5 +76,26 @@ namespace _5_sep_lektionen
                 tbxNivadata.Text += "\r\n";
             }
         }
+
+        private void btnvandom_Click(object sender, EventArgs e)
+        {
+            char[] tecken = new char[2];
+            tecken[0] = char.Parse(tbxTecken1.Text);
+            tecken[1] = char.Parse(tbxTecken2.Text);
+
+            tbxTecken1.Text = "" + tecken[1];
+            tbxTecken2.Text = "" + tecken[0];
+        }
+
+        private void btnFörskjut_Click(object sender, EventArgs e)
+        {
+            string[] strang = new string[3];
+            strang[0] = tbxstrang1.Text;
+            strang[1] = tbxstrang2.Text;
+            strang[2] = tbxstrang3.Text;
+            tbxstrang1.Text = strang[1];
+            tbxstrang2.Text = strang[2];
+            tbxstrang3.Text = strang[0];
+        }
     }
 }

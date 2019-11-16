@@ -69,7 +69,7 @@ namespace _5_sep_lektionen
             {
                 gbxStenSaxPåse.Enabled = false;
                 btnSpela.Enabled = true;
-                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\n");
+                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\r\n");
             }
         }
 
@@ -108,7 +108,7 @@ namespace _5_sep_lektionen
             {
                 gbxStenSaxPåse.Enabled = false;
                 btnSpela.Enabled = true;
-                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\n");
+                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\r\n");
             }
         }
 
@@ -147,7 +147,7 @@ namespace _5_sep_lektionen
             {
                 gbxStenSaxPåse.Enabled = false;
                 btnSpela.Enabled = true;
-                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\n");
+                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster + " Spelare: " + nrSpelarVinster + "\r\n");
             }
         }
     }
