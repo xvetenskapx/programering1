@@ -12,9 +12,13 @@ namespace _5_sep_lektionen
 {
     public partial class Kapitel9 : Form
     {
+        Random generator = new Random();
+        int[] TAL;
         public Kapitel9()
         {
             InitializeComponent();
+            lbxMeny.Items.Add("Medelvärde");
+            lbxMeny.SelectedIndex = 0;
         }
 
         private void btnStarta_Click(object sender, EventArgs e)
@@ -96,6 +100,76 @@ namespace _5_sep_lektionen
             tbxstrang1.Text = strang[1];
             tbxstrang2.Text = strang[2];
             tbxstrang3.Text = strang[0];
+        }
+
+        private void btnGenerera_Click(object sender, EventArgs e)
+        {
+            tbxLista.Clear();
+
+            int[] AntalPrickar = new int[6];
+
+            int antalTal        =int.Parse(tbxAntal.Text);
+            TAL                 =new int[antalTal];
+
+            for (int i = 0; i < TAL.Length; i++)
+            {
+                TAL[i] = generator.Next(1, 7);
+                tbxLista.AppendText(TAL[i] + "\r\n");
+                switch (TAL[i])
+                {
+                    case 1:
+                        AntalPrickar[0]++;
+                        break;
+
+                    case 2:
+                        AntalPrickar[1]++;
+                        break;
+
+                    case 3:
+                        AntalPrickar[2]++;
+                        break;
+
+                    case 4:
+                        AntalPrickar[3]++;
+                        break;
+
+                    case 5:
+                        AntalPrickar[4]++;
+                        break;
+
+                    case 6:
+                        AntalPrickar[5]++;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            lblantal1.Text = AntalPrickar[0].ToString();
+            lblAntal2.Text = AntalPrickar[1].ToString();
+            lblAntal3.Text = AntalPrickar[2].ToString();
+            lblAntal4.Text = AntalPrickar[3].ToString();
+            lblAntal5.Text = AntalPrickar[4].ToString();
+            lblAntal6.Text = AntalPrickar[5].ToString();
+
+            gbxBeräkna.Enabled = true;
+        }
+
+        private void btnBeräkna_Click(object sender, EventArgs e)
+        {
+            double summa = 0;
+
+            for (int i = 0; i < TAL.Length; i++)    summa += + TAL[i];
+
+            if      (lbxMeny.SelectedIndex == 0)    tbxdata.Text = "" + summa;
+            else if (lbxMeny.SelectedIndex == 1)    tbxdata.Text = "" + summa / TAL.Length;
+        }
+
+        private void tbxAntal_TextChanged(object sender, EventArgs e)
+        {
+            tbxLista.Clear();
+            tbxdata.Clear();
         }
     }
 }
