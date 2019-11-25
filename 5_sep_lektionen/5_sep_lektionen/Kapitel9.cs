@@ -171,5 +171,17 @@ namespace _5_sep_lektionen
             tbxLista.Clear();
             tbxdata.Clear();
         }
+
+        private void btnGenerera910_Click(object sender, EventArgs e)
+        {
+            Random tärning = new Random();
+            int[] Rad1 = new int[6];
+            //Rad 1
+            for (int i = 0; i < 6; i++)
+            {
+                Rad1[i] = tärning.Next(1, 21);
+                tbxRad1.Text += Rad1[i].ToString() + "\r\n";
+            }
+        }
     }
 }
