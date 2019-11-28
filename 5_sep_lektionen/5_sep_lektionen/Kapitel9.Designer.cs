@@ -108,9 +108,24 @@
             this.tbxRad2 = new System.Windows.Forms.TextBox();
             this.tbxRad3 = new System.Windows.Forms.TextBox();
             this.lbxMeny910 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxVal = new System.Windows.Forms.TextBox();
             this.btnGenerera910 = new System.Windows.Forms.Button();
             this.btnVälj = new System.Windows.Forms.Button();
+            this.lblUpp91 = new System.Windows.Forms.Label();
+            this.lblStartantal = new System.Windows.Forms.Label();
+            this.lblTid91 = new System.Windows.Forms.Label();
+            this.lbl10minuter = new System.Windows.Forms.Label();
+            this.lblslutantalet = new System.Windows.Forms.Label();
+            this.lblBeraknatillväxt = new System.Windows.Forms.Button();
+            this.tbxTid = new System.Windows.Forms.TextBox();
+            this.tbxStartantal = new System.Windows.Forms.TextBox();
+            this.lblSlutantal = new System.Windows.Forms.Label();
+            this.btnFibonacci = new System.Windows.Forms.Button();
+            this.lblUpp92 = new System.Windows.Forms.Label();
+            this.tbxfibonacistal = new System.Windows.Forms.TextBox();
+            this.lblUppgift93 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -863,14 +878,14 @@
             this.lbxMeny910.Size = new System.Drawing.Size(41, 43);
             this.lbxMeny910.TabIndex = 60;
             // 
-            // textBox1
+            // tbxVal
             // 
-            this.textBox1.Location = new System.Drawing.Point(1293, 45);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(24, 100);
-            this.textBox1.TabIndex = 61;
+            this.tbxVal.Location = new System.Drawing.Point(1293, 45);
+            this.tbxVal.Multiline = true;
+            this.tbxVal.Name = "tbxVal";
+            this.tbxVal.ReadOnly = true;
+            this.tbxVal.Size = new System.Drawing.Size(24, 100);
+            this.tbxVal.TabIndex = 61;
             // 
             // btnGenerera910
             // 
@@ -890,15 +905,164 @@
             this.btnVälj.TabIndex = 63;
             this.btnVälj.Text = "Välj";
             this.btnVälj.UseVisualStyleBackColor = true;
+            this.btnVälj.Click += new System.EventHandler(this.btnVälj_Click);
+            // 
+            // lblUpp91
+            // 
+            this.lblUpp91.AutoSize = true;
+            this.lblUpp91.Location = new System.Drawing.Point(1469, 9);
+            this.lblUpp91.Name = "lblUpp91";
+            this.lblUpp91.Size = new System.Drawing.Size(59, 13);
+            this.lblUpp91.TabIndex = 64;
+            this.lblUpp91.Text = "Uppgift 9.1";
+            // 
+            // lblStartantal
+            // 
+            this.lblStartantal.AutoSize = true;
+            this.lblStartantal.Location = new System.Drawing.Point(1371, 29);
+            this.lblStartantal.Name = "lblStartantal";
+            this.lblStartantal.Size = new System.Drawing.Size(52, 13);
+            this.lblStartantal.TabIndex = 65;
+            this.lblStartantal.Text = "Startantal";
+            // 
+            // lblTid91
+            // 
+            this.lblTid91.AutoSize = true;
+            this.lblTid91.Location = new System.Drawing.Point(1371, 53);
+            this.lblTid91.Name = "lblTid91";
+            this.lblTid91.Size = new System.Drawing.Size(22, 13);
+            this.lblTid91.TabIndex = 66;
+            this.lblTid91.Text = "Tid";
+            // 
+            // lbl10minuter
+            // 
+            this.lbl10minuter.AutoSize = true;
+            this.lbl10minuter.Location = new System.Drawing.Point(1553, 53);
+            this.lbl10minuter.Name = "lbl10minuter";
+            this.lbl10minuter.Size = new System.Drawing.Size(61, 13);
+            this.lbl10minuter.TabIndex = 67;
+            this.lbl10minuter.Text = "x10 minuter";
+            // 
+            // lblslutantalet
+            // 
+            this.lblslutantalet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblslutantalet.Location = new System.Drawing.Point(1429, 150);
+            this.lblslutantalet.Name = "lblslutantalet";
+            this.lblslutantalet.Size = new System.Drawing.Size(243, 23);
+            this.lblslutantalet.TabIndex = 68;
+            this.lblslutantalet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblBeraknatillväxt
+            // 
+            this.lblBeraknatillväxt.Location = new System.Drawing.Point(1429, 95);
+            this.lblBeraknatillväxt.Name = "lblBeraknatillväxt";
+            this.lblBeraknatillväxt.Size = new System.Drawing.Size(94, 23);
+            this.lblBeraknatillväxt.TabIndex = 69;
+            this.lblBeraknatillväxt.Text = "Beräkna tillväxt";
+            this.lblBeraknatillväxt.UseVisualStyleBackColor = true;
+            this.lblBeraknatillväxt.Click += new System.EventHandler(this.lblBeraknatillväxt_Click);
+            // 
+            // tbxTid
+            // 
+            this.tbxTid.Location = new System.Drawing.Point(1429, 50);
+            this.tbxTid.Name = "tbxTid";
+            this.tbxTid.Size = new System.Drawing.Size(118, 20);
+            this.tbxTid.TabIndex = 70;
+            // 
+            // tbxStartantal
+            // 
+            this.tbxStartantal.Location = new System.Drawing.Point(1429, 24);
+            this.tbxStartantal.Name = "tbxStartantal";
+            this.tbxStartantal.Size = new System.Drawing.Size(243, 20);
+            this.tbxStartantal.TabIndex = 71;
+            // 
+            // lblSlutantal
+            // 
+            this.lblSlutantal.AutoSize = true;
+            this.lblSlutantal.Location = new System.Drawing.Point(1371, 155);
+            this.lblSlutantal.Name = "lblSlutantal";
+            this.lblSlutantal.Size = new System.Drawing.Size(48, 13);
+            this.lblSlutantal.TabIndex = 72;
+            this.lblSlutantal.Text = "Slutantal";
+            // 
+            // btnFibonacci
+            // 
+            this.btnFibonacci.Location = new System.Drawing.Point(1344, 366);
+            this.btnFibonacci.Name = "btnFibonacci";
+            this.btnFibonacci.Size = new System.Drawing.Size(75, 23);
+            this.btnFibonacci.TabIndex = 73;
+            this.btnFibonacci.Text = "Fiboncci";
+            this.btnFibonacci.UseVisualStyleBackColor = true;
+            this.btnFibonacci.Click += new System.EventHandler(this.btnFibonacci_Click);
+            // 
+            // lblUpp92
+            // 
+            this.lblUpp92.AutoSize = true;
+            this.lblUpp92.Location = new System.Drawing.Point(1341, 213);
+            this.lblUpp92.Name = "lblUpp92";
+            this.lblUpp92.Size = new System.Drawing.Size(59, 13);
+            this.lblUpp92.TabIndex = 74;
+            this.lblUpp92.Text = "Uppgift 9.2";
+            // 
+            // tbxfibonacistal
+            // 
+            this.tbxfibonacistal.Location = new System.Drawing.Point(1307, 229);
+            this.tbxfibonacistal.Multiline = true;
+            this.tbxfibonacistal.Name = "tbxfibonacistal";
+            this.tbxfibonacistal.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxfibonacistal.Size = new System.Drawing.Size(150, 138);
+            this.tbxfibonacistal.TabIndex = 75;
+            // 
+            // lblUppgift93
+            // 
+            this.lblUppgift93.AutoSize = true;
+            this.lblUppgift93.Location = new System.Drawing.Point(1535, 213);
+            this.lblUppgift93.Name = "lblUppgift93";
+            this.lblUppgift93.Size = new System.Drawing.Size(59, 13);
+            this.lblUppgift93.TabIndex = 76;
+            this.lblUppgift93.Text = "Uppgift 9.3";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1538, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 77;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1559, 304);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "label2";
             // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1614, 552);
+            this.ClientSize = new System.Drawing.Size(1684, 961);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblUppgift93);
+            this.Controls.Add(this.tbxfibonacistal);
+            this.Controls.Add(this.lblUpp92);
+            this.Controls.Add(this.btnFibonacci);
+            this.Controls.Add(this.lblSlutantal);
+            this.Controls.Add(this.tbxStartantal);
+            this.Controls.Add(this.tbxTid);
+            this.Controls.Add(this.lblBeraknatillväxt);
+            this.Controls.Add(this.lblslutantalet);
+            this.Controls.Add(this.lbl10minuter);
+            this.Controls.Add(this.lblTid91);
+            this.Controls.Add(this.lblStartantal);
+            this.Controls.Add(this.lblUpp91);
             this.Controls.Add(this.btnVälj);
             this.Controls.Add(this.btnGenerera910);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxVal);
             this.Controls.Add(this.lbxMeny910);
             this.Controls.Add(this.tbxRad3);
             this.Controls.Add(this.tbxRad2);
@@ -962,6 +1126,7 @@
             this.Controls.Add(this.lblExemple91);
             this.Name = "Kapitel9";
             this.Text = "Kapitel9";
+            this.Load += new System.EventHandler(this.Kapitel9_Load);
             this.gbxGenerera.ResumeLayout(false);
             this.gbxGenerera.PerformLayout();
             this.gbxBeräkna.ResumeLayout(false);
@@ -1055,8 +1220,23 @@
         private System.Windows.Forms.TextBox tbxRad2;
         private System.Windows.Forms.TextBox tbxRad3;
         private System.Windows.Forms.ListBox lbxMeny910;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxVal;
         private System.Windows.Forms.Button btnGenerera910;
         private System.Windows.Forms.Button btnVälj;
+        private System.Windows.Forms.Label lblUpp91;
+        private System.Windows.Forms.Label lblStartantal;
+        private System.Windows.Forms.Label lblTid91;
+        private System.Windows.Forms.Label lbl10minuter;
+        private System.Windows.Forms.Label lblslutantalet;
+        private System.Windows.Forms.Button lblBeraknatillväxt;
+        private System.Windows.Forms.TextBox tbxTid;
+        private System.Windows.Forms.TextBox tbxStartantal;
+        private System.Windows.Forms.Label lblSlutantal;
+        private System.Windows.Forms.Button btnFibonacci;
+        private System.Windows.Forms.Label lblUpp92;
+        private System.Windows.Forms.TextBox tbxfibonacistal;
+        private System.Windows.Forms.Label lblUppgift93;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

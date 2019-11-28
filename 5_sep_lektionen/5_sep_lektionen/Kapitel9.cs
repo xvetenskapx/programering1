@@ -19,6 +19,7 @@ namespace _5_sep_lektionen
             InitializeComponent();
             lbxMeny.Items.Add("Medelvärde");
             lbxMeny.SelectedIndex = 0;
+            lbxMeny910.SelectedIndex = 0;
         }
 
         private void btnStarta_Click(object sender, EventArgs e)
@@ -174,13 +175,84 @@ namespace _5_sep_lektionen
 
         private void btnGenerera910_Click(object sender, EventArgs e)
         {
+            tbxRad1.Clear();
+            tbxRad2.Clear();
+            tbxRad3.Clear();
             Random tärning = new Random();
-            int[] Rad1 = new int[6];
             //Rad 1
-            for (int i = 0; i < 6; i++)
+            int[] Rad1 = new int[7];
+            for (int i = 0; i < 7; i++)
             {
                 Rad1[i] = tärning.Next(1, 21);
                 tbxRad1.Text += Rad1[i].ToString() + "\r\n";
+            }
+
+            //Rad 2
+            int[] Rad2 = new int[7];
+            for (int i = 0; i < 7; i++)
+            {
+                Rad2[i] = tärning.Next(1, 21);
+                tbxRad2.Text += Rad2[i].ToString() + "\r\n";
+            }
+
+            //Rad 3
+            int[] Rad3 = new int[7];
+            for (int i = 0; i < 7; i++)
+            {
+                Rad3[i] = tärning.Next(1, 21);
+                tbxRad3.Text += Rad3[i].ToString() + "\r\n";
+            }
+        }
+
+        private void btnVälj_Click(object sender, EventArgs e)
+        {
+            tbxVal.Clear();
+            if (lbxMeny910.SelectedIndex == 0)
+                tbxVal.Text = tbxRad1.Text;
+
+            else if (lbxMeny910.SelectedIndex == 1)
+                tbxVal.Text = tbxRad2.Text;
+
+            else if (lbxMeny910.SelectedIndex == 2)
+                tbxVal.Text = tbxRad3.Text;
+
+            else
+                MessageBox.Show("Oväntat Fel", "Fel", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void Kapitel9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBeraknatillväxt_Click(object sender, EventArgs e)
+        {
+            double Startantal = double.Parse(tbxStartantal.Text);
+            int Interval = int.Parse(tbxTid.Text);
+            for(int i=0; i < Interval; i++)
+            {
+                Startantal *=2;
+                
+            }
+            lblslutantalet.Text = Startantal.ToString();
+        }
+
+        private void btnFibonacci_Click(object sender, EventArgs e)
+        {
+            //int starttalen = 1;
+            int Fortalet = 1;
+            int eftertalet = 0;
+
+            int[] Fib = new int[102];
+            Fib[0] = 1;
+            Fib[1] = 1;
+
+            tbxfibonacistal.Text = "Tal0" + "\t" + "1" + "\r\n" + "Tal1" + "\t" + "1" + "\r\n";
+            for (int i = 2; i <= 100; i++)
+            {
+                Fib[i] = Fib[i-2] + Fib[i-1];
+                eftertalet++;
+                tbxfibonacistal.Text += "Tal" + i.ToString() + "\t" + Fib[i] + "\r\n";
             }
         }
     }
