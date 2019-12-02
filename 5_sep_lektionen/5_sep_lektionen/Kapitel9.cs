@@ -14,12 +14,42 @@ namespace _5_sep_lektionen
     {
         Random generator = new Random();
         int[] TAL;
+        int[] AntalPrickar = new int[6];
+        int[] Längd = new int[6];
         public Kapitel9()
         {
             InitializeComponent();
             lbxMeny.Items.Add("Medelvärde");
             lbxMeny.SelectedIndex = 0;
             lbxMeny910.SelectedIndex = 0;
+          
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            SolidBrush pensel = new SolidBrush(Color.Black);
+
+            //1
+            g.FillRectangle(pensel, 824, 939 + Längd[0], 75, Längd[0]);
+
+            //2
+            g.FillRectangle(pensel, 905, 939 + Längd[1], 75, Längd[1]);
+
+            //3
+            g.FillRectangle(pensel, 986, 939 + Längd[2], 75, Längd[2]);
+
+            //4
+            g.FillRectangle(pensel, 1067, 939 + Längd[3], 75, Längd[3]);
+
+            //5
+            g.FillRectangle(pensel, 1148, 939 + Längd[4], 75, Längd[4]);
+
+            //6
+            g.FillRectangle(pensel, 1229, 939 + Längd[5], 75, Längd[5]);
+
+            //7
+            //g.FillRectangle(pensel, 824, 939 , 75, 50);
+
         }
 
         private void btnStarta_Click(object sender, EventArgs e)
@@ -105,9 +135,10 @@ namespace _5_sep_lektionen
 
         private void btnGenerera_Click(object sender, EventArgs e)
         {
+       
             tbxLista.Clear();
 
-            int[] AntalPrickar = new int[6];
+
 
             int antalTal        =int.Parse(tbxAntal.Text);
             TAL                 =new int[antalTal];
@@ -155,6 +186,16 @@ namespace _5_sep_lektionen
             lblAntal6.Text = AntalPrickar[5].ToString();
 
             gbxBeräkna.Enabled = true;
+
+
+            Längd[0] = AntalPrickar[0] / 2;
+            Längd[1] = AntalPrickar[1] / 2;
+            Längd[2] = AntalPrickar[2] / 2;
+            Längd[3] = AntalPrickar[3] / 2;
+            Längd[4] = AntalPrickar[4] / 2;
+            Längd[5] = AntalPrickar[5] / 2;
+
+            Invalidate();
         }
 
         private void btnBeräkna_Click(object sender, EventArgs e)
@@ -254,6 +295,20 @@ namespace _5_sep_lektionen
                 eftertalet++;
                 tbxfibonacistal.Text += "Tal" + i.ToString() + "\t" + Fib[i] + "\r\n";
             }
+        }
+
+        private void btnberäkna93_Click(object sender, EventArgs e)
+        {
+            double pappretstjocklek = double.Parse(tbxPappretstjocklek.Text);
+            double Hojd = double.Parse(tbxHojd.Text);
+            int AntalVikningar = 0;
+            for (double i=pappretstjocklek; i<=Hojd; i++)
+            {
+                Math.Pow(pappretstjocklek, 2);
+                AntalVikningar++;
+                i++;
+            }
+            lblSvar931.Text = AntalVikningar.ToString();
         }
     }
 }

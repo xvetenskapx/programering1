@@ -124,8 +124,19 @@
             this.lblUpp92 = new System.Windows.Forms.Label();
             this.tbxfibonacistal = new System.Windows.Forms.TextBox();
             this.lblUppgift93 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnberäkna93 = new System.Windows.Forms.Button();
+            this.lblsvar93 = new System.Windows.Forms.Label();
+            this.tbxHojd = new System.Windows.Forms.TextBox();
+            this.tbxPappretstjocklek = new System.Windows.Forms.TextBox();
+            this.lblSvar931 = new System.Windows.Forms.Label();
+            this.lblHöjd = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -1022,31 +1033,146 @@
             this.lblUppgift93.TabIndex = 76;
             this.lblUppgift93.Text = "Uppgift 9.3";
             // 
-            // button1
+            // btnberäkna93
             // 
-            this.button1.Location = new System.Drawing.Point(1538, 250);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 77;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnberäkna93.Location = new System.Drawing.Point(1477, 308);
+            this.btnberäkna93.Name = "btnberäkna93";
+            this.btnberäkna93.Size = new System.Drawing.Size(195, 23);
+            this.btnberäkna93.TabIndex = 77;
+            this.btnberäkna93.Text = "Beräkna";
+            this.btnberäkna93.UseVisualStyleBackColor = true;
+            this.btnberäkna93.Click += new System.EventHandler(this.btnberäkna93_Click);
+            // 
+            // lblsvar93
+            // 
+            this.lblsvar93.AutoSize = true;
+            this.lblsvar93.Location = new System.Drawing.Point(1474, 289);
+            this.lblsvar93.Name = "lblsvar93";
+            this.lblsvar93.Size = new System.Drawing.Size(32, 13);
+            this.lblsvar93.TabIndex = 78;
+            this.lblsvar93.Text = "Svar:";
+            // 
+            // tbxHojd
+            // 
+            this.tbxHojd.Location = new System.Drawing.Point(1597, 253);
+            this.tbxHojd.Name = "tbxHojd";
+            this.tbxHojd.Size = new System.Drawing.Size(75, 20);
+            this.tbxHojd.TabIndex = 79;
+            this.tbxHojd.Text = "384000";
+            // 
+            // tbxPappretstjocklek
+            // 
+            this.tbxPappretstjocklek.Location = new System.Drawing.Point(1597, 231);
+            this.tbxPappretstjocklek.Name = "tbxPappretstjocklek";
+            this.tbxPappretstjocklek.Size = new System.Drawing.Size(75, 20);
+            this.tbxPappretstjocklek.TabIndex = 80;
+            this.tbxPappretstjocklek.Text = "0,1";
+            // 
+            // lblSvar931
+            // 
+            this.lblSvar931.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSvar931.Location = new System.Drawing.Point(1597, 285);
+            this.lblSvar931.Name = "lblSvar931";
+            this.lblSvar931.Size = new System.Drawing.Size(75, 20);
+            this.lblSvar931.TabIndex = 81;
+            this.lblSvar931.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblHöjd
+            // 
+            this.lblHöjd.AutoSize = true;
+            this.lblHöjd.Location = new System.Drawing.Point(1474, 260);
+            this.lblHöjd.Name = "lblHöjd";
+            this.lblHöjd.Size = new System.Drawing.Size(77, 13);
+            this.lblHöjd.TabIndex = 82;
+            this.lblHöjd.Text = "Hur högt (km)?";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1474, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 13);
+            this.label4.TabIndex = 83;
+            this.label4.Text = "Papprets tjocklek (mm):";
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(824, 929);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 23);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Ett:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1559, 304);
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Location = new System.Drawing.Point(905, 929);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 78;
-            this.label2.Text = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "Två:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Location = new System.Drawing.Point(986, 929);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 23);
+            this.label3.TabIndex = 86;
+            this.label3.Text = "Tre:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(1067, 929);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 23);
+            this.label5.TabIndex = 87;
+            this.label5.Text = "Fyra:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(1148, 929);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 23);
+            this.label6.TabIndex = 88;
+            this.label6.Text = "Fem:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Location = new System.Drawing.Point(1229, 929);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 23);
+            this.label7.TabIndex = 89;
+            this.label7.Text = "Sex:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1684, 961);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblHöjd);
+            this.Controls.Add(this.lblSvar931);
+            this.Controls.Add(this.tbxPappretstjocklek);
+            this.Controls.Add(this.tbxHojd);
+            this.Controls.Add(this.lblsvar93);
+            this.Controls.Add(this.btnberäkna93);
             this.Controls.Add(this.lblUppgift93);
             this.Controls.Add(this.tbxfibonacistal);
             this.Controls.Add(this.lblUpp92);
@@ -1236,7 +1362,18 @@
         private System.Windows.Forms.Label lblUpp92;
         private System.Windows.Forms.TextBox tbxfibonacistal;
         private System.Windows.Forms.Label lblUppgift93;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnberäkna93;
+        private System.Windows.Forms.Label lblsvar93;
+        private System.Windows.Forms.TextBox tbxHojd;
+        private System.Windows.Forms.TextBox tbxPappretstjocklek;
+        private System.Windows.Forms.Label lblSvar931;
+        private System.Windows.Forms.Label lblHöjd;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
