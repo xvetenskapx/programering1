@@ -27,28 +27,30 @@ namespace _5_sep_lektionen
         protected override void OnPaint(PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            SolidBrush pensel = new SolidBrush(Color.Black);
+            SolidBrush penselSvart = new SolidBrush(Color.Black);
+            SolidBrush penselRöd = new SolidBrush(Color.Red);
+            SolidBrush penselGul = new SolidBrush(Color.Yellow);
+            SolidBrush penselGrön = new SolidBrush(Color.Green);
+            SolidBrush penselBlå = new SolidBrush(Color.Blue);
+            SolidBrush penselViolet = new SolidBrush(Color.DarkViolet);
 
             //1
-            g.FillRectangle(pensel, 824, 939 + Längd[0], 75, Längd[0]);
+            g.FillRectangle(penselSvart, 824, 939 - Längd[0], 75, Längd[0]);
 
             //2
-            g.FillRectangle(pensel, 905, 939 + Längd[1], 75, Längd[1]);
+            g.FillRectangle(penselRöd, 905, 939 - Längd[1], 75, Längd[1]);
 
             //3
-            g.FillRectangle(pensel, 986, 939 + Längd[2], 75, Längd[2]);
+            g.FillRectangle(penselGul, 986, 939 - Längd[2], 75, Längd[2]);
 
             //4
-            g.FillRectangle(pensel, 1067, 939 + Längd[3], 75, Längd[3]);
+            g.FillRectangle(penselGrön, 1067, 939 - Längd[3], 75, Längd[3]);
 
             //5
-            g.FillRectangle(pensel, 1148, 939 + Längd[4], 75, Längd[4]);
+            g.FillRectangle(penselBlå, 1148, 939 - Längd[4], 75, Längd[4]);
 
             //6
-            g.FillRectangle(pensel, 1229, 939 + Längd[5], 75, Längd[5]);
-
-            //7
-            //g.FillRectangle(pensel, 824, 939 , 75, 50);
+            g.FillRectangle(penselViolet, 1229, 939 - Längd[5], 75, Längd[5]);
 
         }
 
@@ -137,7 +139,12 @@ namespace _5_sep_lektionen
         {
        
             tbxLista.Clear();
-
+            AntalPrickar[0]= 0;
+            AntalPrickar[1]= 0;
+            AntalPrickar[2]= 0;
+            AntalPrickar[3]= 0;
+            AntalPrickar[4]= 0;
+            AntalPrickar[5]= 0;
 
 
             int antalTal        =int.Parse(tbxAntal.Text);
@@ -187,13 +194,32 @@ namespace _5_sep_lektionen
 
             gbxBeräkna.Enabled = true;
 
+            int skala = int.Parse(tbxstappelskala.Text);
 
-            Längd[0] = AntalPrickar[0] / 2;
-            Längd[1] = AntalPrickar[1] / 2;
-            Längd[2] = AntalPrickar[2] / 2;
-            Längd[3] = AntalPrickar[3] / 2;
-            Längd[4] = AntalPrickar[4] / 2;
-            Längd[5] = AntalPrickar[5] / 2;
+            Längd[0] = AntalPrickar[0] / skala;
+            Längd[1] = AntalPrickar[1] / skala;
+            Längd[2] = AntalPrickar[2] / skala;
+            Längd[3] = AntalPrickar[3] / skala;
+            Längd[4] = AntalPrickar[4] / skala;
+            Längd[5] = AntalPrickar[5] / skala;
+
+            lblEttor97.Location = new Point(lblEttor97.Location.X, 939 - Längd[0] - 23);
+            lblEttor97.Text = AntalPrickar[0].ToString();
+
+            lblTvåor97.Location = new Point(lblTvåor97.Location.X, 939 - Längd[1] - 23);
+            lblTvåor97.Text = AntalPrickar[1].ToString();
+
+            lblTreor97.Location = new Point(lblTreor97.Location.X, 939 - Längd[2] - 23);
+            lblTreor97.Text = AntalPrickar[2].ToString();
+
+            lblFyror97.Location = new Point(lblFyror97.Location.X, 939 - Längd[3] - 23);
+            lblFyror97.Text = AntalPrickar[3].ToString();
+
+            lblFemor97.Location = new Point(lblFemor97.Location.X, 939 - Längd[4] - 23);
+            lblFemor97.Text = AntalPrickar[4].ToString();
+
+            lblSexor97.Location = new Point(lblSexor97.Location.X, 939 - Längd[5] - 23);
+            lblSexor97.Text = AntalPrickar[5].ToString();
 
             Invalidate();
         }
@@ -281,7 +307,6 @@ namespace _5_sep_lektionen
         private void btnFibonacci_Click(object sender, EventArgs e)
         {
             //int starttalen = 1;
-            int Fortalet = 1;
             int eftertalet = 0;
 
             int[] Fib = new int[102];
@@ -309,6 +334,19 @@ namespace _5_sep_lektionen
                 i++;
             }
             lblSvar931.Text = AntalVikningar.ToString();
+        }
+
+        private void btnBeräkna100_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(tbxTalet100.Text);
+            int[] Tal = new int [x];
+            Tal[0] = x;
+
+            for (int i = 1; x>i ; x++)
+            {
+                Tal[i] = x - i;
+                --i;
+            }
         }
     }
 }

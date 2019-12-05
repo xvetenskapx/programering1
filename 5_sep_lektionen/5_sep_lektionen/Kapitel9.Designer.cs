@@ -131,12 +131,25 @@
             this.lblSvar931 = new System.Windows.Forms.Label();
             this.lblHöjd = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblstappel1 = new System.Windows.Forms.Label();
+            this.lblstappel2 = new System.Windows.Forms.Label();
+            this.lblstappel3 = new System.Windows.Forms.Label();
+            this.lblstappel4 = new System.Windows.Forms.Label();
+            this.lblstappel5 = new System.Windows.Forms.Label();
+            this.lblstappel6 = new System.Windows.Forms.Label();
+            this.lblEttor97 = new System.Windows.Forms.Label();
+            this.lblTvåor97 = new System.Windows.Forms.Label();
+            this.lblTreor97 = new System.Windows.Forms.Label();
+            this.lblFyror97 = new System.Windows.Forms.Label();
+            this.lblFemor97 = new System.Windows.Forms.Label();
+            this.lblSexor97 = new System.Windows.Forms.Label();
+            this.tbxstappelskala = new System.Windows.Forms.TextBox();
+            this.lblStappelstorlek = new System.Windows.Forms.Label();
+            this.btnBeräkna100 = new System.Windows.Forms.Button();
+            this.lblTalet100 = new System.Windows.Forms.Label();
+            this.lblÖvning100 = new System.Windows.Forms.Label();
+            this.tbxTalet100 = new System.Windows.Forms.TextBox();
+            this.tbxFraction = new System.Windows.Forms.TextBox();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -494,12 +507,14 @@
             // 
             // gbxGenerera
             // 
+            this.gbxGenerera.Controls.Add(this.lblStappelstorlek);
             this.gbxGenerera.Controls.Add(this.lblAntal);
             this.gbxGenerera.Controls.Add(this.tbxAntal);
+            this.gbxGenerera.Controls.Add(this.tbxstappelskala);
             this.gbxGenerera.Controls.Add(this.btnGenerera);
             this.gbxGenerera.Location = new System.Drawing.Point(930, 231);
             this.gbxGenerera.Name = "gbxGenerera";
-            this.gbxGenerera.Size = new System.Drawing.Size(92, 142);
+            this.gbxGenerera.Size = new System.Drawing.Size(92, 145);
             this.gbxGenerera.TabIndex = 40;
             this.gbxGenerera.TabStop = false;
             this.gbxGenerera.Text = "Generera";
@@ -507,7 +522,7 @@
             // lblAntal
             // 
             this.lblAntal.AutoSize = true;
-            this.lblAntal.Location = new System.Drawing.Point(3, 22);
+            this.lblAntal.Location = new System.Drawing.Point(3, 16);
             this.lblAntal.Name = "lblAntal";
             this.lblAntal.Size = new System.Drawing.Size(31, 13);
             this.lblAntal.TabIndex = 43;
@@ -515,7 +530,7 @@
             // 
             // tbxAntal
             // 
-            this.tbxAntal.Location = new System.Drawing.Point(6, 38);
+            this.tbxAntal.Location = new System.Drawing.Point(6, 32);
             this.tbxAntal.Name = "tbxAntal";
             this.tbxAntal.Size = new System.Drawing.Size(75, 20);
             this.tbxAntal.TabIndex = 42;
@@ -524,7 +539,7 @@
             // 
             // btnGenerera
             // 
-            this.btnGenerera.Location = new System.Drawing.Point(6, 87);
+            this.btnGenerera.Location = new System.Drawing.Point(6, 58);
             this.btnGenerera.Name = "btnGenerera";
             this.btnGenerera.Size = new System.Drawing.Size(75, 23);
             this.btnGenerera.TabIndex = 41;
@@ -541,7 +556,7 @@
             this.gbxBeräkna.Enabled = false;
             this.gbxBeräkna.Location = new System.Drawing.Point(1041, 231);
             this.gbxBeräkna.Name = "gbxBeräkna";
-            this.gbxBeräkna.Size = new System.Drawing.Size(114, 142);
+            this.gbxBeräkna.Size = new System.Drawing.Size(114, 145);
             this.gbxBeräkna.TabIndex = 0;
             this.gbxBeräkna.TabStop = false;
             this.gbxBeräkna.Text = "Beräkna";
@@ -589,7 +604,7 @@
             this.tbxLista.Multiline = true;
             this.tbxLista.Name = "tbxLista";
             this.tbxLista.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbxLista.Size = new System.Drawing.Size(100, 139);
+            this.tbxLista.Size = new System.Drawing.Size(100, 145);
             this.tbxLista.TabIndex = 44;
             // 
             // gbxRaknaPrickar
@@ -608,7 +623,7 @@
             this.gbxRaknaPrickar.Controls.Add(this.lbl4);
             this.gbxRaknaPrickar.Location = new System.Drawing.Point(1187, 234);
             this.gbxRaknaPrickar.Name = "gbxRaknaPrickar";
-            this.gbxRaknaPrickar.Size = new System.Drawing.Size(84, 139);
+            this.gbxRaknaPrickar.Size = new System.Drawing.Size(84, 145);
             this.gbxRaknaPrickar.TabIndex = 44;
             this.gbxRaknaPrickar.TabStop = false;
             this.gbxRaknaPrickar.Text = "Antal Prickar";
@@ -1095,77 +1110,202 @@
             this.label4.TabIndex = 83;
             this.label4.Text = "Papprets tjocklek (mm):";
             // 
-            // label1
+            // lblstappel1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(824, 929);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 23);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "Ett:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel1.Location = new System.Drawing.Point(824, 929);
+            this.lblstappel1.Name = "lblstappel1";
+            this.lblstappel1.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel1.TabIndex = 84;
+            this.lblstappel1.Text = "Ett:";
+            this.lblstappel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblstappel2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(905, 929);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 23);
-            this.label2.TabIndex = 85;
-            this.label2.Text = "Två:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel2.Location = new System.Drawing.Point(905, 929);
+            this.lblstappel2.Name = "lblstappel2";
+            this.lblstappel2.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel2.TabIndex = 85;
+            this.lblstappel2.Text = "Två:";
+            this.lblstappel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblstappel3
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(986, 929);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 23);
-            this.label3.TabIndex = 86;
-            this.label3.Text = "Tre:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel3.Location = new System.Drawing.Point(986, 929);
+            this.lblstappel3.Name = "lblstappel3";
+            this.lblstappel3.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel3.TabIndex = 86;
+            this.lblstappel3.Text = "Tre:";
+            this.lblstappel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblstappel4
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(1067, 929);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 23);
-            this.label5.TabIndex = 87;
-            this.label5.Text = "Fyra:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel4.Location = new System.Drawing.Point(1067, 929);
+            this.lblstappel4.Name = "lblstappel4";
+            this.lblstappel4.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel4.TabIndex = 87;
+            this.lblstappel4.Text = "Fyra:";
+            this.lblstappel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lblstappel5
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(1148, 929);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 23);
-            this.label6.TabIndex = 88;
-            this.label6.Text = "Fem:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel5.Location = new System.Drawing.Point(1148, 929);
+            this.lblstappel5.Name = "lblstappel5";
+            this.lblstappel5.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel5.TabIndex = 88;
+            this.lblstappel5.Text = "Fem:";
+            this.lblstappel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // lblstappel6
             // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(1229, 929);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 23);
-            this.label7.TabIndex = 89;
-            this.label7.Text = "Sex:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblstappel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblstappel6.Location = new System.Drawing.Point(1229, 929);
+            this.lblstappel6.Name = "lblstappel6";
+            this.lblstappel6.Size = new System.Drawing.Size(75, 23);
+            this.lblstappel6.TabIndex = 89;
+            this.lblstappel6.Text = "Sex:";
+            this.lblstappel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEttor97
+            // 
+            this.lblEttor97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEttor97.Location = new System.Drawing.Point(824, 906);
+            this.lblEttor97.Name = "lblEttor97";
+            this.lblEttor97.Size = new System.Drawing.Size(75, 23);
+            this.lblEttor97.TabIndex = 90;
+            this.lblEttor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTvåor97
+            // 
+            this.lblTvåor97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTvåor97.Location = new System.Drawing.Point(905, 906);
+            this.lblTvåor97.Name = "lblTvåor97";
+            this.lblTvåor97.Size = new System.Drawing.Size(75, 23);
+            this.lblTvåor97.TabIndex = 91;
+            this.lblTvåor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTreor97
+            // 
+            this.lblTreor97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTreor97.Location = new System.Drawing.Point(986, 906);
+            this.lblTreor97.Name = "lblTreor97";
+            this.lblTreor97.Size = new System.Drawing.Size(75, 23);
+            this.lblTreor97.TabIndex = 92;
+            this.lblTreor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblFyror97
+            // 
+            this.lblFyror97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFyror97.Location = new System.Drawing.Point(1067, 906);
+            this.lblFyror97.Name = "lblFyror97";
+            this.lblFyror97.Size = new System.Drawing.Size(75, 23);
+            this.lblFyror97.TabIndex = 93;
+            this.lblFyror97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblFemor97
+            // 
+            this.lblFemor97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFemor97.Location = new System.Drawing.Point(1148, 906);
+            this.lblFemor97.Name = "lblFemor97";
+            this.lblFemor97.Size = new System.Drawing.Size(75, 23);
+            this.lblFemor97.TabIndex = 94;
+            this.lblFemor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSexor97
+            // 
+            this.lblSexor97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSexor97.Location = new System.Drawing.Point(1229, 906);
+            this.lblSexor97.Name = "lblSexor97";
+            this.lblSexor97.Size = new System.Drawing.Size(75, 23);
+            this.lblSexor97.TabIndex = 95;
+            this.lblSexor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbxstappelskala
+            // 
+            this.tbxstappelskala.Location = new System.Drawing.Point(6, 116);
+            this.tbxstappelskala.Name = "tbxstappelskala";
+            this.tbxstappelskala.Size = new System.Drawing.Size(75, 20);
+            this.tbxstappelskala.TabIndex = 45;
+            this.tbxstappelskala.Text = "1";
+            // 
+            // lblStappelstorlek
+            // 
+            this.lblStappelstorlek.AutoSize = true;
+            this.lblStappelstorlek.Location = new System.Drawing.Point(6, 100);
+            this.lblStappelstorlek.Name = "lblStappelstorlek";
+            this.lblStappelstorlek.Size = new System.Drawing.Size(71, 13);
+            this.lblStappelstorlek.TabIndex = 46;
+            this.lblStappelstorlek.Text = "Stappelskala:\r\n";
+            // 
+            // btnBeräkna100
+            // 
+            this.btnBeräkna100.Location = new System.Drawing.Point(124, 428);
+            this.btnBeräkna100.Name = "btnBeräkna100";
+            this.btnBeräkna100.Size = new System.Drawing.Size(75, 23);
+            this.btnBeräkna100.TabIndex = 96;
+            this.btnBeräkna100.Text = "Beräkna";
+            this.btnBeräkna100.UseVisualStyleBackColor = true;
+            this.btnBeräkna100.Click += new System.EventHandler(this.btnBeräkna100_Click);
+            // 
+            // lblTalet100
+            // 
+            this.lblTalet100.AutoSize = true;
+            this.lblTalet100.Location = new System.Drawing.Point(12, 433);
+            this.lblTalet100.Name = "lblTalet100";
+            this.lblTalet100.Size = new System.Drawing.Size(57, 13);
+            this.lblTalet100.TabIndex = 97;
+            this.lblTalet100.Text = "Vilket Tal?";
+            // 
+            // lblÖvning100
+            // 
+            this.lblÖvning100.AutoSize = true;
+            this.lblÖvning100.Location = new System.Drawing.Point(72, 412);
+            this.lblÖvning100.Name = "lblÖvning100";
+            this.lblÖvning100.Size = new System.Drawing.Size(62, 13);
+            this.lblÖvning100.TabIndex = 98;
+            this.lblÖvning100.Text = "Övning 100";
+            // 
+            // tbxTalet100
+            // 
+            this.tbxTalet100.Location = new System.Drawing.Point(75, 430);
+            this.tbxTalet100.Name = "tbxTalet100";
+            this.tbxTalet100.Size = new System.Drawing.Size(41, 20);
+            this.tbxTalet100.TabIndex = 99;
+            // 
+            // tbxFraction
+            // 
+            this.tbxFraction.Location = new System.Drawing.Point(15, 456);
+            this.tbxFraction.Multiline = true;
+            this.tbxFraction.Name = "tbxFraction";
+            this.tbxFraction.Size = new System.Drawing.Size(184, 50);
+            this.tbxFraction.TabIndex = 100;
             // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1684, 961);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbxFraction);
+            this.Controls.Add(this.tbxTalet100);
+            this.Controls.Add(this.lblÖvning100);
+            this.Controls.Add(this.lblTalet100);
+            this.Controls.Add(this.btnBeräkna100);
+            this.Controls.Add(this.lblSexor97);
+            this.Controls.Add(this.lblFemor97);
+            this.Controls.Add(this.lblFyror97);
+            this.Controls.Add(this.lblTreor97);
+            this.Controls.Add(this.lblTvåor97);
+            this.Controls.Add(this.lblEttor97);
+            this.Controls.Add(this.lblstappel6);
+            this.Controls.Add(this.lblstappel5);
+            this.Controls.Add(this.lblstappel4);
+            this.Controls.Add(this.lblstappel3);
+            this.Controls.Add(this.lblstappel2);
+            this.Controls.Add(this.lblstappel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblHöjd);
             this.Controls.Add(this.lblSvar931);
@@ -1369,11 +1509,24 @@
         private System.Windows.Forms.Label lblSvar931;
         private System.Windows.Forms.Label lblHöjd;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblstappel1;
+        private System.Windows.Forms.Label lblstappel2;
+        private System.Windows.Forms.Label lblstappel3;
+        private System.Windows.Forms.Label lblstappel4;
+        private System.Windows.Forms.Label lblstappel5;
+        private System.Windows.Forms.Label lblstappel6;
+        private System.Windows.Forms.Label lblEttor97;
+        private System.Windows.Forms.Label lblTvåor97;
+        private System.Windows.Forms.Label lblTreor97;
+        private System.Windows.Forms.Label lblFyror97;
+        private System.Windows.Forms.Label lblFemor97;
+        private System.Windows.Forms.Label lblSexor97;
+        private System.Windows.Forms.Label lblStappelstorlek;
+        private System.Windows.Forms.TextBox tbxstappelskala;
+        private System.Windows.Forms.Button btnBeräkna100;
+        private System.Windows.Forms.Label lblTalet100;
+        private System.Windows.Forms.Label lblÖvning100;
+        private System.Windows.Forms.TextBox tbxTalet100;
+        private System.Windows.Forms.TextBox tbxFraction;
     }
 }

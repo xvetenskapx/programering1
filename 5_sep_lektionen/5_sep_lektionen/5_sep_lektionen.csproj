@@ -64,10 +64,10 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gissatalet.cs">
+    <Compile Include="Kapitel 8\Gissatalet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gissatalet.Designer.cs">
+    <Compile Include="Kapitel 8\Gissatalet.Designer.cs">
       <DependentUpon>Gissatalet.cs</DependentUpon>
     </Compile>
     <Compile Include="Kapitel7.cs">
@@ -90,16 +90,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spel.cs">
+    <Compile Include="Kapitel 8\Spel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Spel.Designer.cs">
+    <Compile Include="Kapitel 8\Spel.Designer.cs">
       <DependentUpon>Spel.cs</DependentUpon>
     </Compile>
-    <Compile Include="StenSaxPase.cs">
+    <Compile Include="Kapitel 8\StenSaxPase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StenSaxPase.Designer.cs">
+    <Compile Include="Kapitel 8\StenSaxPase.Designer.cs">
       <DependentUpon>StenSaxPase.cs</DependentUpon>
     </Compile>
     <Compile Include="Talbas.cs">
@@ -117,7 +117,7 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gissatalet.resx">
+    <EmbeddedResource Include="Kapitel 8\Gissatalet.resx">
       <DependentUpon>Gissatalet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kapitel5.resx">
@@ -139,7 +139,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StenSaxPase.resx">
+    <EmbeddedResource Include="Kapitel 8\Spel.resx">
+      <DependentUpon>Spel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kapitel 8\StenSaxPase.resx">
       <DependentUpon>StenSaxPase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Talbas.resx">

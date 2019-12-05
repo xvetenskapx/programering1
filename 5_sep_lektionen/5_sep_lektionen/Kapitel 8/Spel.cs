@@ -16,5 +16,17 @@ namespace _5_sep_lektionen
         {
             InitializeComponent();
         }
+
+        private void btnGissatalet_Click(object sender, EventArgs e)
+        {
+            Kapitel_8 GissaTalet = new Kapitel_8();
+            GissaTalet.Show();
+        }
+
+        private void btnstensaxpåse_Click(object sender, EventArgs e)
+        {
+            StenSaxPase StenSaxPåse = new StenSaxPase();
+            StenSaxPåse.Show();
+        }
     }
 }
