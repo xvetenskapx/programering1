@@ -69,8 +69,10 @@
             this.lblStrang = new System.Windows.Forms.Label();
             this.lblOvning99 = new System.Windows.Forms.Label();
             this.gbxGenerera = new System.Windows.Forms.GroupBox();
+            this.lblStappelstorlek = new System.Windows.Forms.Label();
             this.lblAntal = new System.Windows.Forms.Label();
             this.tbxAntal = new System.Windows.Forms.TextBox();
+            this.tbxstappelskala = new System.Windows.Forms.TextBox();
             this.btnGenerera = new System.Windows.Forms.Button();
             this.gbxBeräkna = new System.Windows.Forms.GroupBox();
             this.lblMeny = new System.Windows.Forms.Label();
@@ -130,7 +132,7 @@
             this.tbxPappretstjocklek = new System.Windows.Forms.TextBox();
             this.lblSvar931 = new System.Windows.Forms.Label();
             this.lblHöjd = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblpappretstjock = new System.Windows.Forms.Label();
             this.lblstappel1 = new System.Windows.Forms.Label();
             this.lblstappel2 = new System.Windows.Forms.Label();
             this.lblstappel3 = new System.Windows.Forms.Label();
@@ -143,13 +145,20 @@
             this.lblFyror97 = new System.Windows.Forms.Label();
             this.lblFemor97 = new System.Windows.Forms.Label();
             this.lblSexor97 = new System.Windows.Forms.Label();
-            this.tbxstappelskala = new System.Windows.Forms.TextBox();
-            this.lblStappelstorlek = new System.Windows.Forms.Label();
-            this.btnBeräkna100 = new System.Windows.Forms.Button();
-            this.lblTalet100 = new System.Windows.Forms.Label();
-            this.lblÖvning100 = new System.Windows.Forms.Label();
-            this.tbxTalet100 = new System.Windows.Forms.TextBox();
+            this.btnBeräkna115 = new System.Windows.Forms.Button();
+            this.lblTalet115 = new System.Windows.Forms.Label();
+            this.lblÖvning115 = new System.Windows.Forms.Label();
+            this.tbxTalet115 = new System.Windows.Forms.TextBox();
             this.tbxFraction = new System.Windows.Forms.TextBox();
+            this.tbxFractionsvar = new System.Windows.Forms.TextBox();
+            this.lblFraction115 = new System.Windows.Forms.Label();
+            this.tbxDecimaltalet = new System.Windows.Forms.TextBox();
+            this.tbxOctantalet = new System.Windows.Forms.TextBox();
+            this.lblÖvning150 = new System.Windows.Forms.Label();
+            this.lblDecimalatalet = new System.Windows.Forms.Label();
+            this.lblOctantalet = new System.Windows.Forms.Label();
+            this.btnDeciOcta = new System.Windows.Forms.Button();
+            this.tbxOctaDeci = new System.Windows.Forms.Button();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -519,6 +528,15 @@
             this.gbxGenerera.TabStop = false;
             this.gbxGenerera.Text = "Generera";
             // 
+            // lblStappelstorlek
+            // 
+            this.lblStappelstorlek.AutoSize = true;
+            this.lblStappelstorlek.Location = new System.Drawing.Point(6, 100);
+            this.lblStappelstorlek.Name = "lblStappelstorlek";
+            this.lblStappelstorlek.Size = new System.Drawing.Size(71, 13);
+            this.lblStappelstorlek.TabIndex = 46;
+            this.lblStappelstorlek.Text = "Stappelskala:\r\n";
+            // 
             // lblAntal
             // 
             this.lblAntal.AutoSize = true;
@@ -536,6 +554,14 @@
             this.tbxAntal.TabIndex = 42;
             this.tbxAntal.Text = "1000";
             this.tbxAntal.TextChanged += new System.EventHandler(this.tbxAntal_TextChanged);
+            // 
+            // tbxstappelskala
+            // 
+            this.tbxstappelskala.Location = new System.Drawing.Point(6, 116);
+            this.tbxstappelskala.Name = "tbxstappelskala";
+            this.tbxstappelskala.Size = new System.Drawing.Size(75, 20);
+            this.tbxstappelskala.TabIndex = 45;
+            this.tbxstappelskala.Text = "1";
             // 
             // btnGenerera
             // 
@@ -1101,14 +1127,14 @@
             this.lblHöjd.TabIndex = 82;
             this.lblHöjd.Text = "Hur högt (km)?";
             // 
-            // label4
+            // lblpappretstjock
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1474, 234);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 13);
-            this.label4.TabIndex = 83;
-            this.label4.Text = "Papprets tjocklek (mm):";
+            this.lblpappretstjock.AutoSize = true;
+            this.lblpappretstjock.Location = new System.Drawing.Point(1474, 234);
+            this.lblpappretstjock.Name = "lblpappretstjock";
+            this.lblpappretstjock.Size = new System.Drawing.Size(117, 13);
+            this.lblpappretstjock.TabIndex = 83;
+            this.lblpappretstjock.Text = "Papprets tjocklek (mm):";
             // 
             // lblstappel1
             // 
@@ -1224,76 +1250,148 @@
             this.lblSexor97.TabIndex = 95;
             this.lblSexor97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbxstappelskala
+            // btnBeräkna115
             // 
-            this.tbxstappelskala.Location = new System.Drawing.Point(6, 116);
-            this.tbxstappelskala.Name = "tbxstappelskala";
-            this.tbxstappelskala.Size = new System.Drawing.Size(75, 20);
-            this.tbxstappelskala.TabIndex = 45;
-            this.tbxstappelskala.Text = "1";
+            this.btnBeräkna115.Location = new System.Drawing.Point(124, 428);
+            this.btnBeräkna115.Name = "btnBeräkna115";
+            this.btnBeräkna115.Size = new System.Drawing.Size(75, 23);
+            this.btnBeräkna115.TabIndex = 96;
+            this.btnBeräkna115.Text = "Beräkna";
+            this.btnBeräkna115.UseVisualStyleBackColor = true;
+            this.btnBeräkna115.Click += new System.EventHandler(this.btnBeräkna100_Click);
             // 
-            // lblStappelstorlek
+            // lblTalet115
             // 
-            this.lblStappelstorlek.AutoSize = true;
-            this.lblStappelstorlek.Location = new System.Drawing.Point(6, 100);
-            this.lblStappelstorlek.Name = "lblStappelstorlek";
-            this.lblStappelstorlek.Size = new System.Drawing.Size(71, 13);
-            this.lblStappelstorlek.TabIndex = 46;
-            this.lblStappelstorlek.Text = "Stappelskala:\r\n";
+            this.lblTalet115.AutoSize = true;
+            this.lblTalet115.Location = new System.Drawing.Point(12, 433);
+            this.lblTalet115.Name = "lblTalet115";
+            this.lblTalet115.Size = new System.Drawing.Size(57, 13);
+            this.lblTalet115.TabIndex = 97;
+            this.lblTalet115.Text = "Vilket Tal?";
             // 
-            // btnBeräkna100
+            // lblÖvning115
             // 
-            this.btnBeräkna100.Location = new System.Drawing.Point(124, 428);
-            this.btnBeräkna100.Name = "btnBeräkna100";
-            this.btnBeräkna100.Size = new System.Drawing.Size(75, 23);
-            this.btnBeräkna100.TabIndex = 96;
-            this.btnBeräkna100.Text = "Beräkna";
-            this.btnBeräkna100.UseVisualStyleBackColor = true;
-            this.btnBeräkna100.Click += new System.EventHandler(this.btnBeräkna100_Click);
+            this.lblÖvning115.AutoSize = true;
+            this.lblÖvning115.Location = new System.Drawing.Point(72, 412);
+            this.lblÖvning115.Name = "lblÖvning115";
+            this.lblÖvning115.Size = new System.Drawing.Size(62, 13);
+            this.lblÖvning115.TabIndex = 98;
+            this.lblÖvning115.Text = "Övning 115";
             // 
-            // lblTalet100
+            // tbxTalet115
             // 
-            this.lblTalet100.AutoSize = true;
-            this.lblTalet100.Location = new System.Drawing.Point(12, 433);
-            this.lblTalet100.Name = "lblTalet100";
-            this.lblTalet100.Size = new System.Drawing.Size(57, 13);
-            this.lblTalet100.TabIndex = 97;
-            this.lblTalet100.Text = "Vilket Tal?";
-            // 
-            // lblÖvning100
-            // 
-            this.lblÖvning100.AutoSize = true;
-            this.lblÖvning100.Location = new System.Drawing.Point(72, 412);
-            this.lblÖvning100.Name = "lblÖvning100";
-            this.lblÖvning100.Size = new System.Drawing.Size(62, 13);
-            this.lblÖvning100.TabIndex = 98;
-            this.lblÖvning100.Text = "Övning 100";
-            // 
-            // tbxTalet100
-            // 
-            this.tbxTalet100.Location = new System.Drawing.Point(75, 430);
-            this.tbxTalet100.Name = "tbxTalet100";
-            this.tbxTalet100.Size = new System.Drawing.Size(41, 20);
-            this.tbxTalet100.TabIndex = 99;
+            this.tbxTalet115.Location = new System.Drawing.Point(75, 430);
+            this.tbxTalet115.Name = "tbxTalet115";
+            this.tbxTalet115.Size = new System.Drawing.Size(41, 20);
+            this.tbxTalet115.TabIndex = 99;
+            this.tbxTalet115.Text = "5";
             // 
             // tbxFraction
             // 
             this.tbxFraction.Location = new System.Drawing.Point(15, 456);
             this.tbxFraction.Multiline = true;
             this.tbxFraction.Name = "tbxFraction";
+            this.tbxFraction.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbxFraction.Size = new System.Drawing.Size(184, 50);
             this.tbxFraction.TabIndex = 100;
+            // 
+            // tbxFractionsvar
+            // 
+            this.tbxFractionsvar.Location = new System.Drawing.Point(66, 512);
+            this.tbxFractionsvar.Name = "tbxFractionsvar";
+            this.tbxFractionsvar.Size = new System.Drawing.Size(133, 20);
+            this.tbxFractionsvar.TabIndex = 101;
+            // 
+            // lblFraction115
+            // 
+            this.lblFraction115.AutoSize = true;
+            this.lblFraction115.Location = new System.Drawing.Point(12, 515);
+            this.lblFraction115.Name = "lblFraction115";
+            this.lblFraction115.Size = new System.Drawing.Size(48, 13);
+            this.lblFraction115.TabIndex = 102;
+            this.lblFraction115.Text = "Fraction:";
+            // 
+            // tbxDecimaltalet
+            // 
+            this.tbxDecimaltalet.Location = new System.Drawing.Point(83, 599);
+            this.tbxDecimaltalet.Name = "tbxDecimaltalet";
+            this.tbxDecimaltalet.Size = new System.Drawing.Size(100, 20);
+            this.tbxDecimaltalet.TabIndex = 103;
+            this.tbxDecimaltalet.Text = "0";
+            // 
+            // tbxOctantalet
+            // 
+            this.tbxOctantalet.Location = new System.Drawing.Point(83, 625);
+            this.tbxOctantalet.Name = "tbxOctantalet";
+            this.tbxOctantalet.Size = new System.Drawing.Size(100, 20);
+            this.tbxOctantalet.TabIndex = 104;
+            this.tbxOctantalet.Text = "0";
+            // 
+            // lblÖvning150
+            // 
+            this.lblÖvning150.AutoSize = true;
+            this.lblÖvning150.Location = new System.Drawing.Point(51, 581);
+            this.lblÖvning150.Name = "lblÖvning150";
+            this.lblÖvning150.Size = new System.Drawing.Size(62, 13);
+            this.lblÖvning150.TabIndex = 105;
+            this.lblÖvning150.Text = "Övning 150";
+            // 
+            // lblDecimalatalet
+            // 
+            this.lblDecimalatalet.AutoSize = true;
+            this.lblDecimalatalet.Location = new System.Drawing.Point(12, 602);
+            this.lblDecimalatalet.Name = "lblDecimalatalet";
+            this.lblDecimalatalet.Size = new System.Drawing.Size(65, 13);
+            this.lblDecimalatalet.TabIndex = 106;
+            this.lblDecimalatalet.Text = "Decimaltalet";
+            // 
+            // lblOctantalet
+            // 
+            this.lblOctantalet.AutoSize = true;
+            this.lblOctantalet.Location = new System.Drawing.Point(12, 628);
+            this.lblOctantalet.Name = "lblOctantalet";
+            this.lblOctantalet.Size = new System.Drawing.Size(56, 13);
+            this.lblOctantalet.TabIndex = 107;
+            this.lblOctantalet.Text = "Octantalet";
+            // 
+            // btnDeciOcta
+            // 
+            this.btnDeciOcta.Location = new System.Drawing.Point(15, 651);
+            this.btnDeciOcta.Name = "btnDeciOcta";
+            this.btnDeciOcta.Size = new System.Drawing.Size(168, 23);
+            this.btnDeciOcta.TabIndex = 108;
+            this.btnDeciOcta.Text = "Deci - Octa";
+            this.btnDeciOcta.UseVisualStyleBackColor = true;
+            this.btnDeciOcta.Click += new System.EventHandler(this.btnDeciOcta_Click);
+            // 
+            // tbxOctaDeci
+            // 
+            this.tbxOctaDeci.Location = new System.Drawing.Point(15, 680);
+            this.tbxOctaDeci.Name = "tbxOctaDeci";
+            this.tbxOctaDeci.Size = new System.Drawing.Size(168, 23);
+            this.tbxOctaDeci.TabIndex = 109;
+            this.tbxOctaDeci.Text = "Octa - Deci";
+            this.tbxOctaDeci.UseVisualStyleBackColor = true;
             // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1684, 961);
+            this.Controls.Add(this.tbxOctaDeci);
+            this.Controls.Add(this.btnDeciOcta);
+            this.Controls.Add(this.lblOctantalet);
+            this.Controls.Add(this.lblDecimalatalet);
+            this.Controls.Add(this.lblÖvning150);
+            this.Controls.Add(this.tbxOctantalet);
+            this.Controls.Add(this.tbxDecimaltalet);
+            this.Controls.Add(this.lblFraction115);
+            this.Controls.Add(this.tbxFractionsvar);
             this.Controls.Add(this.tbxFraction);
-            this.Controls.Add(this.tbxTalet100);
-            this.Controls.Add(this.lblÖvning100);
-            this.Controls.Add(this.lblTalet100);
-            this.Controls.Add(this.btnBeräkna100);
+            this.Controls.Add(this.tbxTalet115);
+            this.Controls.Add(this.lblÖvning115);
+            this.Controls.Add(this.lblTalet115);
+            this.Controls.Add(this.btnBeräkna115);
             this.Controls.Add(this.lblSexor97);
             this.Controls.Add(this.lblFemor97);
             this.Controls.Add(this.lblFyror97);
@@ -1306,7 +1404,7 @@
             this.Controls.Add(this.lblstappel3);
             this.Controls.Add(this.lblstappel2);
             this.Controls.Add(this.lblstappel1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblpappretstjock);
             this.Controls.Add(this.lblHöjd);
             this.Controls.Add(this.lblSvar931);
             this.Controls.Add(this.tbxPappretstjocklek);
@@ -1508,7 +1606,7 @@
         private System.Windows.Forms.TextBox tbxPappretstjocklek;
         private System.Windows.Forms.Label lblSvar931;
         private System.Windows.Forms.Label lblHöjd;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblpappretstjock;
         private System.Windows.Forms.Label lblstappel1;
         private System.Windows.Forms.Label lblstappel2;
         private System.Windows.Forms.Label lblstappel3;
@@ -1523,10 +1621,19 @@
         private System.Windows.Forms.Label lblSexor97;
         private System.Windows.Forms.Label lblStappelstorlek;
         private System.Windows.Forms.TextBox tbxstappelskala;
-        private System.Windows.Forms.Button btnBeräkna100;
-        private System.Windows.Forms.Label lblTalet100;
-        private System.Windows.Forms.Label lblÖvning100;
-        private System.Windows.Forms.TextBox tbxTalet100;
+        private System.Windows.Forms.Button btnBeräkna115;
+        private System.Windows.Forms.Label lblTalet115;
+        private System.Windows.Forms.Label lblÖvning115;
+        private System.Windows.Forms.TextBox tbxTalet115;
         private System.Windows.Forms.TextBox tbxFraction;
+        private System.Windows.Forms.TextBox tbxFractionsvar;
+        private System.Windows.Forms.Label lblFraction115;
+        private System.Windows.Forms.TextBox tbxDecimaltalet;
+        private System.Windows.Forms.TextBox tbxOctantalet;
+        private System.Windows.Forms.Label lblÖvning150;
+        private System.Windows.Forms.Label lblDecimalatalet;
+        private System.Windows.Forms.Label lblOctantalet;
+        private System.Windows.Forms.Button btnDeciOcta;
+        private System.Windows.Forms.Button tbxOctaDeci;
     }
 }

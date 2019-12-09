@@ -338,14 +338,26 @@ namespace _5_sep_lektionen
 
         private void btnBeräkna100_Click(object sender, EventArgs e)
         {
-            int x = int.Parse(tbxTalet100.Text);
-            int[] Tal = new int [x];
-            Tal[0] = x;
+            tbxFractionsvar.Clear();
+            tbxFraction.Clear();
 
-            for (int i = 1; x>i ; x++)
+            int x = int.Parse(tbxTalet115.Text);
+            int factor = 1;
+
+            for (int i = 1; x >= i ; i++)
             {
-                Tal[i] = x - i;
-                --i;
+                factor *= i;
+                tbxFraction.Text += i + "\t";
+            }
+            tbxFractionsvar.Text = factor.ToString();
+        }
+
+        private void btnDeciOcta_Click(object sender, EventArgs e)
+        {
+            double x = int.Parse(tbxDecimaltalet.Text);
+            for (int i = 0; i>3 ; i--)
+            {
+
             }
         }
     }
