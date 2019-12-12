@@ -354,11 +354,32 @@ namespace _5_sep_lektionen
 
         private void btnDeciOcta_Click(object sender, EventArgs e)
         {
-            double x = int.Parse(tbxDecimaltalet.Text);
-            for (int i = 0; i>3 ; i--)
+
+        }
+
+        private void tbxOctaDeci_Click(object sender, EventArgs e)
+        {
+            int y = tbxOctantalet.TextLength;
+            int[] Octatalet = new int [y];
+            //int[] test y.ToArray;
+
+            //Array.Reverse(Octatalet);
+
+            int pos = 0;
+            for (int i = y-1; i > -1; i--)
             {
 
+                Octatalet[pos++] = int.Parse(tbxOctantalet.Text[i].ToString());
             }
+
+            double Octa = 0;
+            for (int i = 0; i < y; i++)
+            {
+
+                Octa = Octatalet[i] * Math.Pow(8, i);
+                
+            }
+            tbxDecimaltalet.Text = Octa.ToString();
         }
     }
 }

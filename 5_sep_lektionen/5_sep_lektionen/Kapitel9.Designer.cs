@@ -1325,7 +1325,7 @@
             this.tbxOctantalet.Name = "tbxOctantalet";
             this.tbxOctantalet.Size = new System.Drawing.Size(100, 20);
             this.tbxOctantalet.TabIndex = 104;
-            this.tbxOctantalet.Text = "0";
+            this.tbxOctantalet.Text = "87922";
             // 
             // lblÖvning150
             // 
@@ -1372,6 +1372,7 @@
             this.tbxOctaDeci.TabIndex = 109;
             this.tbxOctaDeci.Text = "Octa - Deci";
             this.tbxOctaDeci.UseVisualStyleBackColor = true;
+            this.tbxOctaDeci.Click += new System.EventHandler(this.tbxOctaDeci_Click);
             // 
             // Kapitel9
             // 
