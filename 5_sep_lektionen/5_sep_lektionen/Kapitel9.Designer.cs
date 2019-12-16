@@ -159,6 +159,13 @@
             this.lblOctantalet = new System.Windows.Forms.Label();
             this.btnDeciOcta = new System.Windows.Forms.Button();
             this.tbxOctaDeci = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxAntalarrayer = new System.Windows.Forms.TextBox();
+            this.btnYes = new System.Windows.Forms.Button();
+            this.lblAntalArrayer = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblÖvning102 = new System.Windows.Forms.Label();
+            this.lblSparas = new System.Windows.Forms.Label();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -1374,11 +1381,77 @@
             this.tbxOctaDeci.UseVisualStyleBackColor = true;
             this.tbxOctaDeci.Click += new System.EventHandler(this.tbxOctaDeci_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(379, 486);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 110;
+            // 
+            // tbxAntalarrayer
+            // 
+            this.tbxAntalarrayer.Location = new System.Drawing.Point(376, 430);
+            this.tbxAntalarrayer.Name = "tbxAntalarrayer";
+            this.tbxAntalarrayer.Size = new System.Drawing.Size(22, 20);
+            this.tbxAntalarrayer.TabIndex = 111;
+            this.tbxAntalarrayer.Text = "12";
+            // 
+            // btnYes
+            // 
+            this.btnYes.Location = new System.Drawing.Point(330, 454);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.Size = new System.Drawing.Size(75, 23);
+            this.btnYes.TabIndex = 112;
+            this.btnYes.Text = "button1";
+            this.btnYes.UseVisualStyleBackColor = true;
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+            // 
+            // lblAntalArrayer
+            // 
+            this.lblAntalArrayer.AutoSize = true;
+            this.lblAntalArrayer.Location = new System.Drawing.Point(286, 433);
+            this.lblAntalArrayer.Name = "lblAntalArrayer";
+            this.lblAntalArrayer.Size = new System.Drawing.Size(69, 13);
+            this.lblAntalArrayer.TabIndex = 113;
+            this.lblAntalArrayer.Text = "Antal arrayer:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(379, 512);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 114;
+            // 
+            // lblÖvning102
+            // 
+            this.lblÖvning102.AutoSize = true;
+            this.lblÖvning102.Location = new System.Drawing.Point(358, 412);
+            this.lblÖvning102.Name = "lblÖvning102";
+            this.lblÖvning102.Size = new System.Drawing.Size(62, 13);
+            this.lblÖvning102.TabIndex = 115;
+            this.lblÖvning102.Text = "Övning 102";
+            // 
+            // lblSparas
+            // 
+            this.lblSparas.AutoSize = true;
+            this.lblSparas.Location = new System.Drawing.Point(289, 489);
+            this.lblSparas.Name = "lblSparas";
+            this.lblSparas.Size = new System.Drawing.Size(84, 13);
+            this.lblSparas.TabIndex = 116;
+            this.lblSparas.Text = "Vad skall sparas";
+            // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1684, 961);
+            this.Controls.Add(this.lblSparas);
+            this.Controls.Add(this.lblÖvning102);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.lblAntalArrayer);
+            this.Controls.Add(this.btnYes);
+            this.Controls.Add(this.tbxAntalarrayer);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tbxOctaDeci);
             this.Controls.Add(this.btnDeciOcta);
             this.Controls.Add(this.lblOctantalet);
@@ -1491,7 +1564,9 @@
             this.Controls.Add(this.lblExemple91);
             this.Name = "Kapitel9";
             this.Text = "Kapitel9";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Kapitel9_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Kapitel9_KeyPress);
             this.gbxGenerera.ResumeLayout(false);
             this.gbxGenerera.PerformLayout();
             this.gbxBeräkna.ResumeLayout(false);
@@ -1636,5 +1711,12 @@
         private System.Windows.Forms.Label lblOctantalet;
         private System.Windows.Forms.Button btnDeciOcta;
         private System.Windows.Forms.Button tbxOctaDeci;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxAntalarrayer;
+        private System.Windows.Forms.Button btnYes;
+        private System.Windows.Forms.Label lblAntalArrayer;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblÖvning102;
+        private System.Windows.Forms.Label lblSparas;
     }
 }

@@ -354,7 +354,22 @@ namespace _5_sep_lektionen
 
         private void btnDeciOcta_Click(object sender, EventArgs e)
         {
+            int y = tbxDecimaltalet.TextLength;
+            int[] Decimaltalet = new int[y];
+            int lop = y - 1;
+            int pos = 0;
+            while (lop > -1)
+            {
+                Decimaltalet[pos++] = int.Parse(tbxDecimaltalet.Text[lop].ToString());
+                lop--;
+            }
 
+            double Deci = 0;
+            while (0 < y)
+            {
+                Deci+=
+                y++;
+            }
         }
 
         private void tbxOctaDeci_Click(object sender, EventArgs e)
@@ -376,10 +391,23 @@ namespace _5_sep_lektionen
             for (int i = 0; i < y; i++)
             {
 
-                Octa = Octatalet[i] * Math.Pow(8, i);
+                Octa += Octatalet[i] * Math.Pow(8, i);
                 
             }
             tbxDecimaltalet.Text = Octa.ToString();
+        }
+
+        private void Kapitel9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+            while ()
+            {
+                
+            }
         }
     }
 }
