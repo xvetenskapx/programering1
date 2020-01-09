@@ -159,13 +159,19 @@
             this.lblOctantalet = new System.Windows.Forms.Label();
             this.btnDeciOcta = new System.Windows.Forms.Button();
             this.tbxOctaDeci = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tbxAntalarrayer = new System.Windows.Forms.TextBox();
-            this.btnYes = new System.Windows.Forms.Button();
+            this.tbxOrdspara = new System.Windows.Forms.TextBox();
             this.lblAntalArrayer = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblÖvning102 = new System.Windows.Forms.Label();
             this.lblSparas = new System.Windows.Forms.Label();
+            this.lblArraytot = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.tbxVise = new System.Windows.Forms.TextBox();
+            this.tbxViseVerse = new System.Windows.Forms.TextBox();
+            this.btnReverse = new System.Windows.Forms.Button();
+            this.lblOkänd = new System.Windows.Forms.Label();
+            this.tbxOrd = new System.Windows.Forms.TextBox();
+            this.tbxReversord = new System.Windows.Forms.TextBox();
+            this.lblOkändsvar = new System.Windows.Forms.Label();
             this.gbxGenerera.SuspendLayout();
             this.gbxBeräkna.SuspendLayout();
             this.gbxRaknaPrickar.SuspendLayout();
@@ -1381,46 +1387,21 @@
             this.tbxOctaDeci.UseVisualStyleBackColor = true;
             this.tbxOctaDeci.Click += new System.EventHandler(this.tbxOctaDeci_Click);
             // 
-            // textBox1
+            // tbxOrdspara
             // 
-            this.textBox1.Location = new System.Drawing.Point(379, 486);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 110;
-            // 
-            // tbxAntalarrayer
-            // 
-            this.tbxAntalarrayer.Location = new System.Drawing.Point(376, 430);
-            this.tbxAntalarrayer.Name = "tbxAntalarrayer";
-            this.tbxAntalarrayer.Size = new System.Drawing.Size(22, 20);
-            this.tbxAntalarrayer.TabIndex = 111;
-            this.tbxAntalarrayer.Text = "12";
-            // 
-            // btnYes
-            // 
-            this.btnYes.Location = new System.Drawing.Point(330, 454);
-            this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(75, 23);
-            this.btnYes.TabIndex = 112;
-            this.btnYes.Text = "button1";
-            this.btnYes.UseVisualStyleBackColor = true;
-            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+            this.tbxOrdspara.Location = new System.Drawing.Point(376, 456);
+            this.tbxOrdspara.Name = "tbxOrdspara";
+            this.tbxOrdspara.Size = new System.Drawing.Size(119, 20);
+            this.tbxOrdspara.TabIndex = 110;
             // 
             // lblAntalArrayer
             // 
             this.lblAntalArrayer.AutoSize = true;
-            this.lblAntalArrayer.Location = new System.Drawing.Point(286, 433);
+            this.lblAntalArrayer.Location = new System.Drawing.Point(320, 437);
             this.lblAntalArrayer.Name = "lblAntalArrayer";
             this.lblAntalArrayer.Size = new System.Drawing.Size(69, 13);
             this.lblAntalArrayer.TabIndex = 113;
             this.lblAntalArrayer.Text = "Antal arrayer:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(379, 512);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 114;
             // 
             // lblÖvning102
             // 
@@ -1434,24 +1415,112 @@
             // lblSparas
             // 
             this.lblSparas.AutoSize = true;
-            this.lblSparas.Location = new System.Drawing.Point(289, 489);
+            this.lblSparas.Location = new System.Drawing.Point(286, 459);
             this.lblSparas.Name = "lblSparas";
             this.lblSparas.Size = new System.Drawing.Size(84, 13);
             this.lblSparas.TabIndex = 116;
             this.lblSparas.Text = "Vad skall sparas";
+            // 
+            // lblArraytot
+            // 
+            this.lblArraytot.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblArraytot.Location = new System.Drawing.Point(410, 433);
+            this.lblArraytot.Name = "lblArraytot";
+            this.lblArraytot.Size = new System.Drawing.Size(40, 20);
+            this.lblArraytot.TabIndex = 117;
+            this.lblArraytot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(289, 482);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(206, 23);
+            this.btnSave.TabIndex = 118;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // tbxVise
+            // 
+            this.tbxVise.Location = new System.Drawing.Point(289, 511);
+            this.tbxVise.Multiline = true;
+            this.tbxVise.Name = "tbxVise";
+            this.tbxVise.ReadOnly = true;
+            this.tbxVise.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxVise.Size = new System.Drawing.Size(100, 112);
+            this.tbxVise.TabIndex = 120;
+            // 
+            // tbxViseVerse
+            // 
+            this.tbxViseVerse.Location = new System.Drawing.Point(395, 511);
+            this.tbxViseVerse.Multiline = true;
+            this.tbxViseVerse.Name = "tbxViseVerse";
+            this.tbxViseVerse.ReadOnly = true;
+            this.tbxViseVerse.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxViseVerse.Size = new System.Drawing.Size(100, 112);
+            this.tbxViseVerse.TabIndex = 121;
+            // 
+            // btnReverse
+            // 
+            this.btnReverse.Location = new System.Drawing.Point(531, 480);
+            this.btnReverse.Name = "btnReverse";
+            this.btnReverse.Size = new System.Drawing.Size(100, 23);
+            this.btnReverse.TabIndex = 122;
+            this.btnReverse.Text = "Reverse";
+            this.btnReverse.UseVisualStyleBackColor = true;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
+            // 
+            // lblOkänd
+            // 
+            this.lblOkänd.AutoSize = true;
+            this.lblOkänd.Location = new System.Drawing.Point(528, 412);
+            this.lblOkänd.Name = "lblOkänd";
+            this.lblOkänd.Size = new System.Drawing.Size(76, 13);
+            this.lblOkänd.TabIndex = 123;
+            this.lblOkänd.Text = "Övning Okänd";
+            // 
+            // tbxOrd
+            // 
+            this.tbxOrd.Location = new System.Drawing.Point(531, 428);
+            this.tbxOrd.Name = "tbxOrd";
+            this.tbxOrd.Size = new System.Drawing.Size(100, 20);
+            this.tbxOrd.TabIndex = 124;
+            this.tbxOrd.TextChanged += new System.EventHandler(this.tbxOrd_TextChanged);
+            // 
+            // tbxReversord
+            // 
+            this.tbxReversord.Location = new System.Drawing.Point(531, 454);
+            this.tbxReversord.Name = "tbxReversord";
+            this.tbxReversord.ReadOnly = true;
+            this.tbxReversord.Size = new System.Drawing.Size(100, 20);
+            this.tbxReversord.TabIndex = 125;
+            // 
+            // lblOkändsvar
+            // 
+            this.lblOkändsvar.Location = new System.Drawing.Point(528, 506);
+            this.lblOkändsvar.Name = "lblOkändsvar";
+            this.lblOkändsvar.Size = new System.Drawing.Size(103, 13);
+            this.lblOkändsvar.TabIndex = 126;
+            this.lblOkändsvar.Text = "Svar: ";
             // 
             // Kapitel9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1684, 961);
+            this.Controls.Add(this.lblOkändsvar);
+            this.Controls.Add(this.tbxReversord);
+            this.Controls.Add(this.tbxOrd);
+            this.Controls.Add(this.lblOkänd);
+            this.Controls.Add(this.btnReverse);
+            this.Controls.Add(this.tbxViseVerse);
+            this.Controls.Add(this.tbxVise);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.lblArraytot);
             this.Controls.Add(this.lblSparas);
             this.Controls.Add(this.lblÖvning102);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.lblAntalArrayer);
-            this.Controls.Add(this.btnYes);
-            this.Controls.Add(this.tbxAntalarrayer);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxOrdspara);
             this.Controls.Add(this.tbxOctaDeci);
             this.Controls.Add(this.btnDeciOcta);
             this.Controls.Add(this.lblOctantalet);
@@ -1711,12 +1780,18 @@
         private System.Windows.Forms.Label lblOctantalet;
         private System.Windows.Forms.Button btnDeciOcta;
         private System.Windows.Forms.Button tbxOctaDeci;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox tbxAntalarrayer;
-        private System.Windows.Forms.Button btnYes;
+        private System.Windows.Forms.TextBox tbxOrdspara;
         private System.Windows.Forms.Label lblAntalArrayer;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblÖvning102;
         private System.Windows.Forms.Label lblSparas;
+        private System.Windows.Forms.Label lblArraytot;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox tbxVise;
+        private System.Windows.Forms.TextBox tbxViseVerse;
+        private System.Windows.Forms.Button btnReverse;
+        private System.Windows.Forms.Label lblOkänd;
+        private System.Windows.Forms.TextBox tbxOrd;
+        private System.Windows.Forms.TextBox tbxReversord;
+        private System.Windows.Forms.Label lblOkändsvar;
     }
 }

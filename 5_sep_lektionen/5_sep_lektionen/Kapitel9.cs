@@ -16,6 +16,7 @@ namespace _5_sep_lektionen
         int[] TAL;
         int[] AntalPrickar = new int[6];
         int[] Längd = new int[6];
+        int A = 1;
         public Kapitel9()
         {
             InitializeComponent();
@@ -354,14 +355,12 @@ namespace _5_sep_lektionen
 
         private void btnDeciOcta_Click(object sender, EventArgs e)
         {
-            int y = tbxDecimaltalet.TextLength;
-            int[] Decimaltalet = new int[y];
-            int lop = y - 1;
+            int A = tbxDecimaltalet.TextLength;
+            int[] Decimaltalet = new int[A];
             int pos = 0;
-            while (lop > -1)
+            while (0 > A)
             {
-                Decimaltalet[pos++] = int.Parse(tbxDecimaltalet.Text[lop].ToString());
-                lop--;
+                Decimaltalet[pos] = tbxDecimaltalet[pos];
             }
 
             double Deci = 0;
@@ -402,12 +401,50 @@ namespace _5_sep_lektionen
             
         }
 
-        private void btnYes_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            while ()
+            lblArraytot.Text = A++.ToString();
+
+
+            tbxVise.Text += tbxOrdspara.Text + "\r\n";
+
+
+            string[] Array = new string[A];
+            Array[A-2] = tbxOrdspara.Text;
+
+            tbxViseVerse.Text = Array[A-2] + "\r\n" + tbxViseVerse.Text;
+
+            
+
+            tbxOrdspara.Clear();
+        }
+
+        private void btnReverse_Click(object sender, EventArgs e)
+        {
+            int a = tbxOrd.TextLength;
+            int i = 0;
+            char[] Ord = new char[a];
+            while (i < a)
             {
-                
+                Ord[i] = tbxOrd.Text[i];
+                //tbxReversord.Text += Ord[i];
+                tbxReversord.Text = Ord[i] + tbxReversord.Text;
+                i++;
             }
+            if (tbxOrd.Text == tbxReversord.Text)
+            {
+                MessageBox.Show("De är samma baklänges", "Svar", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                lblOkändsvar.Text = "Svar: De är samma baklänges";
+            }
+            else
+                lblOkändsvar.Text = "Svar: De är inte samma baklänges";
+
+            
+        }
+
+        private void tbxOrd_TextChanged(object sender, EventArgs e)
+        {
+            tbxReversord.Clear();
         }
     }
 }
