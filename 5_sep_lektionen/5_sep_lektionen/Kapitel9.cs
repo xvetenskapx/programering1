@@ -355,20 +355,20 @@ namespace _5_sep_lektionen
 
         private void btnDeciOcta_Click(object sender, EventArgs e)
         {
-            int A = tbxDecimaltalet.TextLength;
-            int[] Decimaltalet = new int[A];
-            int pos = 0;
-            while (0 > A)
-            {
-                Decimaltalet[pos] = tbxDecimaltalet[pos];
-            }
+            //int A = tbxDecimaltalet.TextLength;
+            //int[] Decimaltalet = new int[A];
+            //int pos = 0;
+            //while (0 > A)
+            //{
+            //    Decimaltalet[pos] = tbxDecimaltalet[pos];
+            //}
 
-            double Deci = 0;
-            while (0 < y)
-            {
-                Deci+=
-                y++;
-            }
+            //double Deci = 0;
+            //while (0 < y)
+            //{
+            //    Deci+=
+            //    y++;
+            //}
         }
 
         private void tbxOctaDeci_Click(object sender, EventArgs e)
@@ -445,6 +445,31 @@ namespace _5_sep_lektionen
         private void tbxOrd_TextChanged(object sender, EventArgs e)
         {
             tbxReversord.Clear();
+        }
+
+        private void lblOctantalet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDecimalatalet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblÖvning150_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxOctantalet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxDecimaltalet_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1331,6 +1331,7 @@
             this.tbxDecimaltalet.Size = new System.Drawing.Size(100, 20);
             this.tbxDecimaltalet.TabIndex = 103;
             this.tbxDecimaltalet.Text = "0";
+            this.tbxDecimaltalet.TextChanged += new System.EventHandler(this.tbxDecimaltalet_TextChanged);
             // 
             // tbxOctantalet
             // 
@@ -1339,6 +1340,7 @@
             this.tbxOctantalet.Size = new System.Drawing.Size(100, 20);
             this.tbxOctantalet.TabIndex = 104;
             this.tbxOctantalet.Text = "87922";
+            this.tbxOctantalet.TextChanged += new System.EventHandler(this.tbxOctantalet_TextChanged);
             // 
             // lblÖvning150
             // 
@@ -1348,6 +1350,7 @@
             this.lblÖvning150.Size = new System.Drawing.Size(62, 13);
             this.lblÖvning150.TabIndex = 105;
             this.lblÖvning150.Text = "Övning 150";
+            this.lblÖvning150.Click += new System.EventHandler(this.lblÖvning150_Click);
             // 
             // lblDecimalatalet
             // 
@@ -1357,6 +1360,7 @@
             this.lblDecimalatalet.Size = new System.Drawing.Size(65, 13);
             this.lblDecimalatalet.TabIndex = 106;
             this.lblDecimalatalet.Text = "Decimaltalet";
+            this.lblDecimalatalet.Click += new System.EventHandler(this.lblDecimalatalet_Click);
             // 
             // lblOctantalet
             // 
@@ -1366,6 +1370,7 @@
             this.lblOctantalet.Size = new System.Drawing.Size(56, 13);
             this.lblOctantalet.TabIndex = 107;
             this.lblOctantalet.Text = "Octantalet";
+            this.lblOctantalet.Click += new System.EventHandler(this.lblOctantalet_Click);
             // 
             // btnDeciOcta
             // 
