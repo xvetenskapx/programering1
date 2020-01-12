@@ -39,19 +39,19 @@
             this.tbxOctantalet1 = new System.Windows.Forms.TextBox();
             this.tbxDecimaltalet1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDecimalatalet2 = new System.Windows.Forms.Label();
             this.tbxOctatalet2 = new System.Windows.Forms.TextBox();
             this.tbxDeciamltalet2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblBinäratalet3 = new System.Windows.Forms.Label();
+            this.lblDecimaltalet3 = new System.Windows.Forms.Label();
+            this.tbxBinäratalet3 = new System.Windows.Forms.TextBox();
+            this.tbxDecimaltalet3 = new System.Windows.Forms.TextBox();
+            this.btnDeciBi = new System.Windows.Forms.Button();
+            this.lblDecimalatalet4 = new System.Windows.Forms.Label();
+            this.lblBinäratalet4 = new System.Windows.Forms.Label();
+            this.tbxDecimaltalet4 = new System.Windows.Forms.TextBox();
+            this.tbxBinäratalet4 = new System.Windows.Forms.TextBox();
+            this.btnBiDeci = new System.Windows.Forms.Button();
             this.lblRuta1 = new System.Windows.Forms.Label();
             this.lblRuta2 = new System.Windows.Forms.Label();
             this.lblRuta3 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             // 
             // btnBeräkna
             // 
-            this.btnBeräkna.Location = new System.Drawing.Point(12, 365);
+            this.btnBeräkna.Location = new System.Drawing.Point(13, 255);
             this.btnBeräkna.Name = "btnBeräkna";
             this.btnBeräkna.Size = new System.Drawing.Size(92, 23);
             this.btnBeräkna.TabIndex = 0;
@@ -70,7 +70,7 @@
             // 
             // tbxTal
             // 
-            this.tbxTal.Location = new System.Drawing.Point(12, 394);
+            this.tbxTal.Location = new System.Drawing.Point(13, 284);
             this.tbxTal.Name = "tbxTal";
             this.tbxTal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbxTal.Size = new System.Drawing.Size(100, 20);
@@ -80,7 +80,7 @@
             // lblTalbas
             // 
             this.lblTalbas.AutoSize = true;
-            this.lblTalbas.Location = new System.Drawing.Point(50, 417);
+            this.lblTalbas.Location = new System.Drawing.Point(51, 307);
             this.lblTalbas.Name = "lblTalbas";
             this.lblTalbas.Size = new System.Drawing.Size(16, 13);
             this.lblTalbas.TabIndex = 2;
@@ -89,7 +89,7 @@
             // lblSvarD
             // 
             this.lblSvarD.AutoSize = true;
-            this.lblSvarD.Location = new System.Drawing.Point(12, 417);
+            this.lblSvarD.Location = new System.Drawing.Point(13, 307);
             this.lblSvarD.Name = "lblSvarD";
             this.lblSvarD.Size = new System.Drawing.Size(32, 13);
             this.lblSvarD.TabIndex = 3;
@@ -135,10 +135,10 @@
             // 
             // tbxOctantalet1
             // 
-            this.tbxOctantalet1.Location = new System.Drawing.Point(39, 241);
+            this.tbxOctantalet1.Location = new System.Drawing.Point(12, 108);
             this.tbxOctantalet1.Name = "tbxOctantalet1";
             this.tbxOctantalet1.ReadOnly = true;
-            this.tbxOctantalet1.Size = new System.Drawing.Size(511, 20);
+            this.tbxOctantalet1.Size = new System.Drawing.Size(169, 20);
             this.tbxOctantalet1.TabIndex = 111;
             // 
             // tbxDecimaltalet1
@@ -147,7 +147,7 @@
             this.tbxDecimaltalet1.Name = "tbxDecimaltalet1";
             this.tbxDecimaltalet1.Size = new System.Drawing.Size(100, 20);
             this.tbxDecimaltalet1.TabIndex = 110;
-            this.tbxDecimaltalet1.Text = "87922";
+            this.tbxDecimaltalet1.Text = "8";
             // 
             // label1
             // 
@@ -158,14 +158,14 @@
             this.label1.TabIndex = 120;
             this.label1.Text = "Octantalet";
             // 
-            // label2
+            // lblDecimalatalet2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 119;
-            this.label2.Text = "Decimaltalet";
+            this.lblDecimalatalet2.AutoSize = true;
+            this.lblDecimalatalet2.Location = new System.Drawing.Point(189, 56);
+            this.lblDecimalatalet2.Name = "lblDecimalatalet2";
+            this.lblDecimalatalet2.Size = new System.Drawing.Size(65, 13);
+            this.lblDecimalatalet2.TabIndex = 119;
+            this.lblDecimalatalet2.Text = "Decimaltalet";
             // 
             // tbxOctatalet2
             // 
@@ -183,96 +183,98 @@
             this.tbxDeciamltalet2.Size = new System.Drawing.Size(100, 20);
             this.tbxDeciamltalet2.TabIndex = 117;
             // 
-            // label3
+            // lblBinäratalet3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(369, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 125;
-            this.label3.Text = "Octantalet";
+            this.lblBinäratalet3.AutoSize = true;
+            this.lblBinäratalet3.Location = new System.Drawing.Point(369, 56);
+            this.lblBinäratalet3.Name = "lblBinäratalet3";
+            this.lblBinäratalet3.Size = new System.Drawing.Size(57, 13);
+            this.lblBinäratalet3.TabIndex = 125;
+            this.lblBinäratalet3.Text = "Binäratalet";
             // 
-            // label4
+            // lblDecimaltalet3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(369, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 124;
-            this.label4.Text = "Decimaltalet";
+            this.lblDecimaltalet3.AutoSize = true;
+            this.lblDecimaltalet3.Location = new System.Drawing.Point(369, 30);
+            this.lblDecimaltalet3.Name = "lblDecimaltalet3";
+            this.lblDecimaltalet3.Size = new System.Drawing.Size(65, 13);
+            this.lblDecimaltalet3.TabIndex = 124;
+            this.lblDecimaltalet3.Text = "Decimaltalet";
             // 
-            // textBox3
+            // tbxBinäratalet3
             // 
-            this.textBox3.Location = new System.Drawing.Point(440, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 123;
-            this.textBox3.Text = "87922";
+            this.tbxBinäratalet3.Location = new System.Drawing.Point(440, 53);
+            this.tbxBinäratalet3.Name = "tbxBinäratalet3";
+            this.tbxBinäratalet3.ReadOnly = true;
+            this.tbxBinäratalet3.Size = new System.Drawing.Size(100, 20);
+            this.tbxBinäratalet3.TabIndex = 123;
+            this.tbxBinäratalet3.Text = "87922";
             // 
-            // textBox4
+            // tbxDecimaltalet3
             // 
-            this.textBox4.Location = new System.Drawing.Point(440, 27);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 122;
-            this.textBox4.Text = "0";
+            this.tbxDecimaltalet3.Location = new System.Drawing.Point(440, 27);
+            this.tbxDecimaltalet3.Name = "tbxDecimaltalet3";
+            this.tbxDecimaltalet3.Size = new System.Drawing.Size(100, 20);
+            this.tbxDecimaltalet3.TabIndex = 122;
+            this.tbxDecimaltalet3.Text = "0";
             // 
-            // button1
+            // btnDeciBi
             // 
-            this.button1.Location = new System.Drawing.Point(372, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 23);
-            this.button1.TabIndex = 121;
-            this.button1.Text = "Octa - Deci";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDeciBi.Location = new System.Drawing.Point(372, 79);
+            this.btnDeciBi.Name = "btnDeciBi";
+            this.btnDeciBi.Size = new System.Drawing.Size(168, 23);
+            this.btnDeciBi.TabIndex = 121;
+            this.btnDeciBi.Text = "Deci - Bi";
+            this.btnDeciBi.UseVisualStyleBackColor = true;
+            this.btnDeciBi.Click += new System.EventHandler(this.btnDeciBi_Click);
             // 
-            // label5
+            // lblDecimalatalet4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(549, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 130;
-            this.label5.Text = "Octantalet";
+            this.lblDecimalatalet4.AutoSize = true;
+            this.lblDecimalatalet4.Location = new System.Drawing.Point(549, 56);
+            this.lblDecimalatalet4.Name = "lblDecimalatalet4";
+            this.lblDecimalatalet4.Size = new System.Drawing.Size(65, 13);
+            this.lblDecimalatalet4.TabIndex = 130;
+            this.lblDecimalatalet4.Text = "Decimaltalet";
             // 
-            // label6
+            // lblBinäratalet4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(549, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 129;
-            this.label6.Text = "Decimaltalet";
+            this.lblBinäratalet4.AutoSize = true;
+            this.lblBinäratalet4.Location = new System.Drawing.Point(549, 30);
+            this.lblBinäratalet4.Name = "lblBinäratalet4";
+            this.lblBinäratalet4.Size = new System.Drawing.Size(57, 13);
+            this.lblBinäratalet4.TabIndex = 129;
+            this.lblBinäratalet4.Text = "Binäratalet";
             // 
-            // textBox5
+            // tbxDecimaltalet4
             // 
-            this.textBox5.Location = new System.Drawing.Point(620, 53);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 128;
-            this.textBox5.Text = "87922";
+            this.tbxDecimaltalet4.Location = new System.Drawing.Point(620, 53);
+            this.tbxDecimaltalet4.Name = "tbxDecimaltalet4";
+            this.tbxDecimaltalet4.ReadOnly = true;
+            this.tbxDecimaltalet4.Size = new System.Drawing.Size(100, 20);
+            this.tbxDecimaltalet4.TabIndex = 128;
             // 
-            // textBox6
+            // tbxBinäratalet4
             // 
-            this.textBox6.Location = new System.Drawing.Point(620, 27);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 127;
-            this.textBox6.Text = "0";
+            this.tbxBinäratalet4.Location = new System.Drawing.Point(620, 27);
+            this.tbxBinäratalet4.Name = "tbxBinäratalet4";
+            this.tbxBinäratalet4.Size = new System.Drawing.Size(100, 20);
+            this.tbxBinäratalet4.TabIndex = 127;
+            this.tbxBinäratalet4.Text = "1101";
             // 
-            // button2
+            // btnBiDeci
             // 
-            this.button2.Location = new System.Drawing.Point(552, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 23);
-            this.button2.TabIndex = 126;
-            this.button2.Text = "Octa - Deci";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBiDeci.Location = new System.Drawing.Point(552, 79);
+            this.btnBiDeci.Name = "btnBiDeci";
+            this.btnBiDeci.Size = new System.Drawing.Size(168, 23);
+            this.btnBiDeci.TabIndex = 126;
+            this.btnBiDeci.Text = "Bi - Deci";
+            this.btnBiDeci.UseVisualStyleBackColor = true;
+            this.btnBiDeci.Click += new System.EventHandler(this.btnBiDeci_Click);
             // 
             // lblRuta1
             // 
+            this.lblRuta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblRuta1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblRuta1.Location = new System.Drawing.Point(81, 9);
             this.lblRuta1.Name = "lblRuta1";
@@ -283,6 +285,7 @@
             // 
             // lblRuta2
             // 
+            this.lblRuta2.BackColor = System.Drawing.SystemColors.Control;
             this.lblRuta2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblRuta2.Location = new System.Drawing.Point(261, 9);
             this.lblRuta2.Name = "lblRuta2";
@@ -293,6 +296,7 @@
             // 
             // lblRuta3
             // 
+            this.lblRuta3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblRuta3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblRuta3.Location = new System.Drawing.Point(441, 9);
             this.lblRuta3.Name = "lblRuta3";
@@ -320,18 +324,18 @@
             this.Controls.Add(this.lblRuta3);
             this.Controls.Add(this.lblRuta2);
             this.Controls.Add(this.lblRuta1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblDecimalatalet4);
+            this.Controls.Add(this.lblBinäratalet4);
+            this.Controls.Add(this.tbxDecimaltalet4);
+            this.Controls.Add(this.tbxBinäratalet4);
+            this.Controls.Add(this.btnBiDeci);
+            this.Controls.Add(this.lblBinäratalet3);
+            this.Controls.Add(this.lblDecimaltalet3);
+            this.Controls.Add(this.tbxBinäratalet3);
+            this.Controls.Add(this.tbxDecimaltalet3);
+            this.Controls.Add(this.btnDeciBi);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblDecimalatalet2);
             this.Controls.Add(this.tbxOctatalet2);
             this.Controls.Add(this.tbxDeciamltalet2);
             this.Controls.Add(this.tbxOctaDeci);
@@ -364,19 +368,19 @@
         private System.Windows.Forms.TextBox tbxOctantalet1;
         private System.Windows.Forms.TextBox tbxDecimaltalet1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDecimalatalet2;
         private System.Windows.Forms.TextBox tbxOctatalet2;
         private System.Windows.Forms.TextBox tbxDeciamltalet2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblBinäratalet3;
+        private System.Windows.Forms.Label lblDecimaltalet3;
+        private System.Windows.Forms.TextBox tbxBinäratalet3;
+        private System.Windows.Forms.TextBox tbxDecimaltalet3;
+        private System.Windows.Forms.Button btnDeciBi;
+        private System.Windows.Forms.Label lblDecimalatalet4;
+        private System.Windows.Forms.Label lblBinäratalet4;
+        private System.Windows.Forms.TextBox tbxDecimaltalet4;
+        private System.Windows.Forms.TextBox tbxBinäratalet4;
+        private System.Windows.Forms.Button btnBiDeci;
         private System.Windows.Forms.Label lblRuta1;
         private System.Windows.Forms.Label lblRuta2;
         private System.Windows.Forms.Label lblRuta3;

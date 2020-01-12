@@ -45,13 +45,13 @@ namespace _5_sep_lektionen
 
         private void tbxOctaDeci_Click(object sender, EventArgs e)
         {               // Ruta 2
-            int A = tbxOctatalet2.Text.Length;
+            int TextLength = tbxOctatalet2.Text.Length;
             int i = 0;
-            string B = tbxOctatalet2.Text;
-            double[] Array = new double[A];
-            while ( i < tbxOctatalet2.Text.Length )
+            string OctaTal = tbxOctatalet2.Text;
+            double[] Array = new double[tbxOctatalet2.Text.Length];
+            while ( i < TextLength )
             {
-                Array[i] = B[--A]-48;
+                Array[i] = OctaTal[--TextLength]-48;
                 if (Array[i] >= 8)
                     i = tbxOctatalet2.Text.Length + 1;
                 i++;
@@ -75,70 +75,72 @@ namespace _5_sep_lektionen
 
         private void btnDeciOcta_Click(object sender, EventArgs e)
         {
-            int text = tbxDecimaltalet1.Text.Length * 2;
+            int TextLength = tbxDecimaltalet1.Text.Length * 2 + 1;
             double Deci = int.Parse(tbxDecimaltalet1.Text);
-            double[] Octa = new double[text];
-            int[] kvärde = new int[8];
+            double[] Octa = new double[TextLength];
+            //int[] kvärde = new int[8];
             int n = 0;
             while (Deci>0)
             {
-                Octa[n] = Deci - Math.Pow(8, text - n);
-                if (Octa[n]<1)
+                Octa[n] = Deci - Math.Pow(8, TextLength - ++n);
+                if (Octa[n]<0)
                 {
                     Octa[n] = 0;
+                    Deci = int.Parse(tbxDecimaltalet1.Text);
+                    tbxOctantalet1.Text += "0";
                 }
                 else
                 {
 
                     Octa[n] = Deci;
-                    Octa[n] = Deci - 7 * Math.Pow(8, text - n);
+                    Octa[n] = Deci - 7 * Math.Pow(8, TextLength - n);
 
-                    if (Octa[n] > 1)
+                    if (Octa[n] > 0)
                         tbxOctantalet1.Text += "7";
                     
                     else
                     {
                         Octa[n] = Deci;
-                        Octa[n] = Deci - 6 * Math.Pow(8, text - n);
+                        Octa[n] = Deci - 6 * Math.Pow(8, TextLength - n);
 
 
-                        if (Octa[n] > 1)
+                        if (Octa[n] > 0)
                             tbxOctantalet1.Text += "6";
 
                         else
                         {
                             Octa[n] = Deci;
-                            Octa[n] = Deci - 5 * Math.Pow(8, text - n);
+                            Octa[n] = Deci - 5 * Math.Pow(8, TextLength - n);
 
 
-                            if (Octa[n] > 1)
+                            if (Octa[n] > 0)
                                 tbxOctantalet1.Text += "5";
 
                             else
                             {
                                 Octa[n] = Deci;
-                                Octa[n] = Deci - 4 * Math.Pow(8, text - n);
+                                Octa[n] = Deci - 4 * Math.Pow(8, TextLength - n);
 
 
-                                if (Octa[n] > 1)
+                                if (Octa[n] > 0)
                                     tbxOctantalet1.Text += "4";
 
 
                                 else
                                 {
                                     Octa[n] = Deci;
-                                    Octa[n] = Deci - 3 * Math.Pow(8, text - n); 
+                                    Octa[n] = Deci - 3 * Math.Pow(8, TextLength - n); 
 
-                                    if (Octa[n]>1)
+                                    if (Octa[n]>0)
                                         tbxOctantalet1.Text += "3";
 
 
                                     else
                                     {
                                         Octa[n] = Deci;
-                                        Octa[n] = Deci - 2 * Math.Pow(8, text - n);
+                                        Octa[n] = Deci - 2 * Math.Pow(8, TextLength - n);
 
-                                        if (Octa[n]>1)
+                                        if (Octa[n]>0)
                                         {
                                             tbxOctantalet1.Text += "2";
                                         }
@@ -147,8 +149,17 @@ namespace _5_sep_lektionen
                                         else
                                         {
                                             Octa[n] = Deci;
-                                            Octa[n] = Deci - 1 * Math.Pow(8, text - n);
-                                            tbxOctantalet1.Text += "1";
+                                            Octa[n] = Deci - 1 * Math.Pow(8, TextLength - n);
+
+                                            if (Octa[n]==0)
+                                            {
+                                                tbxOctantalet1.Text += "0";
+                                            }
+
+                                            else
+                                            {
+                                                tbxOctantalet1.Text += "1";
+                                            }
                                         }
                                     }
                                 }
@@ -156,12 +167,63 @@ namespace _5_sep_lektionen
                         }
                     }
                     //tbxOctantalet1.Text += Deci;
+                    Deci = Octa[n];
                 }
-                Deci = Octa[n];
                 n++;
             }
 
 
+        }
+
+        private void btnDeciBi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBiDeci_Click(object sender, EventArgs e)
+        {
+            int TextLength = tbxBinäratalet4.Text.Length;
+            double[] Deci = new double[TextLength];
+            int Bi = int.Parse(tbxBinäratalet4.Text);
+            string Binary = tbxBinäratalet4.Text;
+
+            int n = 0;
+
+            while (n < TextLength)
+            {
+                Deci[n] = Binary[--TextLength] - 48;
+                if (Deci[n] >= 2)       break;
+            }
+
+
+            if (TextLength == 0)
+            {
+                double tot = 0;
+                TextLength = tbxBinäratalet4.Text.Length;
+                for (int i = 0; i < tbxBinäratalet4.Text.Length; i++)
+                {
+                    Deci[i] *= Math.Pow(2, --TextLength);
+                    tot += Deci[i];
+                }
+
+                //n = 0;
+                //while (n<tbxBinäratalet4.Text.Length)
+                //{
+                //    tot += Deci[n];
+                //    n++;
+                //}
+                tbxDecimaltalet4.Text = tot.ToString();
+            }
+            else
+            {
+                tbxDecimaltalet4.Text = "Fel inmatning";
+            }
+
+        }
+
+        private void tbxBinäratalet4_TextChanged(object sender, EventArgs e)
+        {
+            tbxDecimaltalet4.Clear();
         }
     }
 }
