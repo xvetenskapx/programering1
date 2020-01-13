@@ -80,14 +80,30 @@ namespace _5_sep_lektionen
             double[] Octa = new double[TextLength];
             //int[] kvärde = new int[8];
             int n = 0;
-            while (Deci>0)
+            int t = 1;
+
+            while (Deci > 0)
             {
-                Octa[n] = Deci - Math.Pow(8, TextLength - ++n);
-                if (Octa[n]<0)
+                Octa[n] = Deci - Math.Pow(8, TextLength - t++);
+                //MessageBox.Show(Octa[n].ToString());
+                if (Octa[n] < 0)
                 {
                     Octa[n] = 0;
-                    Deci = int.Parse(tbxDecimaltalet1.Text);
                     tbxOctantalet1.Text += "0";
+                    if (n==0)
+                    {
+                        Deci = int.Parse(tbxDecimaltalet1.Text);
+                    }
+                    else
+                    {
+                        Deci = Octa[--n];
+                    }
+                    
+                }
+                else if (Octa[n] == 0)
+                {
+                    tbxOctantalet1.Text += "1";
+                    Deci = Octa[n];
                 }
                 else
                 {
@@ -153,12 +169,12 @@ namespace _5_sep_lektionen
 
                                             if (Octa[n]==0)
                                             {
-                                                tbxOctantalet1.Text += "0";
+                                                tbxOctantalet1.Text += "1";
                                             }
 
                                             else
                                             {
-                                                tbxOctantalet1.Text += "1";
+                                                tbxOctantalet1.Text += "0";
                                             }
                                         }
                                     }
