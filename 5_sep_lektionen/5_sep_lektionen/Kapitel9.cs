@@ -59,7 +59,7 @@ namespace _5_sep_lektionen
         {
             int startvärde = int.Parse(tbxStartvärde.Text);
             int slutvärde = int.Parse(tbxSlutvärde.Text);
-            while (startvärde < slutvärde + 1)
+            while (startvärde <= slutvärde)
             {
                 tbxUtdata.Text += startvärde + " " + "\r\n";
                 startvärde++;
@@ -70,6 +70,7 @@ namespace _5_sep_lektionen
         {
             double korn = 1;
             int ruta = 1;
+
             while (ruta < 64+1)
             {
                 tbxUtdata92.Text += "Ruta: " + ruta.ToString() + "\t" + "\t" + korn.ToString() + "\r\n";
@@ -106,7 +107,7 @@ namespace _5_sep_lektionen
 
             for (int i = 1; i <= int.Parse(tbxNiva.Text) ; i++)
             {
-                for (int j=1; j<= 10; j++)
+                for (int j=1; j <= 10; j++)
                 {
                     tbxNivadata.Text += (i * j).ToString() + "\t";
                 }
@@ -247,6 +248,7 @@ namespace _5_sep_lektionen
             tbxRad2.Clear();
             tbxRad3.Clear();
             Random tärning = new Random();
+
             //Rad 1
             int[] Rad1 = new int[7];
             for (int i = 0; i < 7; i++)
@@ -297,6 +299,7 @@ namespace _5_sep_lektionen
         {
             double Startantal = double.Parse(tbxStartantal.Text);
             int Interval = int.Parse(tbxTid.Text);
+
             for(int i=0; i < Interval; i++)
             {
                 Startantal *=2;
@@ -327,12 +330,21 @@ namespace _5_sep_lektionen
         {
             double pappretstjocklek = double.Parse(tbxPappretstjocklek.Text);
             double Hojd = double.Parse(tbxHojd.Text);
+            Hojd = Hojd * 1000000;
             int AntalVikningar = 0;
-            for (double i=pappretstjocklek; i<=Hojd; i++)
+
+            //kom ihåg att använda rätt enheter samt lär dig hur matte funkar, det är inte så svårt
+            //for (double i=pappretstjocklek; i<=Hojd; i++)
+            //{
+            //    Math.Pow(pappretstjocklek, 2);
+            //    AntalVikningar++;
+            //    i++;
+            //}
+
+            while (pappretstjocklek < Hojd)
             {
-                Math.Pow(pappretstjocklek, 2);
+                pappretstjocklek = pappretstjocklek * 2;
                 AntalVikningar++;
-                i++;
             }
             lblSvar931.Text = AntalVikningar.ToString();
         }

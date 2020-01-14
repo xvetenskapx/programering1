@@ -147,7 +147,8 @@
             this.tbxDecimaltalet1.Name = "tbxDecimaltalet1";
             this.tbxDecimaltalet1.Size = new System.Drawing.Size(100, 20);
             this.tbxDecimaltalet1.TabIndex = 110;
-            this.tbxDecimaltalet1.Text = "8";
+            this.tbxDecimaltalet1.Text = "9";
+            this.tbxDecimaltalet1.TextChanged += new System.EventHandler(this.tbxDecimaltalet1_TextChanged);
             // 
             // label1
             // 

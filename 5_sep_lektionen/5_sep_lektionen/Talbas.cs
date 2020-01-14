@@ -79,113 +79,140 @@ namespace _5_sep_lektionen
             double Deci = int.Parse(tbxDecimaltalet1.Text);
             double[] Octa = new double[TextLength];
             //int[] kvärde = new int[8];
-            int n = 0;
-            int t = 1;
+            int t = 2;
 
-            while (Deci > 0)
+
+            for (int n = 0; n < TextLength; n++)
             {
-                Octa[n] = Deci - Math.Pow(8, TextLength - t++);
-                //MessageBox.Show(Octa[n].ToString());
-                if (Octa[n] < 0)
+                //Blir Decimaltalet 0 kommer vi aldrig kunna ta bort ett tal och fortfarande vara på det positiva eller noll.
+                if (Deci == 0)
                 {
-                    Octa[n] = 0;
                     tbxOctantalet1.Text += "0";
-                    if (n==0)
-                    {
-                        Deci = int.Parse(tbxDecimaltalet1.Text);
-                    }
-                    else
-                    {
-                        Deci = Octa[--n];
-                    }
-                    
                 }
-                else if (Octa[n] == 0)
+
+                //Är talet mellan 0 och 7 är det samma som i deciamla talbasen
+                else if (Deci == 0 || Deci == 1 || Deci == 2 || Deci == 3 || Deci == 4 || Deci == 5 || Deci == 6 || Deci == 7 )
                 {
-                    tbxOctantalet1.Text += "1";
-                    Deci = Octa[n];
+                    tbxOctantalet1.Text += Deci.ToString();
                 }
+
+                //Annars försöker vi ta bort ett hel tal
                 else
                 {
+                    //Ta bort med den en potensen
+                    Octa[n] = Deci - Math.Pow(8, TextLength - t);
 
-                    Octa[n] = Deci;
-                    Octa[n] = Deci - 7 * Math.Pow(8, TextLength - n);
+                    //Kolla ifall det är negativt, då kan vi inte använda den potensen
+                    if (Octa[n] < 0)
+                    {
+                        tbxOctantalet1.Text += "0";
 
-                    if (Octa[n] > 0)
-                        tbxOctantalet1.Text += "7";
-                    
+                        //Används endast ifall det inte går först gången
+                        if (n == 0)
+                        {
+                            Octa[n] = Deci;
+                        }
+
+                        //Efter första gången
+                        else
+                        {
+                            Deci = Octa[--n];
+                        }
+
+                    }
+                    //Blir svaret noll är vi precis på åtta
+                    else if (Octa[n] == 0)
+                    {
+                        tbxOctantalet1.Text += "1";
+                        Deci = Octa[n];
+                    }
+
+                    //Svaret blir större än åtta
+                    //Går det att multiplicera med 7 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                     else
                     {
                         Octa[n] = Deci;
-                        Octa[n] = Deci - 6 * Math.Pow(8, TextLength - n);
-
+                        Octa[n] = Deci - 7 * Math.Pow(8, TextLength - t);
 
                         if (Octa[n] > 0)
-                            tbxOctantalet1.Text += "6";
+                            tbxOctantalet1.Text += "7";
 
+                        //Går det att multiplicera med 6 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                         else
                         {
                             Octa[n] = Deci;
-                            Octa[n] = Deci - 5 * Math.Pow(8, TextLength - n);
+                            Octa[n] = Deci - 6 * Math.Pow(8, TextLength - t);
 
 
                             if (Octa[n] > 0)
-                                tbxOctantalet1.Text += "5";
+                                tbxOctantalet1.Text += "6";
 
+                            //Går det att multiplicera med 5 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                             else
                             {
                                 Octa[n] = Deci;
-                                Octa[n] = Deci - 4 * Math.Pow(8, TextLength - n);
+                                Octa[n] = Deci - 5 * Math.Pow(8, TextLength - t);
 
 
                                 if (Octa[n] > 0)
-                                    tbxOctantalet1.Text += "4";
+                                    tbxOctantalet1.Text += "5";
 
-
+                                //Går det att multiplicera med 4 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                                 else
                                 {
                                     Octa[n] = Deci;
-                                    Octa[n] = Deci - 3 * Math.Pow(8, TextLength - n); 
-
-                                    if (Octa[n]>0)
-                                        tbxOctantalet1.Text += "3";
+                                    Octa[n] = Deci - 4 * Math.Pow(8, TextLength - t);
 
 
+                                    if (Octa[n] > 0)
+                                        tbxOctantalet1.Text += "4";
+
+                                    //Går det att multiplicera med 3 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                                     else
                                     {
                                         Octa[n] = Deci;
-                                        Octa[n] = Deci - 2 * Math.Pow(8, TextLength - n);
+                                        Octa[n] = Deci - 3 * Math.Pow(8, TextLength - t);
 
-                                        if (Octa[n]>0)
-                                        {
-                                            tbxOctantalet1.Text += "2";
-                                        }
+                                        if (Octa[n] > 0)
+                                            tbxOctantalet1.Text += "3";
 
-
+                                        //Går det att multiplicera med 2 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                                         else
                                         {
                                             Octa[n] = Deci;
-                                            Octa[n] = Deci - 1 * Math.Pow(8, TextLength - n);
+                                            Octa[n] = Deci - 2 * Math.Pow(8, TextLength - t);
 
-                                            if (Octa[n]==0)
+                                            if (Octa[n] > 0)
                                             {
-                                                tbxOctantalet1.Text += "1";
+                                                tbxOctantalet1.Text += "2";
                                             }
 
+                                            //Går det att multiplicera med 1 och fortfarande ha positiv eller noll skrivs det ut här annars går det vidare
                                             else
                                             {
-                                                tbxOctantalet1.Text += "0";
+                                                Octa[n] = Deci;
+                                                Octa[n] = Deci - 1 * Math.Pow(8, TextLength - t);
+
+                                                if (Octa[n] > 0)
+                                                {
+                                                    tbxOctantalet1.Text += "1";
+                                                }
+
+                                                else
+                                                {
+                                                    tbxOctantalet1.Text += "0";
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
                         }
+                        //tbxOctantalet1.Text += Deci;
+                        Deci = Octa[n];
                     }
-                    //tbxOctantalet1.Text += Deci;
-                    Deci = Octa[n];
                 }
-                n++;
+                t++;
             }
 
 
@@ -240,6 +267,11 @@ namespace _5_sep_lektionen
         private void tbxBinäratalet4_TextChanged(object sender, EventArgs e)
         {
             tbxDecimaltalet4.Clear();
+        }
+
+        private void tbxDecimaltalet1_TextChanged(object sender, EventArgs e)
+        {
+            tbxOctantalet1.Clear();
         }
     }
 }
