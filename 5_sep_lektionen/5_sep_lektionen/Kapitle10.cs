@@ -69,7 +69,7 @@ namespace _5_sep_lektionen
             lblAreasvar.Text = CirkelArea(double.Parse(tbxRadie.Text)).ToString();
         }
 
-        private int Minstatal(int Tal1, int Tal2)
+        private int Minsta2Tal(int Tal1, int Tal2)
         {
             if (Tal1 < Tal2)
             {
@@ -84,7 +84,7 @@ namespace _5_sep_lektionen
         private void btnMinst102_Click(object sender, EventArgs e)
         {
 
-            tbxMinstaTal.Text = Minstatal(int.Parse(tbxTal1102.Text), int.Parse(tbxTal2102.Text)).ToString();
+            tbxMinstaTal.Text = Minsta2Tal(int.Parse(tbxTal1102.Text), int.Parse(tbxTal2102.Text)).ToString();
         }
 
         double VolymCylinder(double Radie, double höjd)
@@ -112,6 +112,87 @@ namespace _5_sep_lektionen
             Vändom2Tal(ref a, ref b);
             tbxTal1OM105.Text = a.ToString();
             tbxTal2OM105.Text = b.ToString();
+        }
+
+        private void btnMinst106_Click(object sender, EventArgs e)
+        {
+            int Tal1;
+            int Tal2;
+            indata(out Tal1, out Tal2);
+            int minsta = Minsta2Tal(Tal1, Tal2);
+            tbxMinst106.Text = minsta.ToString();
+
+
+        }
+        void indata(out int t1, out int t2)
+        {
+            t1 = int.Parse(tbxTal1106.Text);
+            t2 = int.Parse(tbxTal2106.Text);
+        }
+
+        private void btnBeräkna106_Click(object sender, EventArgs e)
+        {
+            int Radie;
+            int Höjd;
+            indata106(out Radie, out Höjd);
+            tbxVolym106.Text = VolymCylinder(Radie, Höjd).ToString();
+        }
+        void indata106(out int Radie, out int Höjd)
+        {
+            Radie = int.Parse(tbxRadie106.Text);
+            Höjd = int.Parse(tbxHöjd106.Text);
+        }
+
+        private void btnKasta_Click(object sender, EventArgs e)
+        {
+            tbxTärnstatistik.Clear();
+            int Antalkast = 5;
+            int AntalSidor = 6;
+            int[] Tärningar = new int[Antalkast];
+            KastaTärning(Tärningar, AntalSidor);
+            for (int i = 0; i < Antalkast; i++)
+            {
+                tbxTärnstatistik.Text += "Tärning" + (i+1) + ":\t" + Tärningar[i] + "\r\n";
+            }
+            
+        }
+        void KastaTärning(int[] Arr, int Antalsidor)
+        {
+            Random slump = new Random();
+            int i = 0;
+            while (i < Arr.Length)
+            {
+                Arr[i] = slump.Next(1, Antalsidor++);
+                i++;
+            }
+        }
+
+        private void btnBeräknaOmkrets_Click(object sender, EventArgs e)
+        {
+            lblOmkretsSvar101.Text = CirklensOmkrets(double.Parse(tbxRadie101.Text)).ToString();
+        }
+
+        double CirklensOmkrets(double Radie)
+        {
+            double Omkrets = (2 * Radie) * Math.PI;
+            return Omkrets;
+        }
+
+        private void btnVisaTecken_Click(object sender, EventArgs e)
+        {
+            lblTeckenSvar102.Text = BestämTecken(double.Parse(tbxTal102.Text)).ToString();
+        }
+
+        char BestämTecken(double Tal)
+        {
+            if (Tal > 0)
+                return '+';
+            
+            else if (Tal < 0)
+                return '-';
+           
+            else
+                return '0';
         }
     }
 }
