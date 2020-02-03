@@ -194,5 +194,60 @@ namespace _5_sep_lektionen
             else
                 return '0';
         }
+
+        bool ÄrSiffra(char tecken)
+        {
+            if (tecken > 47 && tecken < 58)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void btnTeckenResultat103_Click(object sender, EventArgs e)
+        {
+            char tecken = char.Parse(tbxTecken103.Text);
+            if (ÄrSiffra(tecken) == true)
+            {
+                lblTeckenSvar.Text = "Tecknet är en sifra";
+            }
+            else
+            {
+                lblTeckenSvar.Text = "Tecknet är inte en sifra";
+
+            }
+        }
+
+        private void Kapitle10_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        char Gemen_Versal (char Gemen)
+        {
+            int Versalint = Gemen-32;
+            char Versal = (char)Versalint;
+            return Versal;
+        }
+
+        private void btnvisaVersal_Click(object sender, EventArgs e)
+        {
+            char Gemen = tbxGemen.Text[0];
+            if (Gemen > 96 && Gemen < 122 || Gemen > 227 && Gemen < 230 || Gemen == 246)
+            {
+                lblVersalSvar.Text = Gemen_Versal(Gemen).ToString();
+            }
+            else if (Gemen > 64 && Gemen < 91 || Gemen > 195 && Gemen < 198 || Gemen == 214)
+            {
+                lblVersalSvar.Text = "Tecknet är redan Versal";
+            }
+            else
+            {
+                lblVersalSvar.Text = "Tecknet är inte ett Gemen";
+            }
+        }
     }
 }

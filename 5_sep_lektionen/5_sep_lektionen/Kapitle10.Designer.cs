@@ -95,12 +95,16 @@
             this.lblTal102 = new System.Windows.Forms.Label();
             this.lblTecken102 = new System.Windows.Forms.Label();
             this.btnVisaTecken = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblTeckenSvar = new System.Windows.Forms.Label();
+            this.lblUppgift104 = new System.Windows.Forms.Label();
+            this.tbxTecken103 = new System.Windows.Forms.TextBox();
+            this.lblTecken = new System.Windows.Forms.Label();
+            this.btnTeckenResultat103 = new System.Windows.Forms.Button();
+            this.lblUppgift105 = new System.Windows.Forms.Label();
+            this.lblVersalSvar = new System.Windows.Forms.Label();
+            this.tbxGemen = new System.Windows.Forms.TextBox();
+            this.lblGemen = new System.Windows.Forms.Label();
+            this.btnvisaVersal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTempomvandling
@@ -677,69 +681,109 @@
             this.btnVisaTecken.UseVisualStyleBackColor = true;
             this.btnVisaTecken.Click += new System.EventHandler(this.btnVisaTecken_Click);
             // 
-            // label5
+            // lblTeckenSvar
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(416, 333);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
-            this.label5.TabIndex = 77;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTeckenSvar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTeckenSvar.Location = new System.Drawing.Point(369, 333);
+            this.lblTeckenSvar.Name = "lblTeckenSvar";
+            this.lblTeckenSvar.Size = new System.Drawing.Size(150, 20);
+            this.lblTeckenSvar.TabIndex = 77;
+            this.lblTeckenSvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lblUppgift104
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 289);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 13);
-            this.label6.TabIndex = 76;
-            this.label6.Text = "Uppgift 10.3 ej klar";
+            this.lblUppgift104.AutoSize = true;
+            this.lblUppgift104.Location = new System.Drawing.Point(413, 289);
+            this.lblUppgift104.Name = "lblUppgift104";
+            this.lblUppgift104.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift104.TabIndex = 76;
+            this.lblUppgift104.Text = "Uppgift 10.3";
             // 
-            // textBox2
+            // tbxTecken103
             // 
-            this.textBox2.Location = new System.Drawing.Point(416, 305);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 75;
+            this.tbxTecken103.Location = new System.Drawing.Point(416, 305);
+            this.tbxTecken103.Name = "tbxTecken103";
+            this.tbxTecken103.Size = new System.Drawing.Size(100, 20);
+            this.tbxTecken103.TabIndex = 75;
             // 
-            // label7
+            // lblTecken
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(363, 308);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 74;
-            this.label7.Text = "Radie";
+            this.lblTecken.AutoSize = true;
+            this.lblTecken.Location = new System.Drawing.Point(363, 308);
+            this.lblTecken.Name = "lblTecken";
+            this.lblTecken.Size = new System.Drawing.Size(44, 13);
+            this.lblTecken.TabIndex = 74;
+            this.lblTecken.Text = "Tecken";
             // 
-            // label8
+            // btnTeckenResultat103
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(363, 334);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 13);
-            this.label8.TabIndex = 73;
-            this.label8.Text = "Omkrets:";
+            this.btnTeckenResultat103.Location = new System.Drawing.Point(369, 356);
+            this.btnTeckenResultat103.Name = "btnTeckenResultat103";
+            this.btnTeckenResultat103.Size = new System.Drawing.Size(150, 23);
+            this.btnTeckenResultat103.TabIndex = 78;
+            this.btnTeckenResultat103.Text = "Visa resultat";
+            this.btnTeckenResultat103.UseVisualStyleBackColor = true;
+            this.btnTeckenResultat103.Click += new System.EventHandler(this.btnTeckenResultat103_Click);
             // 
-            // button2
+            // lblUppgift105
             // 
-            this.button2.Location = new System.Drawing.Point(366, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 23);
-            this.button2.TabIndex = 72;
-            this.button2.Text = "Beräkna Omkrets";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lblUppgift105.AutoSize = true;
+            this.lblUppgift105.Location = new System.Drawing.Point(604, 289);
+            this.lblUppgift105.Name = "lblUppgift105";
+            this.lblUppgift105.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift105.TabIndex = 81;
+            this.lblUppgift105.Text = "Uppgift 10.5";
+            // 
+            // lblVersalSvar
+            // 
+            this.lblVersalSvar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblVersalSvar.Location = new System.Drawing.Point(563, 333);
+            this.lblVersalSvar.Name = "lblVersalSvar";
+            this.lblVersalSvar.Size = new System.Drawing.Size(147, 20);
+            this.lblVersalSvar.TabIndex = 86;
+            this.lblVersalSvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxGemen
+            // 
+            this.tbxGemen.Location = new System.Drawing.Point(610, 305);
+            this.tbxGemen.Name = "tbxGemen";
+            this.tbxGemen.Size = new System.Drawing.Size(100, 20);
+            this.tbxGemen.TabIndex = 85;
+            // 
+            // lblGemen
+            // 
+            this.lblGemen.AutoSize = true;
+            this.lblGemen.Location = new System.Drawing.Point(557, 308);
+            this.lblGemen.Name = "lblGemen";
+            this.lblGemen.Size = new System.Drawing.Size(44, 13);
+            this.lblGemen.TabIndex = 84;
+            this.lblGemen.Text = "Gemen:";
+            // 
+            // btnvisaVersal
+            // 
+            this.btnvisaVersal.Location = new System.Drawing.Point(560, 356);
+            this.btnvisaVersal.Name = "btnvisaVersal";
+            this.btnvisaVersal.Size = new System.Drawing.Size(150, 23);
+            this.btnvisaVersal.TabIndex = 82;
+            this.btnvisaVersal.Text = "Visa Versal";
+            this.btnvisaVersal.UseVisualStyleBackColor = true;
+            this.btnvisaVersal.Click += new System.EventHandler(this.btnvisaVersal_Click);
             // 
             // Kapitle10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lblVersalSvar);
+            this.Controls.Add(this.tbxGemen);
+            this.Controls.Add(this.lblGemen);
+            this.Controls.Add(this.btnvisaVersal);
+            this.Controls.Add(this.lblUppgift105);
+            this.Controls.Add(this.btnTeckenResultat103);
+            this.Controls.Add(this.lblTeckenSvar);
+            this.Controls.Add(this.lblUppgift104);
+            this.Controls.Add(this.tbxTecken103);
+            this.Controls.Add(this.lblTecken);
             this.Controls.Add(this.lblTeckenSvar102);
             this.Controls.Add(this.lblUppgift102);
             this.Controls.Add(this.tbxTal102);
@@ -809,6 +853,7 @@
             this.Controls.Add(this.btnTempomvandling);
             this.Name = "Kapitle10";
             this.Text = "Kapitle10";
+            this.Load += new System.EventHandler(this.Kapitle10_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -883,11 +928,15 @@
         private System.Windows.Forms.Label lblTal102;
         private System.Windows.Forms.Label lblTecken102;
         private System.Windows.Forms.Button btnVisaTecken;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblTeckenSvar;
+        private System.Windows.Forms.Label lblUppgift104;
+        private System.Windows.Forms.TextBox tbxTecken103;
+        private System.Windows.Forms.Label lblTecken;
+        private System.Windows.Forms.Button btnTeckenResultat103;
+        private System.Windows.Forms.Label lblUppgift105;
+        private System.Windows.Forms.Label lblVersalSvar;
+        private System.Windows.Forms.TextBox tbxGemen;
+        private System.Windows.Forms.Label lblGemen;
+        private System.Windows.Forms.Button btnvisaVersal;
     }
 }
