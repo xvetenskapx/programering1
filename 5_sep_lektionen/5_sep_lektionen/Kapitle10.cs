@@ -249,5 +249,99 @@ namespace _5_sep_lektionen
                 lblVersalSvar.Text = "Tecknet är inte ett Gemen";
             }
         }
+
+        bool ÄrPrimTal (long Primtal)
+        {
+            int i = 1;
+            double dPrim = (double)Primtal;
+            while (i < Primtal)
+            {
+                i++;
+                if (Primtal == i)
+                {
+                    return true;
+                }
+                else if (dPrim/i == Primtal/i)
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Int64 PT64 = new Int64();
+            PT64 = Int64.Parse(tbxTal106.Text);
+            //int PT = Convert.ToInt32(tbxTal106.Text);
+            //int PrimTal = int.Parse(tbxTal106.Text);
+            if (ÄrPrimTal(PT64) == true )
+            {
+                lblPrimtal106.Text = "Talet är Primtal";
+            }
+            else
+            {
+                lblPrimtal106.Text = "Talet är inte Primtal";
+            }
+        }
+
+        private void tbxTal106_TextChanged(object sender, EventArgs e)
+        {
+            lblPrimtal106.Text = "";
+        }
+
+        double Potens (double Bas, double Exponent)
+        {
+            double Potens = Bas;
+            if (Exponent==0)
+            {
+                return 1;
+            }
+            for (int i = 1; i < Exponent; i++)
+            {
+                Potens *= Bas;
+            }
+            return Potens;
+        }
+
+        private void btnPotens_Click(object sender, EventArgs e)
+        {
+            double Bas = double.Parse(tbxBas.Text);
+            double Exponent = double.Parse(tbxExponent.Text);
+            lblPotensSvar.Text = Bas.ToString() + " upphöjt till " + Exponent.ToString() + " till " + Potens(Bas, Exponent).ToString();
+        }
+
+        void Väderlös_TidOmvandlingSek_Tim (out int Tidh, out int Tidm, out int Tids)
+        {
+            Tids = int.Parse(tbxTidSek.Text);
+            if (Tids/3600 > 0)
+            {
+                Tidh = Tids / 3600;
+                Tids %= 3600;
+                if (Tids/60 > 0)
+                {
+                    Tidm = Tids / 60;
+                    Tids %= 60;
+                }
+            }
+            else if (Tids/60 > 0)
+            {
+                Tidh = 0;
+                Tidm = Tids / 60;
+                Tids %= 60;
+            }
+            else
+            {
+                Tidh = 0;
+                Tidm = 0;
+            }
+            Tidh = 0;
+            Tidm = 0;
+        }
+
+        private void btnTidSek_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

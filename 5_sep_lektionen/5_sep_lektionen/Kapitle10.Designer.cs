@@ -105,6 +105,23 @@
             this.tbxGemen = new System.Windows.Forms.TextBox();
             this.lblGemen = new System.Windows.Forms.Label();
             this.btnvisaVersal = new System.Windows.Forms.Button();
+            this.lblPrimtal106 = new System.Windows.Forms.Label();
+            this.tbxTal106 = new System.Windows.Forms.TextBox();
+            this.lblTal106 = new System.Windows.Forms.Label();
+            this.btnVisa106 = new System.Windows.Forms.Button();
+            this.lblUppgift106 = new System.Windows.Forms.Label();
+            this.lblPotensSvar = new System.Windows.Forms.Label();
+            this.tbxBas = new System.Windows.Forms.TextBox();
+            this.lblBas = new System.Windows.Forms.Label();
+            this.btnPotens = new System.Windows.Forms.Button();
+            this.lblUppgift107 = new System.Windows.Forms.Label();
+            this.tbxExponent = new System.Windows.Forms.TextBox();
+            this.lblexponent = new System.Windows.Forms.Label();
+            this.tbxTidSek = new System.Windows.Forms.TextBox();
+            this.lblTidSek = new System.Windows.Forms.Label();
+            this.lblTid108 = new System.Windows.Forms.Label();
+            this.btnTidSek = new System.Windows.Forms.Button();
+            this.lblUppgift108 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTempomvandling
@@ -769,11 +786,177 @@
             this.btnvisaVersal.UseVisualStyleBackColor = true;
             this.btnvisaVersal.Click += new System.EventHandler(this.btnvisaVersal_Click);
             // 
+            // lblPrimtal106
+            // 
+            this.lblPrimtal106.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPrimtal106.Location = new System.Drawing.Point(751, 54);
+            this.lblPrimtal106.Name = "lblPrimtal106";
+            this.lblPrimtal106.Size = new System.Drawing.Size(147, 20);
+            this.lblPrimtal106.TabIndex = 91;
+            this.lblPrimtal106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxTal106
+            // 
+            this.tbxTal106.Location = new System.Drawing.Point(798, 26);
+            this.tbxTal106.Name = "tbxTal106";
+            this.tbxTal106.Size = new System.Drawing.Size(100, 20);
+            this.tbxTal106.TabIndex = 90;
+            this.tbxTal106.TextChanged += new System.EventHandler(this.tbxTal106_TextChanged);
+            // 
+            // lblTal106
+            // 
+            this.lblTal106.AutoSize = true;
+            this.lblTal106.Location = new System.Drawing.Point(745, 29);
+            this.lblTal106.Name = "lblTal106";
+            this.lblTal106.Size = new System.Drawing.Size(22, 13);
+            this.lblTal106.TabIndex = 89;
+            this.lblTal106.Text = "Tal";
+            // 
+            // btnVisa106
+            // 
+            this.btnVisa106.Location = new System.Drawing.Point(748, 77);
+            this.btnVisa106.Name = "btnVisa106";
+            this.btnVisa106.Size = new System.Drawing.Size(150, 23);
+            this.btnVisa106.TabIndex = 88;
+            this.btnVisa106.Text = "Visa";
+            this.btnVisa106.UseVisualStyleBackColor = true;
+            this.btnVisa106.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblUppgift106
+            // 
+            this.lblUppgift106.AutoSize = true;
+            this.lblUppgift106.Location = new System.Drawing.Point(792, 10);
+            this.lblUppgift106.Name = "lblUppgift106";
+            this.lblUppgift106.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift106.TabIndex = 87;
+            this.lblUppgift106.Text = "Uppgift 10.6";
+            // 
+            // lblPotensSvar
+            // 
+            this.lblPotensSvar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPotensSvar.Location = new System.Drawing.Point(751, 190);
+            this.lblPotensSvar.Name = "lblPotensSvar";
+            this.lblPotensSvar.Size = new System.Drawing.Size(147, 20);
+            this.lblPotensSvar.TabIndex = 96;
+            this.lblPotensSvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxBas
+            // 
+            this.tbxBas.Location = new System.Drawing.Point(773, 162);
+            this.tbxBas.Name = "tbxBas";
+            this.tbxBas.Size = new System.Drawing.Size(25, 20);
+            this.tbxBas.TabIndex = 95;
+            // 
+            // lblBas
+            // 
+            this.lblBas.AutoSize = true;
+            this.lblBas.Location = new System.Drawing.Point(745, 165);
+            this.lblBas.Name = "lblBas";
+            this.lblBas.Size = new System.Drawing.Size(28, 13);
+            this.lblBas.TabIndex = 94;
+            this.lblBas.Text = "Bas:";
+            // 
+            // btnPotens
+            // 
+            this.btnPotens.Location = new System.Drawing.Point(748, 213);
+            this.btnPotens.Name = "btnPotens";
+            this.btnPotens.Size = new System.Drawing.Size(150, 23);
+            this.btnPotens.TabIndex = 93;
+            this.btnPotens.Text = "Beräkna";
+            this.btnPotens.UseVisualStyleBackColor = true;
+            this.btnPotens.Click += new System.EventHandler(this.btnPotens_Click);
+            // 
+            // lblUppgift107
+            // 
+            this.lblUppgift107.AutoSize = true;
+            this.lblUppgift107.Location = new System.Drawing.Point(792, 146);
+            this.lblUppgift107.Name = "lblUppgift107";
+            this.lblUppgift107.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift107.TabIndex = 92;
+            this.lblUppgift107.Text = "Uppgift 10.7";
+            // 
+            // tbxExponent
+            // 
+            this.tbxExponent.Location = new System.Drawing.Point(870, 162);
+            this.tbxExponent.Name = "tbxExponent";
+            this.tbxExponent.Size = new System.Drawing.Size(25, 20);
+            this.tbxExponent.TabIndex = 98;
+            // 
+            // lblexponent
+            // 
+            this.lblexponent.AutoSize = true;
+            this.lblexponent.Location = new System.Drawing.Point(812, 165);
+            this.lblexponent.Name = "lblexponent";
+            this.lblexponent.Size = new System.Drawing.Size(55, 13);
+            this.lblexponent.TabIndex = 97;
+            this.lblexponent.Text = "Exponent:";
+            // 
+            // tbxTidSek
+            // 
+            this.tbxTidSek.Location = new System.Drawing.Point(831, 305);
+            this.tbxTidSek.Name = "tbxTidSek";
+            this.tbxTidSek.Size = new System.Drawing.Size(64, 20);
+            this.tbxTidSek.TabIndex = 105;
+            // 
+            // lblTidSek
+            // 
+            this.lblTidSek.AutoSize = true;
+            this.lblTidSek.Location = new System.Drawing.Point(748, 308);
+            this.lblTidSek.Name = "lblTidSek";
+            this.lblTidSek.Size = new System.Drawing.Size(77, 13);
+            this.lblTidSek.TabIndex = 104;
+            this.lblTidSek.Text = "Tid i sekunder:";
+            // 
+            // lblTid108
+            // 
+            this.lblTid108.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTid108.Location = new System.Drawing.Point(751, 333);
+            this.lblTid108.Name = "lblTid108";
+            this.lblTid108.Size = new System.Drawing.Size(147, 20);
+            this.lblTid108.TabIndex = 103;
+            this.lblTid108.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnTidSek
+            // 
+            this.btnTidSek.Location = new System.Drawing.Point(748, 356);
+            this.btnTidSek.Name = "btnTidSek";
+            this.btnTidSek.Size = new System.Drawing.Size(150, 23);
+            this.btnTidSek.TabIndex = 100;
+            this.btnTidSek.Text = "Visa";
+            this.btnTidSek.UseVisualStyleBackColor = true;
+            this.btnTidSek.Click += new System.EventHandler(this.btnTidSek_Click);
+            // 
+            // lblUppgift108
+            // 
+            this.lblUppgift108.AutoSize = true;
+            this.lblUppgift108.Location = new System.Drawing.Point(792, 289);
+            this.lblUppgift108.Name = "lblUppgift108";
+            this.lblUppgift108.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift108.TabIndex = 99;
+            this.lblUppgift108.Text = "Uppgift 10.8";
+            // 
             // Kapitle10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1070, 450);
+            this.Controls.Add(this.tbxTidSek);
+            this.Controls.Add(this.lblTidSek);
+            this.Controls.Add(this.lblTid108);
+            this.Controls.Add(this.btnTidSek);
+            this.Controls.Add(this.lblUppgift108);
+            this.Controls.Add(this.tbxExponent);
+            this.Controls.Add(this.lblexponent);
+            this.Controls.Add(this.lblPotensSvar);
+            this.Controls.Add(this.tbxBas);
+            this.Controls.Add(this.lblBas);
+            this.Controls.Add(this.btnPotens);
+            this.Controls.Add(this.lblUppgift107);
+            this.Controls.Add(this.lblPrimtal106);
+            this.Controls.Add(this.tbxTal106);
+            this.Controls.Add(this.lblTal106);
+            this.Controls.Add(this.btnVisa106);
+            this.Controls.Add(this.lblUppgift106);
             this.Controls.Add(this.lblVersalSvar);
             this.Controls.Add(this.tbxGemen);
             this.Controls.Add(this.lblGemen);
@@ -938,5 +1121,22 @@
         private System.Windows.Forms.TextBox tbxGemen;
         private System.Windows.Forms.Label lblGemen;
         private System.Windows.Forms.Button btnvisaVersal;
+        private System.Windows.Forms.Label lblPrimtal106;
+        private System.Windows.Forms.TextBox tbxTal106;
+        private System.Windows.Forms.Label lblTal106;
+        private System.Windows.Forms.Button btnVisa106;
+        private System.Windows.Forms.Label lblUppgift106;
+        private System.Windows.Forms.Label lblPotensSvar;
+        private System.Windows.Forms.TextBox tbxBas;
+        private System.Windows.Forms.Label lblBas;
+        private System.Windows.Forms.Button btnPotens;
+        private System.Windows.Forms.Label lblUppgift107;
+        private System.Windows.Forms.TextBox tbxExponent;
+        private System.Windows.Forms.Label lblexponent;
+        private System.Windows.Forms.TextBox tbxTidSek;
+        private System.Windows.Forms.Label lblTidSek;
+        private System.Windows.Forms.Label lblTid108;
+        private System.Windows.Forms.Button btnTidSek;
+        private System.Windows.Forms.Label lblUppgift108;
     }
 }
