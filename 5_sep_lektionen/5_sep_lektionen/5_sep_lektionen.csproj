@@ -64,6 +64,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Färg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Färg.Designer.cs">
+      <DependentUpon>Färg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kapitel 8\Gissatalet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     <Compile Include="Kapitle10.Designer.cs">
       <DependentUpon>Kapitle10.cs</DependentUpon>
     </Compile>
+    <Compile Include="KärleksVeckan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KärleksVeckan.Designer.cs">
+      <DependentUpon>KärleksVeckan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Kapitel 8\Spel.cs">
@@ -123,6 +135,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Färg.resx">
+      <DependentUpon>Färg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kapitel 8\Gissatalet.resx">
       <DependentUpon>Gissatalet.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kapitle10.resx">
       <DependentUpon>Kapitle10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KärleksVeckan.resx">
+      <DependentUpon>KärleksVeckan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

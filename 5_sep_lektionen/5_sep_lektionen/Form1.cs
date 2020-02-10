@@ -227,5 +227,11 @@ namespace _5_sep_lektionen
             Kapitle10 kapitle10 = new Kapitle10();
             kapitle10.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            KärleksVeckan kärleksVeckan = new KärleksVeckan();
+            kärleksVeckan.Show();
+        }
     }
 }
