@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnValdFärg = new System.Windows.Forms.Button();
             this.btnRGBFärg = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxGreen = new System.Windows.Forms.TextBox();
+            this.tbxBlue = new System.Windows.Forms.TextBox();
+            this.tbxRed = new System.Windows.Forms.TextBox();
             this.lblRed = new System.Windows.Forms.Label();
             this.lblGreen = new System.Windows.Forms.Label();
             this.lblBlue = new System.Windows.Forms.Label();
@@ -42,15 +42,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxVäljfärg)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnValdFärg
             // 
-            this.button1.Location = new System.Drawing.Point(330, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnValdFärg.Location = new System.Drawing.Point(330, 415);
+            this.btnValdFärg.Name = "btnValdFärg";
+            this.btnValdFärg.Size = new System.Drawing.Size(137, 23);
+            this.btnValdFärg.TabIndex = 0;
+            this.btnValdFärg.Text = "Denna Färgen";
+            this.btnValdFärg.UseVisualStyleBackColor = true;
+            this.btnValdFärg.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnRGBFärg
             // 
@@ -58,29 +58,30 @@
             this.btnRGBFärg.Name = "btnRGBFärg";
             this.btnRGBFärg.Size = new System.Drawing.Size(312, 23);
             this.btnRGBFärg.TabIndex = 1;
-            this.btnRGBFärg.Text = "button2";
+            this.btnRGBFärg.Text = "Testa Kombinationen";
             this.btnRGBFärg.UseVisualStyleBackColor = true;
+            this.btnRGBFärg.Click += new System.EventHandler(this.btnRGBFärg_Click);
             // 
-            // textBox1
+            // tbxGreen
             // 
-            this.textBox1.Location = new System.Drawing.Point(582, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbxGreen.Location = new System.Drawing.Point(582, 30);
+            this.tbxGreen.Name = "tbxGreen";
+            this.tbxGreen.Size = new System.Drawing.Size(100, 20);
+            this.tbxGreen.TabIndex = 2;
             // 
-            // textBox2
+            // tbxBlue
             // 
-            this.textBox2.Location = new System.Drawing.Point(688, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbxBlue.Location = new System.Drawing.Point(688, 30);
+            this.tbxBlue.Name = "tbxBlue";
+            this.tbxBlue.Size = new System.Drawing.Size(100, 20);
+            this.tbxBlue.TabIndex = 3;
             // 
-            // textBox3
+            // tbxRed
             // 
-            this.textBox3.Location = new System.Drawing.Point(476, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
+            this.tbxRed.Location = new System.Drawing.Point(476, 30);
+            this.tbxRed.Name = "tbxRed";
+            this.tbxRed.Size = new System.Drawing.Size(100, 20);
+            this.tbxRed.TabIndex = 4;
             // 
             // lblRed
             // 
@@ -123,9 +124,9 @@
             "Lila",
             "Svart",
             "Vit"});
-            this.cbxFärgAlternativ.Location = new System.Drawing.Point(84, 30);
+            this.cbxFärgAlternativ.Location = new System.Drawing.Point(12, 29);
             this.cbxFärgAlternativ.Name = "cbxFärgAlternativ";
-            this.cbxFärgAlternativ.Size = new System.Drawing.Size(121, 21);
+            this.cbxFärgAlternativ.Size = new System.Drawing.Size(312, 21);
             this.cbxFärgAlternativ.TabIndex = 8;
             this.cbxFärgAlternativ.SelectedIndexChanged += new System.EventHandler(this.cbxFärgAlternativ_SelectedIndexChanged);
             // 
@@ -134,7 +135,7 @@
             this.pbxVäljfärg.BackColor = System.Drawing.Color.Red;
             this.pbxVäljfärg.Location = new System.Drawing.Point(330, 12);
             this.pbxVäljfärg.Name = "pbxVäljfärg";
-            this.pbxVäljfärg.Size = new System.Drawing.Size(137, 297);
+            this.pbxVäljfärg.Size = new System.Drawing.Size(137, 397);
             this.pbxVäljfärg.TabIndex = 11;
             this.pbxVäljfärg.TabStop = false;
             // 
@@ -148,11 +149,11 @@
             this.Controls.Add(this.lblBlue);
             this.Controls.Add(this.lblGreen);
             this.Controls.Add(this.lblRed);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxRed);
+            this.Controls.Add(this.tbxBlue);
+            this.Controls.Add(this.tbxGreen);
             this.Controls.Add(this.btnRGBFärg);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnValdFärg);
             this.Name = "Färg";
             this.Text = "Färg";
             this.Load += new System.EventHandler(this.Färg_Load);
@@ -164,11 +165,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnValdFärg;
         private System.Windows.Forms.Button btnRGBFärg;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxGreen;
+        private System.Windows.Forms.TextBox tbxBlue;
+        private System.Windows.Forms.TextBox tbxRed;
         private System.Windows.Forms.Label lblRed;
         private System.Windows.Forms.Label lblGreen;
         private System.Windows.Forms.Label lblBlue;
