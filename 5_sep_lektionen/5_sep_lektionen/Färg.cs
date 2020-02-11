@@ -12,7 +12,7 @@ namespace _5_sep_lektionen
 {
     public partial class Färg : Form
     {
-
+        PictureBox pbx;
         int[] FärgTest = new int[3];
 
         int[] stefan;
@@ -21,6 +21,12 @@ namespace _5_sep_lektionen
         {
             InitializeComponent();
             
+        }
+
+        public Färg(PictureBox p)
+        {
+            InitializeComponent();
+            pbx = p;
         }
 
         
@@ -40,7 +46,12 @@ namespace _5_sep_lektionen
             {
                 KärleksVeckan.Färg[0] = FärgTest[0];
             }
+
             pbxVäljfärg.BackColor = Color.FromArgb(FärgTest[0], FärgTest[1], FärgTest[2]);
+
+
+            pbx.BackColor = Color.FromArgb(FärgTest[0], FärgTest[1], FärgTest[2]);
+
 
             this.Close();
         }
@@ -50,6 +61,8 @@ namespace _5_sep_lektionen
             //cbxFärgAlternativ.Items.Add("Röd");
 
         }
+
+        
 
         private void cbxFärgAlternativ_SelectedIndexChanged(object sender, EventArgs e)
         {

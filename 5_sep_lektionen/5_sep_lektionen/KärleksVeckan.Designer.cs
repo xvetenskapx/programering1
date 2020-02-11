@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KärleksVeckan));
             this.lblNamn1 = new System.Windows.Forms.Label();
             this.lblNamn2 = new System.Windows.Forms.Label();
             this.tbxNamn1 = new System.Windows.Forms.TextBox();
@@ -124,11 +125,11 @@
             // 
             // lblHjärta
             // 
-            this.lblHjärta.Location = new System.Drawing.Point(604, 49);
+            this.lblHjärta.Location = new System.Drawing.Point(657, 52);
             this.lblHjärta.Name = "lblHjärta";
-            this.lblHjärta.Size = new System.Drawing.Size(493, 318);
+            this.lblHjärta.Size = new System.Drawing.Size(130, 202);
             this.lblHjärta.TabIndex = 11;
-            this.lblHjärta.Text = "label1\r\n";
+            this.lblHjärta.Text = resources.GetString("lblHjärta.Text");
             // 
             // comboBox1
             // 
@@ -159,14 +160,14 @@
             // 
             this.tbxHjärta.BackColor = System.Drawing.SystemColors.Control;
             this.tbxHjärta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxHjärta.Location = new System.Drawing.Point(360, 243);
+            this.tbxHjärta.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxHjärta.Location = new System.Drawing.Point(477, 274);
             this.tbxHjärta.Multiline = true;
             this.tbxHjärta.Name = "tbxHjärta";
             this.tbxHjärta.ReadOnly = true;
             this.tbxHjärta.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbxHjärta.Size = new System.Drawing.Size(563, 219);
+            this.tbxHjärta.Size = new System.Drawing.Size(743, 219);
             this.tbxHjärta.TabIndex = 14;
-            this.tbxHjärta.Text = "test";
             // 
             // KärleksVeckan
             // 
