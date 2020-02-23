@@ -40,7 +40,7 @@ namespace _5_sep_lektionen
             Färg färg = new Färg(this.pbxVäljfärg);
             färg.Show();
 
-           
+
         }
 
         public void bytFärg(Color c)
@@ -54,32 +54,121 @@ namespace _5_sep_lektionen
         }
 
 
-        void RitaHjärtaÖver(int Storlek, int[] Färg, int Tecken)
+        void RitaHjärtaÖver(string Tecken)
         {
-            for (int i = 0; i < 13; i++)
+
+            for (int i = 0; i < 11; i++)
             {
-                tbxHjärta.Text += "  ";
-                if (i==2)
+                lblHjärtaUtskrift.Text += "  ";
+                if (i == 3)
                 {
-                    tbxHjärta.Text += 'A';
+                    lblHjärtaUtskrift.Text += " " + Tecken;
                 }
             }
 
-            for (int h = 0; h < 16; h++)
+            lblHjärtaUtskrift.Text += Tecken + "\r\n";
+            for (int i = 0; i < 6; i++)
             {
-                //tbxHjärta.Text +=
+                lblHjärtaUtskrift.Text += "  ";
+                switch (i)
+                {
+                    case 1:
+                        lblHjärtaUtskrift.Text += "  " + Tecken;
+                        break;
+
+                    case 2:
+                        lblHjärtaUtskrift.Text += "  " + Tecken;
+                        break;
+
+                    case 3:
+                        lblHjärtaUtskrift.Text += "  ";
+                        break;
+                    case 4:
+                        lblHjärtaUtskrift.Text += "  " + Tecken;
+                        break;
+                    case 5:
+                        lblHjärtaUtskrift.Text += "  " + Tecken;
+                        break;
+                    default:
+                        break;
+                }
             }
-            
+            lblHjärtaUtskrift.Text += "\r\n";
 
-            //for (int t = 0; t < 10; t++)
-            //{
-            //    tbxHjärta.Text += "  ";
-            //}
+            for (int i = 0; i < 5; i++)
+            {
+                lblHjärtaUtskrift.Text += "  ";
+                switch (i)
+                {
+                    case 1:
+                        lblHjärtaUtskrift.Text += Tecken;
+                        break;
 
-            tbxHjärta.Text += 'A' + "\r\n";
+                    case 2:
+                        lblHjärtaUtskrift.Text += "  " + "  " + "  " + Tecken;
+                        break;
+                    case 3:
+                        lblHjärtaUtskrift.Text += "  " + Tecken;
+                        break;
+                    case 4:
+                        lblHjärtaUtskrift.Text += "  " + "  " + "  " + Tecken;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            lblHjärtaUtskrift.Text += "\r\n";
+
+            int y = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        lblHjärtaUtskrift.Text += Tecken;
+                        break;
+
+                    case 1:
+                        while (y < 7)
+                        {
+                            lblHjärtaUtskrift.Text += "  ";
+                            y++;
+                        }
+                        lblHjärtaUtskrift.Text += " " + Tecken;
+                        y = 0;
+                        break;
+
+                    case 2:
+                        while (y < 7)
+                        {
+                            lblHjärtaUtskrift.Text += "  ";
+                            y++;
+                        }
+                        lblHjärtaUtskrift.Text += " " + Tecken;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            lblHjärtaUtskrift.Text += "\r\n";
         }
 
-        void RitaHjärtaUnder(int Storlek, int[] Färg, int Tecken)
+        private void btnRita_Click(object sender, EventArgs e)
+        {
+            int Storlek = int.Parse(tbxStorlek.Text);
+            lblHjärtaUtskrift.Text = "";
+            TextÄndring(Storlek);
+            FärgÄndring(Färg);
+            string Tecken = tbxTecken.Text;
+            RitaHjärtaÖver(Tecken);
+            Klass(Tecken);
+            
+            namn1(tbxNamn1.Text);
+            namn2(tbxNamn2.Text);
+        }
+
+        void Klass(string Tecken)
         {
             int t = 4;
             int n = 32;
@@ -91,18 +180,18 @@ namespace _5_sep_lektionen
 
                 for (int i1 = 0; i1 < h; i1++)
                 {
-                    tbxHjärta.Text += "  ";
+                    lblHjärtaUtskrift.Text += "  ";
                 }
 
-                tbxHjärta.Text += 'A';
+                lblHjärtaUtskrift.Text += Tecken;
 
                 while (0 < y)
                 {
-                    tbxHjärta.Text += "  ";
-                    y = y-2;
+                    lblHjärtaUtskrift.Text += "  ";
+                    y = y - 2;
                 }
 
-                tbxHjärta.Text += 'A' + "\r\n";
+                lblHjärtaUtskrift.Text += Tecken + "\r\n";
                 i--;
                 y = n - t;
                 t = t + 4;
@@ -110,16 +199,50 @@ namespace _5_sep_lektionen
             }
             for (int i1 = 0; i1 < 8; i1++)
             {
-                tbxHjärta.Text += "  ";
+                lblHjärtaUtskrift.Text += "  ";
             }
-            tbxHjärta.Text += " " + 'A';
+            lblHjärtaUtskrift.Text += " " + Tecken;
+            lblHjärtaUtskrift.Text += "\r\n";
         }
 
-        private void btnRita_Click(object sender, EventArgs e)
+        void FärgÄndring (int[] Färg)
         {
-            
-            RitaHjärtaÖver(1, Färg, 1);
-            RitaHjärtaUnder(1, Färg, 1);
+            //lblHjärtaUtskrift.ForeColor = Color.FromArgb(Färg[0], Färg[1], Färg[2]);
+            lblHjärtaUtskrift.ForeColor = pbxVäljfärg.BackColor;
+        }
+
+        void TextÄndring (int Storlek)
+        {
+            Font font = new Font("Times New Roman", Storlek);
+            lblHjärtaUtskrift.Font = font;
+            lblNamn1Utskrift.Font = font;
+            lblNamn2Utskrift.Font = font;
+        }
+
+        void namn1 (string namn)
+        {
+            lblNamn1Utskrift.Width = lblHjärtaUtskrift.Width;
+            int Hight = lblHjärtaUtskrift.Size.Height;
+            int X = lblHjärtaUtskrift.Location.X;
+            Point Position = new Point(X, Hight + 150);
+            lblNamn1Utskrift.Location = Position;
+            lblNamn1Utskrift.Text = namn;
+        }
+
+        void namn2 (string namn)
+        {
+            lblNamn2Utskrift.Width = lblHjärtaUtskrift.Width;
+            int Hight = lblHjärtaUtskrift.Location.Y;
+            int X = lblHjärtaUtskrift.Location.X;
+            Point Position = new Point(X, Hight - 150);
+            lblNamn2Utskrift.Location = Position;
+            lblNamn2Utskrift.Text = namn;
+        }
+
+        private void lblHjärtaUtskrift_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+

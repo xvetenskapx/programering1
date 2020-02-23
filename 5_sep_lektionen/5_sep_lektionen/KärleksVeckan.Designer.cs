@@ -33,56 +33,61 @@
             this.lblNamn2 = new System.Windows.Forms.Label();
             this.tbxNamn1 = new System.Windows.Forms.TextBox();
             this.tbxNamn2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbxTecken = new System.Windows.Forms.TextBox();
             this.lblTecken = new System.Windows.Forms.Label();
             this.lblStorlek = new System.Windows.Forms.Label();
             this.btnRita = new System.Windows.Forms.Button();
             this.pbxVäljfärg = new System.Windows.Forms.PictureBox();
             this.lblHjärta = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblFärg = new System.Windows.Forms.Label();
-            this.tbxHjärta = new System.Windows.Forms.TextBox();
+            this.tbxStorlek = new System.Windows.Forms.TextBox();
+            this.lblHjärtaUtskrift = new System.Windows.Forms.Label();
+            this.lblNamn1Utskrift = new System.Windows.Forms.Label();
+            this.lblNamn2Utskrift = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVäljfärg)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNamn1
             // 
             this.lblNamn1.AutoSize = true;
-            this.lblNamn1.Location = new System.Drawing.Point(59, 55);
+            this.lblNamn1.Location = new System.Drawing.Point(59, 81);
             this.lblNamn1.Name = "lblNamn1";
             this.lblNamn1.Size = new System.Drawing.Size(47, 13);
             this.lblNamn1.TabIndex = 0;
-            this.lblNamn1.Text = "Namn 1:";
+            this.lblNamn1.Text = "Namn 2:";
             // 
             // lblNamn2
             // 
             this.lblNamn2.AutoSize = true;
-            this.lblNamn2.Location = new System.Drawing.Point(59, 81);
+            this.lblNamn2.Location = new System.Drawing.Point(59, 55);
             this.lblNamn2.Name = "lblNamn2";
             this.lblNamn2.Size = new System.Drawing.Size(47, 13);
             this.lblNamn2.TabIndex = 1;
-            this.lblNamn2.Text = "Namn 2:";
+            this.lblNamn2.Text = "Namn 1:";
             // 
             // tbxNamn1
             // 
-            this.tbxNamn1.Location = new System.Drawing.Point(112, 52);
+            this.tbxNamn1.Location = new System.Drawing.Point(112, 78);
             this.tbxNamn1.Name = "tbxNamn1";
             this.tbxNamn1.Size = new System.Drawing.Size(131, 20);
             this.tbxNamn1.TabIndex = 2;
+            this.tbxNamn1.Text = "Hej";
             // 
             // tbxNamn2
             // 
-            this.tbxNamn2.Location = new System.Drawing.Point(112, 78);
+            this.tbxNamn2.Location = new System.Drawing.Point(112, 52);
             this.tbxNamn2.Name = "tbxNamn2";
             this.tbxNamn2.Size = new System.Drawing.Size(131, 20);
             this.tbxNamn2.TabIndex = 3;
+            this.tbxNamn2.Text = "Nej";
             // 
-            // textBox4
+            // tbxTecken
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(25, 20);
-            this.textBox4.TabIndex = 5;
+            this.tbxTecken.Location = new System.Drawing.Point(112, 133);
+            this.tbxTecken.Name = "tbxTecken";
+            this.tbxTecken.Size = new System.Drawing.Size(25, 20);
+            this.tbxTecken.TabIndex = 5;
+            this.tbxTecken.Text = "A";
             // 
             // lblTecken
             // 
@@ -125,27 +130,13 @@
             // 
             // lblHjärta
             // 
-            this.lblHjärta.Location = new System.Drawing.Point(657, 52);
+            this.lblHjärta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHjärta.Location = new System.Drawing.Point(12, 456);
             this.lblHjärta.Name = "lblHjärta";
-            this.lblHjärta.Size = new System.Drawing.Size(130, 202);
+            this.lblHjärta.Size = new System.Drawing.Size(400, 363);
             this.lblHjärta.TabIndex = 11;
             this.lblHjärta.Text = resources.GetString("lblHjärta.Text");
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "0.25x",
-            "0.5x",
-            "0.75x",
-            "1x",
-            "1.5x",
-            "2x",
-            "2.5x"});
-            this.comboBox1.Location = new System.Drawing.Point(112, 159);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.lblHjärta.Visible = false;
             // 
             // lblFärg
             // 
@@ -156,33 +147,58 @@
             this.lblFärg.TabIndex = 13;
             this.lblFärg.Text = "Färg:";
             // 
-            // tbxHjärta
+            // tbxStorlek
             // 
-            this.tbxHjärta.BackColor = System.Drawing.SystemColors.Control;
-            this.tbxHjärta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxHjärta.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxHjärta.Location = new System.Drawing.Point(477, 274);
-            this.tbxHjärta.Multiline = true;
-            this.tbxHjärta.Name = "tbxHjärta";
-            this.tbxHjärta.ReadOnly = true;
-            this.tbxHjärta.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbxHjärta.Size = new System.Drawing.Size(743, 219);
-            this.tbxHjärta.TabIndex = 14;
+            this.tbxStorlek.Location = new System.Drawing.Point(112, 159);
+            this.tbxStorlek.Name = "tbxStorlek";
+            this.tbxStorlek.Size = new System.Drawing.Size(131, 20);
+            this.tbxStorlek.TabIndex = 15;
+            this.tbxStorlek.Text = "16";
+            // 
+            // lblHjärtaUtskrift
+            // 
+            this.lblHjärtaUtskrift.AutoSize = true;
+            this.lblHjärtaUtskrift.Location = new System.Drawing.Point(570, 124);
+            this.lblHjärtaUtskrift.Name = "lblHjärtaUtskrift";
+            this.lblHjärtaUtskrift.Size = new System.Drawing.Size(35, 13);
+            this.lblHjärtaUtskrift.TabIndex = 16;
+            this.lblHjärtaUtskrift.Text = "Hjärta";
+            this.lblHjärtaUtskrift.Click += new System.EventHandler(this.lblHjärtaUtskrift_Click);
+            // 
+            // lblNamn1Utskrift
+            // 
+            this.lblNamn1Utskrift.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNamn1Utskrift.Location = new System.Drawing.Point(570, 153);
+            this.lblNamn1Utskrift.Name = "lblNamn1Utskrift";
+            this.lblNamn1Utskrift.Size = new System.Drawing.Size(35, 100);
+            this.lblNamn1Utskrift.TabIndex = 18;
+            this.lblNamn1Utskrift.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblNamn2Utskrift
+            // 
+            this.lblNamn2Utskrift.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNamn2Utskrift.Location = new System.Drawing.Point(568, 9);
+            this.lblNamn2Utskrift.Name = "lblNamn2Utskrift";
+            this.lblNamn2Utskrift.Size = new System.Drawing.Size(35, 100);
+            this.lblNamn2Utskrift.TabIndex = 19;
+            this.lblNamn2Utskrift.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // KärleksVeckan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 637);
-            this.Controls.Add(this.tbxHjärta);
+            this.Controls.Add(this.lblNamn2Utskrift);
+            this.Controls.Add(this.lblNamn1Utskrift);
+            this.Controls.Add(this.lblHjärtaUtskrift);
+            this.Controls.Add(this.tbxStorlek);
             this.Controls.Add(this.lblFärg);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblHjärta);
             this.Controls.Add(this.pbxVäljfärg);
             this.Controls.Add(this.btnRita);
             this.Controls.Add(this.lblStorlek);
             this.Controls.Add(this.lblTecken);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbxTecken);
             this.Controls.Add(this.tbxNamn2);
             this.Controls.Add(this.tbxNamn1);
             this.Controls.Add(this.lblNamn2);
@@ -202,14 +218,16 @@
         private System.Windows.Forms.Label lblNamn2;
         private System.Windows.Forms.TextBox tbxNamn1;
         private System.Windows.Forms.TextBox tbxNamn2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxTecken;
         private System.Windows.Forms.Label lblTecken;
         private System.Windows.Forms.Label lblStorlek;
         private System.Windows.Forms.Button btnRita;
         private System.Windows.Forms.Label lblHjärta;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblFärg;
         public System.Windows.Forms.PictureBox pbxVäljfärg;
-        private System.Windows.Forms.TextBox tbxHjärta;
+        private System.Windows.Forms.TextBox tbxStorlek;
+        private System.Windows.Forms.Label lblHjärtaUtskrift;
+        private System.Windows.Forms.Label lblNamn1Utskrift;
+        private System.Windows.Forms.Label lblNamn2Utskrift;
     }
 }
