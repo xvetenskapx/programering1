@@ -164,6 +164,8 @@ namespace _5_sep_lektionen
             RitaHjärtaÖver(Tecken);
             Klass(Tecken);
             
+            //string TextStil = tbxTextStil.text
+            //
             namn1(tbxNamn1.Text);
             namn2(tbxNamn2.Text);
         }

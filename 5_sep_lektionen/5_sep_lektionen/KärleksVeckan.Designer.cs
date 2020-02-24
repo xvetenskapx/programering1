@@ -71,7 +71,7 @@
             this.tbxNamn1.Name = "tbxNamn1";
             this.tbxNamn1.Size = new System.Drawing.Size(131, 20);
             this.tbxNamn1.TabIndex = 2;
-            this.tbxNamn1.Text = "Hej";
+            this.tbxNamn1.Text = "Veckan";
             // 
             // tbxNamn2
             // 
@@ -79,7 +79,7 @@
             this.tbxNamn2.Name = "tbxNamn2";
             this.tbxNamn2.Size = new System.Drawing.Size(131, 20);
             this.tbxNamn2.TabIndex = 3;
-            this.tbxNamn2.Text = "Nej";
+            this.tbxNamn2.Text = "Kärleks";
             // 
             // tbxTecken
             // 

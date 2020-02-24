@@ -122,6 +122,9 @@
             this.lblTid108 = new System.Windows.Forms.Label();
             this.btnTidSek = new System.Windows.Forms.Button();
             this.lblUppgift108 = new System.Windows.Forms.Label();
+            this.btnKastaTärning109 = new System.Windows.Forms.Button();
+            this.lblUppgift109 = new System.Windows.Forms.Label();
+            this.lblKastaTärningarnaResultat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTempomvandling
@@ -935,11 +938,42 @@
             this.lblUppgift108.TabIndex = 99;
             this.lblUppgift108.Text = "Uppgift 10.8";
             // 
+            // btnKastaTärning109
+            // 
+            this.btnKastaTärning109.Location = new System.Drawing.Point(942, 24);
+            this.btnKastaTärning109.Name = "btnKastaTärning109";
+            this.btnKastaTärning109.Size = new System.Drawing.Size(137, 23);
+            this.btnKastaTärning109.TabIndex = 106;
+            this.btnKastaTärning109.Text = "Kasta Tärningarna";
+            this.btnKastaTärning109.UseVisualStyleBackColor = true;
+            this.btnKastaTärning109.Click += new System.EventHandler(this.btnKastaTärning109_Click);
+            // 
+            // lblUppgift109
+            // 
+            this.lblUppgift109.AutoSize = true;
+            this.lblUppgift109.Location = new System.Drawing.Point(979, 8);
+            this.lblUppgift109.Name = "lblUppgift109";
+            this.lblUppgift109.Size = new System.Drawing.Size(65, 13);
+            this.lblUppgift109.TabIndex = 107;
+            this.lblUppgift109.Text = "Uppgift 10.9";
+            // 
+            // lblKastaTärningarnaResultat
+            // 
+            this.lblKastaTärningarnaResultat.AutoSize = true;
+            this.lblKastaTärningarnaResultat.Location = new System.Drawing.Point(939, 50);
+            this.lblKastaTärningarnaResultat.Name = "lblKastaTärningarnaResultat";
+            this.lblKastaTärningarnaResultat.Size = new System.Drawing.Size(35, 13);
+            this.lblKastaTärningarnaResultat.TabIndex = 108;
+            this.lblKastaTärningarnaResultat.Text = "label2";
+            // 
             // Kapitle10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 450);
+            this.ClientSize = new System.Drawing.Size(1142, 450);
+            this.Controls.Add(this.lblKastaTärningarnaResultat);
+            this.Controls.Add(this.lblUppgift109);
+            this.Controls.Add(this.btnKastaTärning109);
             this.Controls.Add(this.tbxTidSek);
             this.Controls.Add(this.lblTidSek);
             this.Controls.Add(this.lblTid108);
@@ -1138,5 +1172,8 @@
         private System.Windows.Forms.Label lblTid108;
         private System.Windows.Forms.Button btnTidSek;
         private System.Windows.Forms.Label lblUppgift108;
+        private System.Windows.Forms.Button btnKastaTärning109;
+        private System.Windows.Forms.Label lblUppgift109;
+        private System.Windows.Forms.Label lblKastaTärningarnaResultat;
     }
 }

@@ -304,6 +304,7 @@ namespace _5_sep_lektionen
             return Potens;
         }
 
+     
         private void btnPotens_Click(object sender, EventArgs e)
         {
             double Bas = double.Parse(tbxBas.Text);
@@ -313,6 +314,7 @@ namespace _5_sep_lektionen
 
         void Väderlös_TidOmvandlingSek_Tim (out int Tidh, out int Tidm, out int Tids)
         {
+            Tidm = 0;
             Tids = int.Parse(tbxTidSek.Text);
             if (Tids/3600 > 0)
             {
@@ -335,13 +337,21 @@ namespace _5_sep_lektionen
                 Tidh = 0;
                 Tidm = 0;
             }
-            Tidh = 0;
-            Tidm = 0;
         }
+
 
         private void btnTidSek_Click(object sender, EventArgs e)
         {
-            
+            int Sek;
+            int Min;
+            int Tim;
+            Väderlös_TidOmvandlingSek_Tim(out Tim, out Min, out Sek);
+            lblTid108.Text = Tim.ToString() + "h " + Min.ToString() + "min " + Sek.ToString() + "sek";
+        }
+
+        private void btnKastaTärning109_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
