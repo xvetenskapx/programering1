@@ -233,5 +233,11 @@ namespace _5_sep_lektionen
             KärleksVeckan kärleksVeckan = new KärleksVeckan();
             kärleksVeckan.Show();
         }
+
+        private void btnKapitel13_Click(object sender, EventArgs e)
+        {
+            Kapitel_13 kapitel_13 = new Kapitel_13();
+            kapitel_13.Show();
+        }
     }
 }

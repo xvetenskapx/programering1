@@ -70,6 +70,12 @@
     <Compile Include="Färg.Designer.cs">
       <DependentUpon>Färg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kapitel 13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kapitel 13.Designer.cs">
+      <DependentUpon>Kapitel 13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kapitel 8\Gissatalet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Färg.resx">
       <DependentUpon>Färg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kapitel 13.resx">
+      <DependentUpon>Kapitel 13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kapitel 8\Gissatalet.resx">
       <DependentUpon>Gissatalet.cs</DependentUpon>
