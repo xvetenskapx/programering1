@@ -40,7 +40,7 @@ namespace _5_sep_lektionen
         private void btnKontrollera132_Click(object sender, EventArgs e)
         {
             lblSvarPalindrom.Text = "";
-            if (Palindrom(tbxOrd132.Text)
+            if (Palindrom(tbxOrd132.Text))
             {
 
             }

@@ -273,5 +273,19 @@ namespace _5_sep_lektionen
         {
             tbxOctantalet1.Clear();
         }
+
+        private void btnText_Click(object sender, EventArgs e)
+        {
+            tbxText2.Text = "";
+            string S1 = tbxText1.Text;
+            char[] ca = S1.ToCharArray();
+
+            foreach (char c in ca)
+            {
+                int ccode = Convert.ToInt32(c);
+                string bin = Convert.ToString(ccode, 2);
+                tbxText2.Text += bin + "\r\n";
+            }
+        }
     }
 }

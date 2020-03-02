@@ -56,6 +56,9 @@
             this.lblRuta2 = new System.Windows.Forms.Label();
             this.lblRuta3 = new System.Windows.Forms.Label();
             this.lblRuta4 = new System.Windows.Forms.Label();
+            this.btnText = new System.Windows.Forms.Button();
+            this.tbxText1 = new System.Windows.Forms.TextBox();
+            this.tbxText2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnBeräkna
@@ -316,11 +319,40 @@
             this.lblRuta4.Text = "4";
             this.lblRuta4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnText
+            // 
+            this.btnText.Location = new System.Drawing.Point(751, 5);
+            this.btnText.Name = "btnText";
+            this.btnText.Size = new System.Drawing.Size(75, 23);
+            this.btnText.TabIndex = 135;
+            this.btnText.Text = "Text1";
+            this.btnText.UseVisualStyleBackColor = true;
+            this.btnText.Click += new System.EventHandler(this.btnText_Click);
+            // 
+            // tbxText1
+            // 
+            this.tbxText1.Location = new System.Drawing.Point(751, 34);
+            this.tbxText1.Name = "tbxText1";
+            this.tbxText1.Size = new System.Drawing.Size(100, 20);
+            this.tbxText1.TabIndex = 137;
+            // 
+            // tbxText2
+            // 
+            this.tbxText2.Location = new System.Drawing.Point(751, 60);
+            this.tbxText2.Multiline = true;
+            this.tbxText2.Name = "tbxText2";
+            this.tbxText2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxText2.Size = new System.Drawing.Size(100, 218);
+            this.tbxText2.TabIndex = 138;
+            // 
             // Talbas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(916, 450);
+            this.Controls.Add(this.tbxText2);
+            this.Controls.Add(this.tbxText1);
+            this.Controls.Add(this.btnText);
             this.Controls.Add(this.lblRuta4);
             this.Controls.Add(this.lblRuta3);
             this.Controls.Add(this.lblRuta2);
@@ -386,5 +418,8 @@
         private System.Windows.Forms.Label lblRuta2;
         private System.Windows.Forms.Label lblRuta3;
         private System.Windows.Forms.Label lblRuta4;
+        private System.Windows.Forms.Button btnText;
+        private System.Windows.Forms.TextBox tbxText1;
+        private System.Windows.Forms.TextBox tbxText2;
     }
 }
