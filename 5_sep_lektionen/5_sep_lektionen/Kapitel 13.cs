@@ -39,13 +39,64 @@ namespace _5_sep_lektionen
 
         private void btnKontrollera132_Click(object sender, EventArgs e)
         {
-            Stack<char> Ord132 = new Stack<char>();
-            Stack<string> OmväntOrd132 = new Stack<string>();
-            Ord132.Push(char.Parse(tbxOrd132.Text));
-            while (Ord132.Count != 0)
+            lblSvarPalindrom.Text = "";
+            if (Palindrom(tbxOrd132.Text)
             {
-                lblSvarPalindrom.Text += Ord132;
-                
+
+            }
+
+
+
+        }
+
+        bool Palindrom(String Ord)
+        {
+            char y;
+            int i = 0;
+            string S1 = Ord;
+            int t = S1.Length;
+            Stack<char> Ord132 = new Stack<char>();
+            Stack<char> OmväntOrd132 = new Stack<char>();
+            Stack<char> Ord132Reserv = new Stack<char>();
+            while (t - 1 >= i)
+            {
+                y = S1[i];
+                Ord132.Push(y);
+                Ord132Reserv.Push(y);
+                i++;
+            }
+            i = 0;
+            t = Ord132.Count - 1;
+            while (t >= i)
+            {
+                OmväntOrd132.Push(Ord132.Pop());
+                i++;
+            }
+
+            i = 0;
+            t = Ord132Reserv.Count - 1;
+            while (t >= i)
+            {
+                if (Ord132Reserv.Peek() == OmväntOrd132.Peek())
+                {
+                    Ord132Reserv.Pop();
+                    OmväntOrd132.Pop();
+                    i++;
+                }
+                else
+                {
+                    i = S1.Length + 1;
+                }
+            }
+            if (S1.Length.Equals(i))
+            {
+                return true;
+                //lblSvarPalindrom.Text = "Det är ett Palindrom";
+            }
+            else
+            {
+                return false;
+                //lblSvarPalindrom.Text = "Det är ett inte Palindrom";
             }
         }
     }
