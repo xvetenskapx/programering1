@@ -13,6 +13,15 @@ namespace _5_sep_lektionen
     public partial class Kapitel_13 : Form
     {
         Stack<string> stadStack = new Stack<string>();
+        Queue<string> KundKö = new Queue<string>();
+
+        //
+        //Glos Program
+        //
+        List<string> SveGlosor = new List<string>();
+        List<string> EngGlosor = new List<string>();
+        int i = 0;
+        int y = 0;
 
         public Kapitel_13()
         {
@@ -97,6 +106,71 @@ namespace _5_sep_lektionen
             {
                 return false;
                 //lblSvarPalindrom.Text = "Det är ett inte Palindrom";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Namn = tbxNamn133.Text;
+            KundKö.Enqueue(Namn);
+            lblNamnKö133.Text = Namn + " har ställts i kö";
+        }
+
+        private void btnGKund_Click(object sender, EventArgs e)
+        {
+            lblNamnKö133.Text = KundKö.Dequeue() + " har expedierats";
+        }
+
+        private void btnAddGlosa_Click(object sender, EventArgs e)
+        {
+            if (tbxEngOrd.Text.Length == 0||tbxSveOrd.Text.Length == 0)
+            {
+                MessageBox.Show("Glömt inmatning", "Fel Meddelande", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                SveGlosor.Add(tbxSveOrd.Text);
+                EngGlosor.Add(tbxEngOrd.Text);
+                btnStartGlos.Enabled = true;
+                tbxSveOrd.Clear();
+                tbxEngOrd.Clear();
+            }
+
+        }
+
+        private void btnStartGlos_Click(object sender, EventArgs e)
+        {
+            gbxGlosorAdd.Enabled = false;
+            gbxGlostest.Enabled = true;
+            btnStartGlos.Enabled = false;
+
+        }
+
+        private void btnSvaraGlosa_Click(object sender, EventArgs e)
+        {
+            Random Rnd = new Random();
+            int GlosNr = Rnd.Next(EngGlosor.Count);
+            tbxSveOrdSvar.Text = SveGlosor.ElementAt(GlosNr);
+
+            if (i==0)
+            {
+                i++;
+                y = GlosNr;
+
+            }
+            else
+            {
+                if (tbxSveOrdSvar.Text == tbxEngOrdSvar.Text)
+                {
+                    tbxNamn133.Text = "Rätt";
+                    SveGlosor.RemoveAt(y);
+                    y = GlosNr;
+                }
+                else
+                {
+                    tbxNamn133.Text = "Fel";
+                }
+
             }
         }
     }
