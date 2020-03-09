@@ -22,6 +22,9 @@ namespace _5_sep_lektionen
         List<string> EngGlosor = new List<string>();
         int i = 0;
         int y = 0;
+        List<int> RandomHistorik = new List<int>();
+        int AntalGissningar = -1;
+
 
         public Kapitel_13()
         {
@@ -148,29 +151,40 @@ namespace _5_sep_lektionen
 
         private void btnSvaraGlosa_Click(object sender, EventArgs e)
         {
-            Random Rnd = new Random();
-            int GlosNr = Rnd.Next(EngGlosor.Count);
-            tbxSveOrdSvar.Text = SveGlosor.ElementAt(GlosNr);
-
-            if (i==0)
+            try
             {
-                i++;
-                y = GlosNr;
+                Random Rnd = new Random();
+                int GlosNr = Rnd.Next(EngGlosor.Count - 1);
+                RandomHistorik.Add(GlosNr);
+                AntalGissningar++;
 
-            }
-            else
-            {
-                if (tbxSveOrdSvar.Text == tbxEngOrdSvar.Text)
+                if (AntalGissningar > 0 && tbxEngOrdSvar.Text == EngGlosor.ElementAt(RandomHistorik.ElementAt(AntalGissningar - 1)))
                 {
                     tbxNamn133.Text = "Rätt";
-                    SveGlosor.RemoveAt(y);
-                    y = GlosNr;
+                    SveGlosor.RemoveAt(RandomHistorik.ElementAt(AntalGissningar - 1));
+                    EngGlosor.RemoveAt(RandomHistorik.ElementAt(AntalGissningar - 1));
                 }
                 else
                 {
                     tbxNamn133.Text = "Fel";
                 }
 
+                tbxEngOrdSvar.Clear();
+                tbxSveOrdSvar.Clear();
+
+                if (EngGlosor.Count > 0)
+                {
+                    tbxSveOrdSvar.Text = SveGlosor.ElementAt(GlosNr);
+                }
+                else
+                {
+                    tbxNamn133.Text = "klar";
+                }
+            }
+            catch (Exception)
+            {
+                gbxGlosResultat.Enabled = true;
+                gbxGlostest.Enabled = false;
             }
         }
     }
